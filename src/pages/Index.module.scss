@@ -1,0 +1,23 @@
+@import '~styles/app';
+
+.mainLayout {
+  height: 100%;
+  background: transparent;
+  color: #888888;
+  text-align: center;
+}
+
+.mainContent {
+  padding-top: 30px;
+  flex: 1;
+}
+
+.mainFooter {
+  color: #888888;
+  height: 60px;
+}
+
+.headerComingSoon {
+  color: rgba(255,255,255,.7);
+  font-weight: 600;
+}

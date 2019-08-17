@@ -1,11 +1,70 @@
+const autoprefixer = require('autoprefixer')
+const dotenv = require('dotenv')
+const path = require('path')
+const postCssDiscardDuplicates = require('postcss-discard-duplicates')
+const postCssFlexbugsFixes = require('postcss-flexbugs-fixes')
+const postCssFocus = require('postcss-focus')
+
+dotenv.config({
+  path: `./.env.${process.env.RELEASE_LEVEL}`,
+})
+
+console.log(`Using environment: ${process.env.RELEASE_LEVEL}`)
+
 module.exports = {
   siteMetadata: {
     title: `Songer Audio`,
+    siteUrl: 'http://songeraudio.com',
     description: `Maker of finely handcrafted field coil loudspeakers`,
-    author: `@gatsbyjs`,
+    author: `Ken Songer`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-antd',
+      options: {
+        style: true
+      }
+    },
+    {
+      resolve: "gatsby-plugin-less",
+      options: {
+        javascriptEnabled: true,
+        modifyVars: {
+          "primary-color": "#308FFE",
+          "layout-body-background": "transparent",
+          "layout-header-background": "transparent",
+          "layout-footer-background": "transparent",
+          "breadcrumb-link-color": "#308FFE",
+          "popover-bg": "#777",
+          "popover-color": "#fff",
+        }
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        cssLoaderOptions: {
+          camelCase: false,
+        },
+        postCssPlugins: [
+          autoprefixer(),
+          postCssDiscardDuplicates(),
+          postCssFlexbugsFixes(),
+          postCssFocus(),
+        ],
+      },
+    },
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        components: path.join(__dirname, 'src/components'),
+        images: path.join(__dirname, 'src/images'),
+        pages: path.join(__dirname, 'src/pages'),
+        styles: path.join(__dirname, 'src/styles'),
+        templates: path.join(__dirname, 'src/templates'),
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
