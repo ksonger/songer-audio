@@ -20,7 +20,7 @@ class IndexPage extends React.Component {
 
   render() {
     const { Header, Footer, Content } = Layout;
-    const {Paragraph} = Typography
+    const {Paragraph, Text} = Typography
     return (
       <>
         <SEO title="Songer Audio"/>
@@ -38,6 +38,9 @@ class IndexPage extends React.Component {
                   <Image img="songer_audio_logo.png"/>
                   </div>
                   <p>Finely handcrafted field coil loudspeakers</p>
+                  <Paragraph>
+                    <Text >Sign up</Text> to receive updates
+                  </Paragraph>
                 </Content>
                 <Footer className={styles.mainFooter}>
                   &copy; 2019
