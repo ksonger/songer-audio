@@ -23,7 +23,7 @@ export default class Image extends React.Component {
               edges {
                 node {
                   fluid(maxWidth: 1200) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_noBase64
                   }
                 }
               }
