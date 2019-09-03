@@ -15,7 +15,7 @@ module.exports = {
   siteMetadata: {
     title: `Songer Audio`,
     siteUrl: 'http://songeraudio.com',
-    description: `Maker of finely handcrafted field coil loudspeakers`,
+    description: `Maker of finely handcrafted field coil loudspeakers and drivers`,
     author: `Ken Songer`,
   },
   plugins: [
@@ -31,7 +31,7 @@ module.exports = {
         javascriptEnabled: true,
         modifyVars: {
           "primary-color": "#E6CC8E",
-          "secondary-color": "#68729D",
+          "secondary-color": "rgb(40, 162, 199)",
           "layout-body-background": "transparent",
           "layout-header-background": "transparent",
           "layout-footer-background": "transparent",
@@ -40,7 +40,7 @@ module.exports = {
           "popover-color": "#fff",
           "menu-bg": "transparent",
           "menu-highlight-color": "#E6CC8E",
-          "menu-item-color": "#91c7d8",
+          "menu-item-color": "rgb(40, 162, 199)",
           "menu-item-active-bg": "rgba(145, 199, 216, 0.15)",
           "layout-header-padding": "0 20px",
           "input-color": "rgba(0, 0, 0, 0.5)"

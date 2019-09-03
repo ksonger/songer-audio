@@ -32,9 +32,7 @@ class AboutPage extends React.Component {
     return (
       <Row>
         <Col>
-          <div style={{ position: 'relative', maxWidth: '1200px', margin: '30px auto 0', marginLeft: '-30%' }}>
-            <Image img="driver_web.png"/>
-          </div>
+          coming soon
         </Col>
       </Row>
     )

@@ -6,39 +6,57 @@
   margin: 30px auto 0 -30%;
 
   &--mobile {
-    max-width: 655px;
+    max-width: 800px;
     margin: 30px auto 0 -35%;
     object-fit: scale-down;
   }
 }
 
 .homeHeader {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.85);
-  top: -30px;
-  font-size: 15px;
-  font-weight: 500;
+
+  &--desktop {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    top: -30px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  &--mobile {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    top: -45px;
+    font-size: 14px;
+    font-weight: 500;
+
+  }
+
 }
 
 .homeCopy {
 
   &--mobile {
     background: rgb(255, 255, 255);
-    margin-top: -40%
+    margin-top: -35%;
+    padding-bottom: 60px;
   }
 
   &--desktop {
-
+    margin-top: 0;
   }
 }
 
 .homeText {
 
+
+
   &--mobile {
     padding: 0 20px 18px;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 15px;
     color: rgba(0, 0, 0, 0.60);
     margin-top: -18px;
@@ -46,9 +64,31 @@
 
   &--desktop {
     padding: 0 20px 18px;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 15px;
     color: rgba(255, 255, 255, 0.60);
   }
 
+}
+
+.desktopRow {
+  margin-top: 90px;
+  max-width: 920px;
+}
+
+.tagline {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  margin-top: 12px;
+
+  &--mobile {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+  }
 }

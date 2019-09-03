@@ -93,7 +93,8 @@ class SignUpFormComponent extends React.Component {
    * @param cb {Function}
    */
   validPhoneNumber = (rule, value, cb) => {
-    if (String(value).match(regex.PHONE_REGEX)) {
+    console.log(value.length)
+    if (String(value).match(regex.PHONE_REGEX || value.length === 0)) {
       cb()
     } else if (value.length > 0) {
       cb('Please provide a mobile phone number.')
@@ -192,8 +193,7 @@ class SignUpFormComponent extends React.Component {
                 {getFieldDecorator('phonenumber', {
                   initialValue: phoneNumber,
                   rules: [
-                    { required: true, message: 'Please provide a mobile phone number.' },
-                    { validator: this.validPhoneNumber },
+                    { required: false },
                   ],
                 })(
                   <Input

@@ -5,12 +5,12 @@
 
   .ant-menu-submenu-selected {
     color: #fffffd;
-    border-bottom: 1px solid rgb(230, 204, 142);
+    border-bottom: 1px solid rgba(230, 204, 142, 0);
   }
 }
 
 .ant-menu-item.ant-menu-selected {
-  border-bottom: 1px solid rgb(230, 204, 142);
+  border-bottom: 1px solid rgba(230, 204, 142, 0);
 }
 
 .ant-menu-item {
@@ -20,4 +20,12 @@
 
 .ant-dropdown-menu-item {
   color: rgb(145, 199, 216)
+}
+
+.ant-modal {
+  border-radius: 12px;
+  overflow: hidden;
+  padding-bottom: 0;
+  opacity: 0.97;
+  background: linear-gradient(rgb(34, 34, 34) 0%, rgba(34, 34, 34, 0) 100%);
 }

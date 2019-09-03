@@ -1,18 +1,50 @@
-.appLayout {
+.site {
   height: 100%;
+}
+
+.siteShadow {
+  max-width: 918px;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  height: 90px;
+  top: 61px;
+  background: linear-gradient(rgb(34, 34, 34) 0%, rgba(34, 34, 34, 0) 100%);
+}
+
+.siteLayout {
+  background: linear-gradient(to bottom, #272727 0%,#000000 100%) !important;
+  max-width: 920px;
+  border-left: 1px solid rgba(230, 204, 142, 0.35);
+  border-right: 1px solid rgba(230, 204, 142, 0.35);
+
+  &--mobile {
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .header {
   z-index: 1000;
   position: fixed;
   width: 100%;
+  max-width: 918px;
   height: 61px;
-  background: rgba(59, 59, 59, 0.75);
+  background: rgba(59, 59, 59, 0.90);
   border-bottom: 1px solid rgba(230, 204, 142, 0.35);
 }
 
 .content {
-  margin-top: 60px;
+
+  &--desktop {
+    margin-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  &--mobile {
+    margin-top: 60px;
+    padding-bottom: 0;
+  }
 }
 
 .footer {
@@ -25,12 +57,12 @@
 }
 
 .siteMenu {
-    width: calc(100% - 70px);
+    width: calc(100% - 60px);
   z-index: 1001
 }
 
 .siteLogo {
-  width: 70px;
+  width: 60px;
 }
 
 .mobileNavButton {
@@ -65,32 +97,35 @@
 }
 
 .company {
-  color: rgba(255, 255, 255, .65);
+  color: rgba(255, 255, 255, .95);
   text-align: right;
   position: absolute;
-  top: 46px;
+  top: 52px;
   right: 19px;
-  font-size: 14px;
+  font-size: 13px;
+  z-index: 1000;
 
   &--mobile {
-
+    font-size: 13px;
   }
 }
 
 .tag {
-  color: rgba(255, 255, 255, .35);
+  color: rgba(129, 129, 129, 1);
   text-align: left;
   position: absolute;
-  top: 46px;
+  top: 52px;
   left: 19px;
-  font-size: 14px;
+  font-size: 13px;
+  z-index: 1002;
 
   &--mobile {
-
+    font-size: 13px;
   }
 }
 
 .subscribe {
   color: rgb(40, 162, 199);
   cursor: pointer;
+  text-decoration: underline;
 }

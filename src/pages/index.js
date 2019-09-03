@@ -18,7 +18,7 @@ class IndexPage extends React.Component {
     email: '',
     phone_number: '',
     code: '',
-    breakpoint: 'xs',
+    breakpoint: 'sm',
     isMobile: false,
     point: null
   };
@@ -66,91 +66,82 @@ class IndexPage extends React.Component {
     return window.innerWidth <= responsive.BREAKPOINTS[this.state.breakpoint]
   };
 
+  copy = {
+    header: 'The medium is engineering.  The result is art.',
+    p1: "Songer Audio field coil loudspeakers & drivers are created as functional works of fine art.  Each is made in service of a singular mission, and every component we produce to realize it is 100% designed, constructed and assembled in house, painstakingly and entirely by hand.",
+    p2: "At the heart of our sound is the SA-FC10 field coil driver, driven by a powerful 33-pound hand-wound electromagnet producing 1.7 Tesla of magnetic flux.",
+    p3: "The brass and aluminum frame of the SA-FC10 is both functional and beautiful, spanning the length of the electromagnet housing and heat-syncing excess thermal energy away from the field coil motor.",
+    p4: "Our cones, whizzers, and voice coil formers are light as a feather, water resistant, and all hand-formed from a Japanese Hosho washi paper. The surrounds of the the SA-FC10 are equally light and refined, molded from Italian lambskin leather. The innovative spider suspension combines carbon fiber and thermal polyurethane,  and is carefully designed to be both durable, and yet utterly soft and agile.",
+    p5: "The end result of this labor of love is a sound that must be experienced to be believed. Each detail of musical recordings clearly resolves. Every instrument is in it's place, surrounded by air and full of life, every voice textured and tonally rich, and faithfully accurate. The loudspeaker itself vanishes, and what remains is the simple emotional connection between the listener and the musician.",
+    p6: "Connecting you to the music is our passion."
+  }
+
   homeCopy = () => {
     const { Paragraph } = Typography;
-    if(this.mobile()) {
+    if (this.mobile()) {
       return (
-        <Typography>
-          <Paragraph className={styles.homeHeader}>
-            A New Work of Art
-          </Paragraph>
-          <Paragraph className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
-            Songer Audio field coil loudspeakers & drivers are created as nothing less than
-            functional artworks, each made in service of a singular mission. Each component
-            we produce to realize it is 100% designed, made and assembled in house by an
-            individual artist, painstakingly and entirely by hand.
-          </Paragraph>
-          <Paragraph className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
-            At the heart of our sound is the SA-FC10 field coil driver, driven by a powerful
-            33-pound hand-wound electromagnet producing 1.7 Tesla of magnetic flux.
-          </Paragraph>
-          <Paragraph className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
-            The brass and aluminum frame of the SA-FC10 is both functional and beautiful, running
-            the length of the electromagnet housing and heat-syncing excess thermal energy away
-            from the field coil motor.
-          </Paragraph>
-          <Paragraph className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
-            Our cones, whizzers, and voice coil formers are feather-light, water resistant,
-            and all hand-formed from a fine Japanese Hosho washi paper. The surrounds of
-            the the SA-FC10 are equally light and refined, composed of Italian lambskin leather.
-            The innovative spider suspension combines carbon fiber and thermal polyurethane,
-            and is specially designed to be both durable, and yet as utterly soft and agile
-            as possible.
-          </Paragraph>
-          <Paragraph className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
-            The end result of this labor of love is a sound that must be experienced to be believed.
-            Each detail of musical recordings cleanly resolves. Every instrument is in it's place,
-            surrounded by air and full of life, every voice textured and tonally rich, and
-            faithfully accurate. The loudspeaker itself vanishes, and what remains is the simple
-            emotional connection between the listener and the musician.
-          </Paragraph>
-          <Paragraph className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
-            That connection between listener and music is our passion.
-          </Paragraph>
-        </Typography>
+        <>
+          <Typography>
+            <Paragraph className={classNames(styles.homeHeader, styles[this.styleState('homeHeader')])}>
+              {this.copy.header}
+            </Paragraph>
+            <Paragraph className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
+              {this.copy.p1}
+            </Paragraph>
+            <Paragraph className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
+              {this.copy.p2}
+            </Paragraph>
+            <Paragraph className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
+              {this.copy.p3}
+            </Paragraph>
+            <Paragraph className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
+              {this.copy.p4}
+            </Paragraph>
+            <Paragraph className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
+              {this.copy.p5}
+            </Paragraph>
+          </Typography>
+          <Row type="flex" justify="center">
+        <span className={classNames(styles.tagline, styles[this.styleState('tagline')])}>
+      {this.copy.p6}
+    </span>
+          </Row>
+        </>
       )
     } else {
-      return <p>
-        <span style={{width: '30%', overflow: 'hidden', margin: 0}}>
-        <img src="driver_web.png" style={{display: 'block', width: '100%', margin: '0 0 0 -30%', float: 'left', opacity: '0.4'}} />
+      return (
+        <>
+          <Row className={styles.desktopRow}>
+            <Paragraph className={classNames(styles.homeHeader, styles[this.styleState('homeHeader')])}>
+              {this.copy.header}
+            </Paragraph>
+            <span style={{ width: '30%', overflow: 'hidden', margin: 0 }}>
+        <img src="driver_web_cropped.png" style={{ display: 'block', width: '50%', marginLeft: '-2%', float: 'left' }}/>
         </span>
-        <span className={styles.homeHeader}>
-          A New Work of Art
-        </span>
-        <span className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
-          Songer Audio field coil loudspeakers & drivers are created as nothing less than
-          functional artworks, each made in service of a singular mission. Each component
-          we produce to realize it is 100% designed, made and assembled in house by an
-          individual artist, painstakingly and entirely by hand.
-        </span>
-        <span className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
-          At the heart of our sound is the SA-FC10 field coil driver, driven by a powerful
-          33-pound hand-wound electromagnet producing 1.7 Tesla of magnetic flux.
-        </span>
-        <span className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
-          The brass and aluminum frame of the SA-FC10 is both functional and beautiful, running
-          the length of the electromagnet housing and heat-syncing excess thermal energy away
-          from the field coil motor.
-        </span>
-        <span className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
-          Our cones, whizzers, and voice coil formers are feather-light, water resistant,
-          and all hand-formed from a fine Japanese Hosho washi paper. The surrounds of
-          the the SA-FC10 are equally light and refined, composed of Italian lambskin leather.
-          The innovative spider suspension combines carbon fiber and thermal polyurethane,
-          and is specially designed to be both durable, and yet as utterly soft and agile
-          as possible.
-        </span>
-        <span className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
-          The end result of this labor of love is a sound that must be experienced to be believed.
-          Each detail of musical recordings cleanly resolves. Every instrument is in it's place,
-          surrounded by air and full of life, every voice textured and tonally rich, and
-          faithfully accurate. The loudspeaker itself vanishes, and what remains is the simple
-          emotional connection between the listener and the musician.
-        </span>
-        <span className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
-          That connection between listener and music is our passion.
-        </span>
-      </p>
+
+            <p className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
+              {this.copy.p1}
+            </p>
+            <p className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
+              {this.copy.p2}
+            </p>
+            <p className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
+              {this.copy.p3}
+            </p>
+            <p className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
+              {this.copy.p4}
+            </p>
+            <p className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
+              {this.copy.p5}
+            </p>
+          </Row>
+          <Row type="flex" justify="center">
+            <span className={classNames(styles.tagline, styles[this.styleState('tagline')])}>
+              {this.copy.p6}
+            </span>
+          </Row>
+        </>
+      )
     }
   }
 
