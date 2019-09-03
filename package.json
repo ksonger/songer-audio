@@ -5,11 +5,12 @@
   "version": "0.1.0",
   "author": "Ken Songer <gomper.igbot@gmail.com>",
   "scripts": {
-    "activate": "aws s3 cp --cache-control 'max-age=31104000' --recursive s3://songeraudio.com/$(date -u \"+%Y%m%d\") s3://songeraudio.com/latest",
-    "clean": "gatsby clean",
-    "deploy": "yarn upload && yarn activate",
     "build": "gatsby build",
-    "upload": "yarn clean && yarn build && aws s3 sync public/ s3://songeraudio.com/$(date -u \"+%Y%m%d\")"
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
     "@aws-amplify/analytics": "^1.2.23",
@@ -54,14 +55,6 @@
     "gatsby"
   ],
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"

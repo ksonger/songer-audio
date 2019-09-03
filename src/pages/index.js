@@ -1,10 +1,12 @@
 import React from "react"
-import Animated from 'components/Animated'
+import _ from 'lodash'
 import {Row, Col, Layout, Typography} from 'antd'
+import Animated from 'components/Animated'
 import Image from "../components/image"
-import SEO from "../components/seo"
-import SignUpForm from 'components/SignUpForm'
+import responsive from 'constants/responsive'
+
 import styles from './Index.module.scss'
+import classNames from "classnames";
 
 
 class IndexPage extends React.Component {
@@ -15,58 +17,96 @@ class IndexPage extends React.Component {
     family_name: '',
     email: '',
     phone_number: '',
-    code: ''
+    code: '',
+    breakpoint: 'xs',
+    isMobile: false,
+    point: null
   };
 
-  componentDidMount() {
-    const gatsbyRoot = document.querySelector('#___gatsby');
-    const nodes = gatsbyRoot.querySelectorAll('div');
-    document.querySelector('body').style.background = '#000';
-    gatsbyRoot.style.height = '100%';
-    nodes[0].style.height = 'inherit';
-    nodes[1].style.height = 'inherit';
-    this.setState({status: 'data-ready'})
+  componentDidMount () {
+    this.setState({ status: 'data-ready' })
+    window.addEventListener('resize', this.onWindowResize)
   }
 
-  renderHome = () => {
-    const {Header, Footer, Content} = Layout;
-    const {Paragraph} = Typography;
-    return (
-      <div style={{height: '100%'}}>
-        <SEO title="Songer Audio"/>
-        <Animated>
-          <Col type="flex" span={24}
-               style={{height: '100%', background: 'linear-gradient(to bottom, #444444 0%,#000000 100%)'}}>
-            <Row style={{height: 'inherit'}} justify="center">
-              <Col style={{height: 'inherit'}} type="flex">
-                <Layout className={styles.mainLayout}>
-                  <Header style={{height: '60px'}}>
-                    <Paragraph className={styles.headerComingSoon}>
-                      Coming Soon
-                    </Paragraph>
-                  </Header>
-                  <Content className={styles.mainContent}>
-                    <div style={{position: 'relative', maxWidth: '300px', margin: '0 auto'}}>
-                      <Image img="songer_audio_logo.png"/>
-                    </div>
-                    <p>Finely handcrafted field coil loudspeakers</p>
-                    <SignUpForm/>
-                  </Content>
-                  <Footer className={styles.mainFooter}>
-                    &copy; 2019
-                  </Footer>
-                </Layout>
-              </Col>
-            </Row>
-          </Col>
-        </Animated>
-      </div>
+  componentWillUnmount () {
+    window.removeEventListener('resize', this.onWindowResize)
+  }
 
+  /**
+   * Update table data per display form factor
+   */
+  onWindowResize = () => {
+    const { breakpoint } = this.state
+    const windowWidth = window.innerWidth
+    let bp = ''
+    _.forEach(_.keys(responsive.BREAKPOINTS), (key) => {
+      if (windowWidth > responsive.BREAKPOINTS[key]) {
+        bp = key
+      }
+    })
+    const debounced = _.debounce(
+      () => {
+        this.setState({ isMobile: windowWidth < responsive.BREAKPOINTS[breakpoint], point: bp })
+      },
+      200,
+      false
+    )
+    debounced()
+  }
+
+  /**
+   * Returns form factor boolean according to breakpoint
+   * @returns {boolean}
+   */
+  mobile = () => {
+    return window.innerWidth <= responsive.BREAKPOINTS[this.state.breakpoint]
+  };
+
+  renderHome = () => {
+    const { Paragraph } = Typography;
+    const styleState = (element) => {
+      return this.mobile() ? `${element}--mobile` : `${element}--desktop`
+    }
+    return (
+      <Animated>
+        <Row className={classNames(styles.homeMain, styles[styleState('homeMain')])}>
+          {this.mobile() && (
+            <Col span={24}>
+              <Row>
+                <div className={classNames(styles.driver, styles[styleState('driver')])}>
+                  <Image img="driver_web.png"/>
+                </div>
+              </Row>
+              <Row style={{ background: '#fff', marginTop: '-40%' }}>
+                <Paragraph className={styles.homeHeader}>
+                  Our Work
+                </Paragraph>
+                <Paragraph className={styles.homeText}>
+                  Songer Audio field coil loudspeakers & drivers are above all things,
+                  nothing less than functional, beautiful works of art. Each piece we
+                  produce is 100% designed and made in house by an individual craftsman,
+                  painstakingly and entirely by by hand.
+                </Paragraph>
+                <Paragraph className={styles.homeText}>
+                  At the heart of our sound is the SA-FC10 field coil driver, driven by
+                  a powerful 33-pound hand-wound electromagnet which produces 1.7 Tesla
+                  of magnetic flux.
+                </Paragraph>
+                <Paragraph className={styles.homeText}>
+                  The hand-made frame is constructed of aluminum and brass,  and runs the length of the
+                  electromagnet.  Acting as a heat-sync, it wicks unwanted excess thermal energy away
+                  from the field coil magnet.
+                </Paragraph>
+              </Row>
+            </Col>
+          )}
+        </Row>
+      </Animated>
     )
   };
 
-  render() {
-    const {status} = this.state;
+  render () {
+    const { status } = this.state;
     return (
       <div>
         {status === 'data-ready' && this.renderHome()}

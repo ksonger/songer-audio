@@ -30,13 +30,20 @@ module.exports = {
       options: {
         javascriptEnabled: true,
         modifyVars: {
-          "primary-color": "#308FFE",
+          "primary-color": "#E6CC8E",
+          "secondary-color": "#68729D",
           "layout-body-background": "transparent",
           "layout-header-background": "transparent",
           "layout-footer-background": "transparent",
-          "breadcrumb-link-color": "#308FFE",
+          "breadcrumb-link-color": "#E6CC8E",
           "popover-bg": "#777",
           "popover-color": "#fff",
+          "menu-bg": "transparent",
+          "menu-highlight-color": "#E6CC8E",
+          "menu-item-color": "#91c7d8",
+          "menu-item-active-bg": "rgba(145, 199, 216, 0.15)",
+          "layout-header-padding": "0 20px",
+          "input-color": "rgba(0, 0, 0, 0.5)"
         }
       }
     },
@@ -60,7 +67,9 @@ module.exports = {
       options: {
         components: path.join(__dirname, 'src/components'),
         constants: path.join(__dirname, 'src/constants'),
+        fonts: path.join(__dirname, 'src/fonts'),
         images: path.join(__dirname, 'src/images'),
+        lib: path.join(__dirname, 'src/lib'),
         models: path.join(__dirname, 'src/models'),
         pages: path.join(__dirname, 'src/pages'),
         services: path.join(__dirname, 'src/services'),
@@ -74,6 +83,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `fonts`,
+        path: `${__dirname}/src/fonts`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -90,6 +106,7 @@ module.exports = {
         icon: `src/images/songer_audio_logo.png`, // This path is relative to the root of the site.
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

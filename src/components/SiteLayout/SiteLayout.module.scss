@@ -1,0 +1,96 @@
+.appLayout {
+  height: 100%;
+}
+
+.header {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: 61px;
+  background: rgba(59, 59, 59, 0.75);
+  border-bottom: 1px solid rgba(230, 204, 142, 0.35);
+}
+
+.content {
+  margin-top: 60px;
+}
+
+.footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  color: rgba(255, 255, 255, .35);
+  font-size: 10px;
+}
+
+.siteMenu {
+    width: calc(100% - 70px);
+  z-index: 1001
+}
+
+.siteLogo {
+  width: 70px;
+}
+
+.mobileNavButton {
+  z-index: 1100;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(230, 204, 142, 0.35);
+  color: rgba(230, 204, 142, 1);
+  padding-top: 3px;
+  width: 150px;
+
+  &:active, &:hover {
+    @extend .mobileNavButton;
+  }
+}
+
+.mobileMenuIcon {
+  float: left;
+  margin-top: 2px;
+}
+
+.menu {
+
+  &--desktop {
+
+  }
+
+  &--mobile {
+    background: rgba(59, 59, 59, 0.9);
+    border: 1px solid rgba(230, 204, 142, 0.35);
+    color: rgb(145, 199, 216)
+  }
+}
+
+.company {
+  color: rgba(255, 255, 255, .65);
+  text-align: right;
+  position: absolute;
+  top: 46px;
+  right: 19px;
+  font-size: 14px;
+
+  &--mobile {
+
+  }
+}
+
+.tag {
+  color: rgba(255, 255, 255, .35);
+  text-align: left;
+  position: absolute;
+  top: 46px;
+  left: 19px;
+  font-size: 14px;
+
+  &--mobile {
+
+  }
+}
+
+.subscribe {
+  color: rgb(145, 199, 216);
+  cursor: pointer;
+}

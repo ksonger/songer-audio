@@ -1,1 +1,23 @@
 
+
+.ant-menu-horizontal {
+  border-bottom: none;
+
+  .ant-menu-submenu-selected {
+    color: #fffffd;
+    border-bottom: 1px solid rgb(230, 204, 142);
+  }
+}
+
+.ant-menu-item.ant-menu-selected {
+  border-bottom: 1px solid rgb(230, 204, 142);
+}
+
+.ant-menu-item {
+  height: 60px;
+  line-height: 60px;
+}
+
+.ant-dropdown-menu-item {
+  color: rgb(145, 199, 216)
+}

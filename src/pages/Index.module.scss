@@ -1,34 +1,31 @@
 @import '~styles/app';
 
-.mainLayout {
-  height: 100%;
-  background: transparent;
-  color: #888888;
+.driver {
+  position: relative;
+  max-width: 1200px;
+  margin: 30px auto 0 -30%;
+
+  &--mobile {
+    max-width: 655px;
+    margin: 30px auto 0 -35%;
+    object-fit: scale-down;
+  }
+}
+
+.homeHeader {
+  position: relative;
+  width: 100%;
   text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+  top: -24px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
-.mainContent {
-  padding-top: 30px;
-  flex: 1;
-}
-
-.mainFooter {
-  color: #888888;
-  height: 60px;
-}
-
-.headerComingSoon {
-  color: rgba(255,255,255,.8);
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.cta {
-  margin-top: 84px;
-  color: rgba(255,255,255,0.9)
-}
-
-.ctalink {
-  color: #ddd555;
-  cursor: pointer;
+.homeText {
+  padding: 0 20px 18px;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.60);
+  margin-top: -18px;
 }
