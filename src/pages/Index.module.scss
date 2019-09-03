@@ -17,15 +17,38 @@
   width: 100%;
   text-align: center;
   color: rgba(255, 255, 255, 0.85);
-  top: -24px;
+  top: -30px;
   font-size: 15px;
   font-weight: 500;
 }
 
+.homeCopy {
+
+  &--mobile {
+    background: rgb(255, 255, 255);
+    margin-top: -40%
+  }
+
+  &--desktop {
+
+  }
+}
+
 .homeText {
-  padding: 0 20px 18px;
-  font-size: 12px;
-  line-height: 15px;
-  color: rgba(0, 0, 0, 0.60);
-  margin-top: -18px;
+
+  &--mobile {
+    padding: 0 20px 18px;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.60);
+    margin-top: -18px;
+  }
+
+  &--desktop {
+    padding: 0 20px 18px;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.60);
+  }
+
 }
