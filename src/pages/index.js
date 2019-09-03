@@ -68,12 +68,12 @@ class IndexPage extends React.Component {
 
   copy = {
     header: 'The medium is engineering.  The result is art.',
-    p1: "Songer Audio field coil loudspeakers & drivers are created as functional works of fine art.  Each is made in service of a singular mission, and every component we produce to realize it is 100% designed, constructed and assembled in house, painstakingly and entirely by hand.",
-    p2: "At the heart of our sound is the SA-FC10 field coil driver, driven by a powerful 33-pound hand-wound electromagnet producing 1.7 Tesla of magnetic flux.",
-    p3: "The brass and aluminum frame of the SA-FC10 is both functional and beautiful, spanning the length of the electromagnet housing and heat-syncing excess thermal energy away from the field coil motor.",
-    p4: "Our cones, whizzers, and voice coil formers are light as a feather, water resistant, and all hand-formed from a Japanese Hosho washi paper. The surrounds of the the SA-FC10 are equally light and refined, molded from Italian lambskin leather. The innovative spider suspension combines carbon fiber and thermal polyurethane,  and is carefully designed to be both durable, and yet utterly soft and agile.",
-    p5: "The end result of this labor of love is a sound that must be experienced to be believed. Each detail of musical recordings clearly resolves. Every instrument is in it's place, surrounded by air and full of life, every voice textured and tonally rich, and faithfully accurate. The loudspeaker itself vanishes, and what remains is the simple emotional connection between the listener and the musician.",
-    p6: "Connecting you to the music is our passion."
+    p1: "Songer Audio field coil loudspeakers & drivers are functional works of fine art.  Each is created in service of a singular vision, and every component we produce to realize it is 100% designed, constructed and assembled in house, painstakingly and entirely by hand.",
+    p2: "At the heart of our sound is the SA-FC10 field coil driver, powered by a 33-pound hand-wound electromagnet, producing 1.7 Tesla of magnetic flux.",
+    p3: "The brass and aluminum frame of the SA-FC10 is both functional and beautiful, spanning the length of the electromagnet housing and carrying excess thermal energy away from the field coil motor.",
+    p4: "Our cones, whizzers, and voice coil formers are lightweight, water resistant, and all hand-formed from Japanese Hosho washi paper. The surrounds of the the SA-FC10 are equally light and refined, molded from Italian lambskin leather. The innovative spider suspension combines carbon fiber and thermal polyurethane, and is carefully designed to be both durable and yet utterly soft and agile.",
+    p5: "The end result of this labor of love is a sound that must be experienced to be believed. Each detail of musical recordings effortlessly resolves. Every instrument is in it's place, surrounded by air and full of life, and every voice textured, tonally rich, and faithfully accurate. The loudspeaker itself vanishes, and what remains is the simple emotional connection between the listener and the art form.",
+    p6: "Connecting you to your music is our passion."
   }
 
   homeCopy = () => {
