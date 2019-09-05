@@ -12,6 +12,15 @@
   }
 }
 
+.desktopDriver {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 50%;
+  margin: -3% 0 0 -2%;
+  float: left;
+}
+
 .homeHeader {
 
   &--desktop {
@@ -20,7 +29,7 @@
     text-align: center;
     color: rgba(255, 255, 255, 0.85);
     top: -30px;
-    font-size: 15px;
+    @include font-size(16px);
     font-weight: 500;
   }
 
@@ -29,8 +38,9 @@
     width: 100%;
     text-align: center;
     color: rgba(255, 255, 255, 0.85);
-    top: -45px;
-    font-size: 14px;
+    top: -58px;
+    padding: 0 18px;
+    @include font-size(16px);
     font-weight: 500;
 
   }
@@ -40,9 +50,9 @@
 .homeCopy {
 
   &--mobile {
-    background: rgb(255, 255, 255);
-    margin-top: -35%;
-    padding-bottom: 60px;
+
+    margin-top: -30%;
+    padding: 0 6px 60px;
   }
 
   &--desktop {
@@ -56,15 +66,15 @@
 
   &--mobile {
     padding: 0 20px 18px;
-    font-size: 13px;
+    @include font-size(13px);
     line-height: 15px;
-    color: rgba(0, 0, 0, 0.60);
+    color: rgba(255, 255, 255, 0.60);
     margin-top: -18px;
   }
 
   &--desktop {
     padding: 0 20px 18px;
-    font-size: 13px;
+    @include font-size(13px);
     line-height: 15px;
     color: rgba(255, 255, 255, 0.60);
   }
@@ -78,7 +88,7 @@
 
 .tagline {
   width: 100%;
-  font-size: 13px;
+  @include font-size(13px);
   font-weight: 800;
   color: rgba(255, 255, 255, 0.75);
   text-align: center;
@@ -86,7 +96,7 @@
 
   &--mobile {
     width: 100%;
-    font-size: 13px;
+    @include font-size(13px);
     font-weight: 800;
     color: rgba(0, 0, 0, 0.65);
     text-align: center;

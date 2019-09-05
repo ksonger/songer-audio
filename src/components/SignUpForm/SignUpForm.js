@@ -59,7 +59,7 @@ class SignUpFormComponent extends React.Component {
         password: pwd(16),
         attributes: {
           email: emailAddress,
-          phone_number: formatPhone.toE164(phoneNumber),
+          phone_number: phoneNumber.length ? formatPhone.toE164(phoneNumber) : phoneNumber,
           given_name: givenName,
           family_name: familyName
         }
@@ -78,7 +78,7 @@ class SignUpFormComponent extends React.Component {
     const {onFormSubmit} = this.props;
     try {
       await Auth.confirmSignUp(emailAddress, getFieldValue('code'));
-      message.success('Thank you for confirming your email!');
+      message.success('Thank you for confirming your email.');
       onFormSubmit();
     } catch (err) {
       console.log(err);
@@ -221,7 +221,7 @@ class SignUpFormComponent extends React.Component {
           {formStatus === 'verify' && (
             <Form layout="vertical">
               <Row type="flex" justify="center">
-              <Paragraph className={styles.codeSentMessage}>Thank you for signing up!  Please, take a moment to confirm your email: <br />
+              <Paragraph className={styles.codeSentMessage}>Thank you for subscribing. Please, take a moment to confirm your email: <br />
                 </Paragraph>
                 <Paragraph className={styles.codeSentEmail}>{emailAddress}</Paragraph>
               </Row>

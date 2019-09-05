@@ -1,10 +1,11 @@
 @import '~styles/sass';
+@import '~styles/mixins';
 @import '~styles/antd_overrides';
 
 @font-face {
   font-family: 'Trade Gothic LT Std Extended';
-  src: url('../fonts/TradeGothicLTStd-Extended.woff2') format('woff2'),
-  url('../fonts/TradeGothicLTStd-Extended.woff') format('woff');
+  src: url('/fonts/TradeGothicLTStd-Extended.woff2') format('woff2'),
+  url('/fonts/TradeGothicLTStd-Extended.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

@@ -7,7 +7,7 @@ import SEO from "components/seo"
 import SignUpForm from 'components/SignUpForm'
 import paths from 'constants/paths'
 import responsive from 'constants/responsive'
-import appStyles from 'styles/app.scss'
+import Helmet from 'react-helmet'
 import styles from './SiteLayout.module.scss'
 import Image from "../image";
 

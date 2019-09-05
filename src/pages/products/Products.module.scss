@@ -1,0 +1,118 @@
+@import '~styles/app';
+
+.driver {
+  position: relative;
+  max-width: 1200px;
+  margin: 30px auto 0 -30%;
+
+  &--mobile {
+    max-width: 800px;
+    margin: 0 auto;
+    object-fit: scale-down;
+  }
+}
+
+.desktopDriver {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 60%;
+  margin-left: -2%;
+  float: left;
+}
+
+.homeHeader {
+
+  &--desktop {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    top: -30px;
+    @include font-size(16px);
+    font-weight: 500;
+  }
+
+  &--mobile {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    top: -70px;
+    padding: 0 18px;
+    @include font-size(16px);
+    font-weight: 500;
+
+  }
+
+}
+
+.homeHeaderDriver {
+
+  &--desktop {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    top: -30px;
+    @include font-size(16px);
+    font-weight: 500;
+  }
+
+  &--mobile {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    top: -40px;
+    padding: 0 18px;
+    @include font-size(16px);
+    font-weight: 500;
+
+  }
+
+}
+
+.homeCopy {
+
+  &--mobile {
+    margin-top: 10%;
+    padding: 0 6px 60px;
+  }
+
+  &--desktop {
+    margin-top: 0;
+  }
+}
+
+.homeText {
+
+
+
+  &--mobile {
+    padding: 0 20px 18px;
+    @include font-size(13px);
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.60);
+    margin-top: -8px;
+  }
+
+  &--desktop {
+    padding: 0 20px 18px;
+    @include font-size(13px);
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.60);
+  }
+
+}
+
+.desktopRow {
+  margin-top: 90px;
+  max-width: 920px;
+}
+
+.subscribe {
+  color: rgb(40, 162, 199);
+  cursor: pointer;
+  text-decoration: underline;
+}

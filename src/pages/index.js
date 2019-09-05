@@ -67,13 +67,11 @@ class IndexPage extends React.Component {
   };
 
   copy = {
-    header: 'The medium is engineering.  The result is art.',
-    p1: "Songer Audio field coil loudspeakers & drivers are functional works of fine art.  Each is created in service of a singular vision, and every component we produce to realize it is 100% designed, constructed and assembled in house, painstakingly and entirely by hand.",
-    p2: "At the heart of our sound is the SA-FC10 field coil driver, powered by a 33-pound hand-wound electromagnet, producing 1.7 Tesla of magnetic flux.",
-    p3: "The brass and aluminum frame of the SA-FC10 is both functional and beautiful, spanning the length of the electromagnet housing and carrying excess thermal energy away from the field coil motor.",
-    p4: "Our cones, whizzers, and voice coil formers are lightweight, water resistant, and all hand-formed from Japanese Hosho washi paper. The surrounds of the the SA-FC10 are equally light and refined, molded from Italian lambskin leather. The innovative spider suspension combines carbon fiber and thermal polyurethane, and is carefully designed to be both durable and yet utterly soft and agile.",
-    p5: "The end result of this labor of love is a sound that must be experienced to be believed. Each detail of musical recordings effortlessly resolves. Every instrument is in it's place, surrounded by air and full of life, and every voice textured, tonally rich, and faithfully accurate. The loudspeaker itself vanishes, and what remains is the simple emotional connection between the listener and the art form.",
-    p6: "Connecting you to your music is our passion."
+    header: `The medium is engineering. The result is art.`,
+    p1: `Songer Audio loudspeakers & drivers are functional works of art.  Each piece we produce is 100% designed, made and assembled entirely by hand.`,
+    p2: `At the heart of our loudspeakers is a 10-inch field coil driver, the result of five years of research, innovation & development.  We use only the finest materials available to construct it - Japanese Hosho paper cones and voice coils, Italian lambskin surrounds, a brass and aluminum frame to dissipate heat, and an innovative, carbon fiber thermal polyurethane spider suspension for unmatched softness and agility.`,
+    p3: "The furniture grade cabinetry we mount them in is constructed of solid hardwood.  Simply braced and minimally damped, it contributes a warm musicality to the listening experience.",
+    p4: "The end result of this labor of love is a sound that must be experienced to be believed. Each detail of musical recordings is effortlessly revealed. Every instrument is in it's place, surrounded by air and full of life, and every voice textured, tonally rich, and faithfully accurate. The loudspeaker itself seems to vanish, leaving only the emotional connection between listener and musician."
   }
 
   homeCopy = () => {
@@ -97,15 +95,7 @@ class IndexPage extends React.Component {
             <Paragraph className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
               {this.copy.p4}
             </Paragraph>
-            <Paragraph className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
-              {this.copy.p5}
-            </Paragraph>
           </Typography>
-          <Row type="flex" justify="center">
-        <span className={classNames(styles.tagline, styles[this.styleState('tagline')])}>
-      {this.copy.p6}
-    </span>
-          </Row>
         </>
       )
     } else {
@@ -115,9 +105,7 @@ class IndexPage extends React.Component {
             <Paragraph className={classNames(styles.homeHeader, styles[this.styleState('homeHeader')])}>
               {this.copy.header}
             </Paragraph>
-            <span style={{ width: '30%', overflow: 'hidden', margin: 0 }}>
-        <img src="driver_web_cropped.png" style={{ display: 'block', width: '50%', marginLeft: '-2%', float: 'left' }}/>
-        </span>
+            <Image className={styles.desktopDriver} img="driver_web_cropped_1500.png"/>
 
             <p className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
               {this.copy.p1}
@@ -131,14 +119,6 @@ class IndexPage extends React.Component {
             <p className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
               {this.copy.p4}
             </p>
-            <p className={classNames(styles.homeText, styles[this.styleState('homeText')])}>
-              {this.copy.p5}
-            </p>
-          </Row>
-          <Row type="flex" justify="center">
-            <span className={classNames(styles.tagline, styles[this.styleState('tagline')])}>
-              {this.copy.p6}
-            </span>
           </Row>
         </>
       )
@@ -153,7 +133,7 @@ class IndexPage extends React.Component {
             <Col span={24}>
               <Row>
                 <div className={classNames(styles.driver, styles[this.styleState('driver')])}>
-                  <Image img="driver_web.png"/>
+                  <Image img="driver_web_1000.png"/>
                 </div>
               </Row>
               <Row className={classNames(styles.homeCopy, styles[this.styleState('homeCopy')])}>
