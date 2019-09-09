@@ -68,10 +68,10 @@ class IndexPage extends React.Component {
 
   copy = {
     header: `The medium is engineering. The result is art.`,
-    p1: `Songer Audio loudspeakers & drivers are functional works of art.  Each piece we produce is 100% designed, made and assembled entirely by hand.`,
-    p2: `At the heart of our loudspeakers is a 10-inch field coil driver, the result of five years of research, innovation & development.  We use only the finest materials available to construct it - Japanese Hosho paper cones and voice coils, Italian lambskin surrounds, a brass and aluminum frame to dissipate heat, and an innovative, carbon fiber thermal polyurethane spider suspension for unmatched softness and agility.`,
-    p3: "The furniture grade cabinetry we mount them in is constructed of solid hardwood.  Simply braced and minimally damped, it contributes a warm musicality to the listening experience.",
-    p4: "The end result of this labor of love is a sound that must be experienced to be believed. Each detail of musical recordings is effortlessly revealed. Every instrument is in it's place, surrounded by air and full of life, and every voice textured, tonally rich, and faithfully accurate. The loudspeaker itself seems to vanish, leaving only the emotional connection between listener and musician."
+    p1: `Songer Audio loudspeakers & drivers are functional art.  Each piece is 100% designed, made and assembled entirely by hand.`,
+    p2: `Our 10-inch field coil driver is the product of years of research, innovation & development.  Carefully chosen materials are used to produce it, including Japanese Hosho washi paper for the cones and voice coil formers, and Italian lambskin for the surrounds.  The brass and aluminum frame dissipates excess heat, and an innovative, carbon fiber thermal polyurethane spider suspension provides excellent sensitivity and agility.`,
+    p3: "The furniture grade loudspeaker cabinetry is made from solid hardwoods, and are simply braced and minimally damped for a natural sounding, musical listening experience.",
+    p4: "The end result is a sound that must be experienced to be believed. Each detail of musical recordings is effortlessly revealed. Every instrument is in it's place, surrounded by air and full of life. Each voice is textured, tonally rich, and faithfully accurate. Songer Audio aspires to distill music down to the connection between listener and musician."
   }
 
   homeCopy = () => {

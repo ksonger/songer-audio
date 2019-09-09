@@ -93,7 +93,6 @@ class SignUpFormComponent extends React.Component {
    * @param cb {Function}
    */
   validPhoneNumber = (rule, value, cb) => {
-    console.log(value.length)
     if (String(value).match(regex.PHONE_REGEX || value.length === 0)) {
       cb()
     } else if (value.length > 0) {
