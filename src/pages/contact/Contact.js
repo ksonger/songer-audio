@@ -3,7 +3,7 @@ import {Row, Col} from 'antd'
 
 
 
-class AboutPage extends React.Component {
+class ContactPage extends React.Component {
 
   state = {
     status: 'no-data',
@@ -33,4 +33,4 @@ class AboutPage extends React.Component {
   }
 }
 
-export default AboutPage
+export default ContactPage

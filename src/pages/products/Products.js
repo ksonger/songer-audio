@@ -1,6 +1,6 @@
 import React from "react"
 import _ from 'lodash'
-import {Row, Col, Layout, List, Modal, Typography} from 'antd'
+import {Row, Col, List, Modal, Typography} from 'antd'
 import Animated from 'components/Animated'
 import Image from "components/image"
 import SignUpForm from "components/SignUpForm"
@@ -141,7 +141,7 @@ class ProductsPage extends React.Component {
             dataSource={data.loudspeaker}
             renderItem={item => (
               <List.Item>
-                <Row justify="top">
+                <Row justify="start">
                   <Col><span style={{
                     fontSize: '13px',
                     fontWeight: 600
@@ -176,7 +176,7 @@ class ProductsPage extends React.Component {
             dataSource={data.driver}
             renderItem={item => (
               <List.Item>
-                <Row justify="top">
+                <Row justify="start">
                   <Col><span style={{
                     fontSize: '13px',
                     fontWeight: 600
@@ -218,7 +218,7 @@ class ProductsPage extends React.Component {
                   dataSource={data.loudspeaker}
                   renderItem={item => (
                     <List.Item>
-                      <Row justify="top">
+                      <Row justify="start">
                         <Col><span style={{
                           fontSize: '13px',
                           fontWeight: 600
@@ -255,7 +255,7 @@ class ProductsPage extends React.Component {
                   dataSource={data.driver}
                   renderItem={item => (
                     <List.Item>
-                      <Row justify="top">
+                      <Row justify="start">
                         <Col><span style={{
                           fontSize: '13px',
                           fontWeight: 600

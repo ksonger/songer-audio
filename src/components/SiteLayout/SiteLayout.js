@@ -7,9 +7,9 @@ import SEO from "components/seo"
 import SignUpForm from 'components/SignUpForm'
 import paths from 'constants/paths'
 import responsive from 'constants/responsive'
-import Helmet from 'react-helmet'
-import styles from './SiteLayout.module.scss'
 import Image from "../image";
+import appStyles from 'styles/app.scss' // eslint-disable-line no-unused-vars
+import styles from './SiteLayout.module.scss'
 
 
 class SiteLayout extends React.Component {
@@ -52,6 +52,10 @@ class SiteLayout extends React.Component {
     return window.innerWidth <= responsive.BREAKPOINTS[this.state.breakpoint]
   };
 
+  onRouteChange = (event) => {
+    this.activeMenuItem(event.detail.path())
+  };
+
   componentDidMount () {
     const gatsbyRoot = document.querySelector('#___gatsby');
     const nodes = gatsbyRoot.querySelectorAll('div');
@@ -60,11 +64,13 @@ class SiteLayout extends React.Component {
     nodes[1].style.height = 'inherit';
     this.setState({ status: 'data-ready' });
     this.activeMenuItem()
-    window.addEventListener('resize', this.onWindowResize)
+    window.addEventListener('resize', this.onWindowResize);
+    window.addEventListener('routeChange', this.onRouteChange)
   }
 
   componentWillUnmount () {
-    window.removeEventListener('resize', this.onWindowResize)
+    window.removeEventListener('resize', this.onWindowResize);
+    window.removeEventListener('routeChange', this.onRouteChange)
   }
 
   activeMenuItem = (path) => {
@@ -72,7 +78,8 @@ class SiteLayout extends React.Component {
     const menuPaths = [
       { pth: paths.HOME, txt: 'home' },
       { pth: paths.PRODUCTS, txt: 'products' },
-      { pth: paths.ABOUT, txt: 'about' }
+      { pth: paths.ABOUT, txt: 'about' },
+      { pth: paths.CONTACT, txt: 'contact' }
     ];
     menuPaths.forEach((menuPath, index) => {
       if (pathName === menuPath.pth) {
@@ -90,39 +97,39 @@ class SiteLayout extends React.Component {
    * @param item {Menu.Item}
    */
   appMenuSelect = (item) => {
-    if (item.item.props.path) {
-      const { path } = item.item.props;
-      navigate(path)
-      this.activeMenuItem(path)
-    }
+    const { path } = item.item.props;
+    navigate(path)
+    this.activeMenuItem(path)
+
   }
 
   styleState = (element) => {
     return this.mobile() ? `${element}--mobile` : `${element}--desktop`
   }
 
-  mobileMenu = () => {
-    const { menuActiveItem } = this.state;
-    return (
-      <Menu
-        id="appMenu"
-        className={classNames(styles.menu, styles[this.styleState('menu')])}
-        theme="light"
-        selectedKeys={menuActiveItem}
-        onClick={this.appMenuSelect}
-      >
-        <Menu.Item key="m0" path={paths.HOME}>
-          home
-        </Menu.Item>
-        <Menu.Item key="m1" path={paths.PRODUCTS}>
-          products
-        </Menu.Item>
-        <Menu.Item key="m2" path={paths.ABOUT}>
-          about
-        </Menu.Item>
-      </Menu>
-    )
-  };
+  mobileMenu = (
+    <Menu
+      id="appMenu"
+      className={classNames(styles.menu, styles[this.styleState('menu')])}
+      theme="light"
+
+      onClick={this.appMenuSelect}
+    >
+      <Menu.Item key="m0" path={paths.HOME}>
+        home
+      </Menu.Item>
+      <Menu.Item key="m1" path={paths.PRODUCTS}>
+        products
+      </Menu.Item>
+      <Menu.Item key="m2" path={paths.ABOUT}>
+        about
+      </Menu.Item>
+      <Menu.Item key="m3" path={paths.CONTACT}>
+        contact
+      </Menu.Item>
+    </Menu>
+  )
+
 
   showForm = () => {
     this.setState({ showModal: true })
@@ -138,7 +145,7 @@ class SiteLayout extends React.Component {
 
   renderLayout = () => {
     const { children } = this.props;
-    const { Header, Footer, Content } = Layout;
+    const { Header, Content } = Layout;
     const { Paragraph, Text } = Typography;
     const { menuActiveItem, menuActiveLabel, showModal } = this.state;
 
@@ -152,7 +159,7 @@ class SiteLayout extends React.Component {
             <Row align="middle" type="flex">
               <Col className={styles.siteMenu}>
                 {this.mobile() && (
-                  <Dropdown overlay={this.mobileMenu()} placement="bottomLeft">
+                  <Dropdown overlay={this.mobileMenu} placement="bottomCenter" trigger={['click']}>
                     <Button className={styles.mobileNavButton}>
                       <Icon type="menu" className={styles.mobileMenuIcon}/>
                       {menuActiveLabel}
@@ -176,6 +183,9 @@ class SiteLayout extends React.Component {
                     </Menu.Item>
                     <Menu.Item key="2" path={paths.ABOUT}>
                       about
+                    </Menu.Item>
+                    <Menu.Item key="3" path={paths.CONTACT}>
+                      contact
                     </Menu.Item>
                   </Menu>
 

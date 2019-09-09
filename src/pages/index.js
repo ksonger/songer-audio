@@ -1,6 +1,6 @@
 import React from "react"
 import _ from 'lodash'
-import {Row, Col, Layout, Typography} from 'antd'
+import {Row, Col, Typography} from 'antd'
 import Animated from 'components/Animated'
 import Image from "../components/image"
 import responsive from 'constants/responsive'
