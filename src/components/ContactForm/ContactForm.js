@@ -20,8 +20,8 @@ class ContactFormComponent extends React.Component {
     code: ''
   };
 
-  componentDidMount() {
-    if(document.querySelector('#givenname'))  {
+  componentDidMount () {
+    if (document.querySelector('#givenname')) {
       document.querySelector('#givenname').focus()
     }
   }
@@ -31,15 +31,14 @@ class ContactFormComponent extends React.Component {
   };
 
   signUp = async () => {
-    //TODO
-    //https://lpbj4kohdb.execute-api.us-west-2.amazonaws.com/default/contact-form
+    const apiPath = 'https://lpbj4kohdb.execute-api.us-west-2.amazonaws.com/api/contact-form';
+    const { getFieldValue, resetFields } = this.props.form;
 
-    const { getFieldValue } = this.props.form;
 
     const req = {
-      url: 'https://lpbj4kohdb.execute-api.us-west-2.amazonaws.com/default/contact-form',
-      headers: {},
-      method: 'post',
+      url: apiPath,
+      headers: {'content-type': 'application/json'},
+      method: 'POST',
       data: {
         given_name: getFieldValue('givenname'),
         family_name: getFieldValue('familyname'),
@@ -49,14 +48,19 @@ class ContactFormComponent extends React.Component {
     }
 
 
-          axios(req)
-            .then((response) => {
-              message.success('Your comments were sent successfully, thank you.')
+    axios(req)
+      .then((response) => {
+        message.success('Your comments were sent successfully, thank you.')
 
-            })
-            .catch((error) => {
-              console.log(error);
-            })
+      })
+      .catch((error) => {
+        console.log('ERROR', error);
+        message.error("We're sorry, unfortunately an error occurred.  Please, send us an email at 'info@songeraudio.com")
+      })
+      .finally(() => {
+        resetFields();
+      })
+
   };
 
   /**
@@ -92,8 +96,8 @@ class ContactFormComponent extends React.Component {
     // eslint-disable-next-line react/prop-types
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        this.signUp(values).catch(() => {
-          console.log('error')
+        this.signUp(values).catch((err) => {
+          console.log('error', err)
         })
       }
     })
@@ -108,7 +112,8 @@ class ContactFormComponent extends React.Component {
     const { getFieldDecorator, getFieldsError } = this.props.form;
     return (
 
-      <Row type="flex" justify="center" className={classNames(styles.contactForm, styles[this.styleState('contactForm')])}>
+      <Row type="flex" justify="center"
+           className={classNames(styles.contactForm, styles[this.styleState('contactForm')])}>
         <Col span={24}>
           {formStatus === 'contact' && (
             <Form layout="vertical" onSubmit={this.handleSubmit}>
@@ -151,18 +156,19 @@ class ContactFormComponent extends React.Component {
                     id="comment"
                     placeholder="Message"
                     className={styles.formInput}
-                    maxLength={10000}
+                    maxLength={1500}
                   />
                 )}
               </Form.Item>
               <Row type="flex" justify="space-between">
-                <Form.Item style={{marginBottom: 0}}>
+                <Form.Item style={{ marginBottom: 0 }}>
                   <Button className={styles.cancelButton} onClick={onFormCancel} type="secondary">
                     Cancel
                   </Button>
                 </Form.Item>
-                <Form.Item style={{marginBottom: 0}}>
-                  <Button className={styles.signUpButton} type="primary" htmlType="submit" disabled={hasErrors(getFieldsError())}>
+                <Form.Item style={{ marginBottom: 0 }}>
+                  <Button className={styles.signUpButton} type="primary" htmlType="submit"
+                          disabled={hasErrors(getFieldsError())}>
                     Submit
                   </Button>
                 </Form.Item>
