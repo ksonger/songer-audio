@@ -81,13 +81,7 @@ class ProductsPage extends React.Component {
   }
 
   copy = {
-    header: {loudspeaker: `Songer Audio Field Coil Loudspeaker`, driver: `Songer Audio 10" Field Coil Driver`},
-    p1: "Songer Audio field coil loudspeakers & drivers are functional works of fine art.  Each is created in service of a singular vision, and every component we produce to realize it is 100% designed, constructed and assembled in house, painstakingly and entirely by hand.",
-    p2: "At the heart of our sound is the SA-FC10 field coil driver, powered by a 33-pound hand-wound electromagnet, producing 1.7 Tesla of magnetic flux.",
-    p3: "The brass and aluminum frame of the SA-FC10 is both functional and beautiful, spanning the length of the electromagnet housing and carrying excess thermal energy away from the field coil motor.",
-    p4: "Our cones, whizzers, and voice coil formers are lightweight, water resistant, and all hand-formed from Japanese Hosho washi paper. The surrounds of the the SA-FC10 are equally light and refined, molded from Italian lambskin leather. The innovative spider suspension combines carbon fiber and thermal polyurethane, and is carefully designed to be both durable and yet utterly soft and agile.",
-    p5: "The end result of this labor of love is a sound that must be experienced to be believed. Each detail of musical recordings effortlessly resolves. Every instrument is in it's place, surrounded by air and full of life, and every voice textured, tonally rich, and faithfully accurate. The loudspeaker itself vanishes, and what remains is the simple emotional connection between the listener and the art form.",
-    p6: "Connecting you to your music is our passion."
+    header: {loudspeaker: `Songer Audio Field Coil Loudspeaker`, driver: `Songer Audio 10" Field Coil Driver`}
   }
 
   homeCopy = () => {
@@ -96,8 +90,8 @@ class ProductsPage extends React.Component {
       'loudspeaker':
         [
           { title: 'System:', description: 'Point source full-range ported loudspeaker' },
-          { title: 'Frequency Response:', description: '45 - 15,000 Hz' },
-          { title: 'Efficiency:', description: '92 dB SPL (2.83 V/1m)' },
+          { title: 'Frequency Response:', description: '33 - 20,000 Hz' },
+          { title: 'Efficiency:', description: '94.7 dB SPL (2.83 V/1m)' },
           { title: 'Dimensions:', description: '(W x H x D) 15 x 47 x 20 in' },
           { title: 'Materials:', description: 'Cherry, Cabrueva, Brass' },
           { title: 'Connections:', description: '5-way binding posts, XLR power connector' },
@@ -106,8 +100,8 @@ class ProductsPage extends React.Component {
 
       'driver':
         [
-          { title: 'System:', description: '6 Ohm 1.7 Tesla Field Coil' },
-          { title: 'Frequency Response:', description: '20 - 15,000 Hz' },
+          { title: 'System:', description: '6 Ohm 1.6 Tesla Field Coil' },
+          { title: 'Frequency Response:', description: '20 - 20,000 Hz' },
           { title: 'Efficiency (12v):', description: '96.5 dB SPL (2.83 V/1m)' },
           { title: 'Impedance:', description: '9.6 Ohms' },
           { title: 'Qts (12v):', description: '0.19' },
