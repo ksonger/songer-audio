@@ -68,10 +68,10 @@ class IndexPage extends React.Component {
 
   copy = {
     header: `The medium is engineering. The result is art.`,
-    p1: `Songer Audio loudspeakers & drivers are functional art, of uncompromising craftsmanship.  Each piece is 100% designed, made and assembled entirely by hand.`,
-    p2: `Our 10-inch field coil driver is the product of years of research, innovation & development.  Carefully chosen materials are used to produce it.  Japanese washi cones and voice coil formers produce beautiful tone and accuracy.  Italian lambskin surrounds offer superb transients and attack.  The elegant brass and aluminum frames dissipate excess heat from the driver, and an innovative, carbon fiber thermal polyurethane spider suspension delivers breathtaking sensitivity and detail.`,
-    p3: "Our furniture grade loudspeaker cabinetry is made from solid hardwood, simply braced and minimally damped for a natural sounding, musical listening experience.",
-    p4: "The end result is something that must be experienced to be believed. Each detail of musical recordings is effortlessly revealed. Every instrument is in it's place, surrounded by air and full of life. Voices are rich, expressive and accurate. Our products express our philosophy, which is of perfectly executed simplicity and of relentless commitment to excellence.  We remove all that is inessential, and leave only a pure conduit between you and the music."
+    p1: `Songer Audio loudspeakers & drivers are functional works of art, of uncompromising craftsmanship.  Each piece is 100% designed, made and assembled by hand. Our products express a philosophy, which is of simplicity in approach, and relentless dedication to excellence.  Our goal is to remove all that is inessential, and provide the purest possible experience of music.`,
+    p2: `Our 10-inch field coil driver is the product of years of research, innovation & development.  Carefully chosen materials are used to produce it.  Japanese washi cones and voice coil formers produce beautiful tone and accuracy.  Italian lambskin surrounds offer superb transients.  The elegant brass and aluminum driver frame dissipates excess heat from the electromagnetic motor, and an innovative, carbon fiber and thermal polyurethane spider suspension delivers breathtaking sensitivity and detail.`,
+    p3: "Our furniture grade cabinetry is entirely made from solid hardwood, well-braced and minimally damped for a natural sounding, musical listening experience.",
+    p4: "The end result is something that must be experienced to be believed. Each detail of musical recordings is effortlessly revealed. Every instrument is in it's place, surrounded by air and full of life. Voices are rich, expressive and accurate. The result is art."
   }
 
   homeCopy = () => {
