@@ -68,10 +68,10 @@ class IndexPage extends React.Component {
 
   copy = {
     header: `The medium is engineering. The result is art.`,
-    p1: `Songer Audio loudspeakers & drivers are functional art.  Each piece is 100% designed, made and assembled entirely by hand.`,
-    p2: `Our 10-inch field coil driver is the product of years of research, innovation & development.  Carefully chosen materials are used to produce it, including Japanese Hosho washi paper for the cones and voice coil formers, and Italian lambskin for the surrounds.  The brass and aluminum frame dissipates excess heat, and an innovative, carbon fiber thermal polyurethane spider suspension provides excellent sensitivity and agility.`,
-    p3: "The furniture grade loudspeaker cabinetry is made from solid hardwoods, and are simply braced and minimally damped for a natural sounding, musical listening experience.",
-    p4: "The end result is a sound that must be experienced to be believed. Each detail of musical recordings is effortlessly revealed. Every instrument is in it's place, surrounded by air and full of life. Each voice is textured, tonally rich, and faithfully accurate. Songer Audio aspires to distill music down to the connection between listener and musician."
+    p1: `Songer Audio loudspeakers & drivers are functional art, of uncompromising craftsmanship.  Each piece is 100% designed, made and assembled entirely by hand.`,
+    p2: `Our 10-inch field coil driver is the product of years of research, innovation & development.  Carefully chosen materials are used to produce it.  Japanese washi cones and voice coil formers produce beautiful tone and accuracy.  Italian lambskin surrounds offer superb transients and attack.  The elegant brass and aluminum frames dissipate excess heat from the driver, and an innovative, carbon fiber thermal polyurethane spider suspension delivers breathtaking sensitivity and detail.`,
+    p3: "Our furniture grade loudspeaker cabinetry is made from solid hardwood, simply braced and minimally damped for a natural sounding, musical listening experience.",
+    p4: "The end result is something that must be experienced to be believed. Each detail of musical recordings is effortlessly revealed. Every instrument is in it's place, surrounded by air and full of life. Voices are rich, expressive and accurate. Our products express our philosophy, which is of perfectly executed simplicity and of relentless commitment to excellence.  We remove all that is inessential, and leave only a pure conduit between you and the music."
   }
 
   homeCopy = () => {
