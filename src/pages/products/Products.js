@@ -90,7 +90,7 @@ class ProductsPage extends React.Component {
       'loudspeaker':
         [
           { title: 'System:', description: 'Point source full-range ported loudspeaker' },
-          { title: 'Frequency Response:', description: '33 - 20,000 Hz' },
+          { title: 'Frequency Response:', description: '35Hz - 20,000Hz' },
           { title: 'Efficiency:', description: '94.7 dB SPL (2.83 V/1m)' },
           { title: 'Dimensions:', description: '(W x H x D) 15 x 47 x 20 in' },
           { title: 'Materials:', description: 'Cherry, Cabrueva, Brass' },
@@ -101,7 +101,7 @@ class ProductsPage extends React.Component {
       'driver':
         [
           { title: 'System:', description: '6 Ohm 1.6 Tesla Field Coil' },
-          { title: 'Frequency Response:', description: '20 - 20,000 Hz' },
+          { title: 'Frequency Response:', description: '20 - 20,000Hz' },
           { title: 'Efficiency (12v):', description: '96.5 dB SPL (2.83 V/1m)' },
           { title: 'Impedance:', description: '9.6 Ohms' },
           { title: 'Qts (12v):', description: '0.19' },
