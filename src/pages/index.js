@@ -71,7 +71,7 @@ class IndexPage extends React.Component {
     p1: `Songer Audio loudspeakers & drivers are functional works of art, of uncompromising craftsmanship.  Each piece is 100% designed, made and assembled by hand. Our products express a philosophy of simplicity and a relentless dedication to excellence, to provide the purest possible experience of music.`,
     p2: `The Songer Audio 10-inch field coil driver is the product of years of research, innovation & development.  Japanese washi cones and voice coil formers produce beautiful tone and accuracy.  Italian lambskin surrounds offer superb transients.  The elegant brass and aluminum frame dissipates excess heat, and an innovative, carbon fiber and thermal polyurethane spider suspension delivers breathtaking sensitivity and detail.`,
     p3: "Our furniture grade cabinetry is entirely made from solid hardwood, well-braced and minimally damped for a natural sounding, musical listening experience.",
-    p4: "The end result is something that must be experienced to be believed.  Each detail of musical recordings is effortlessly revealed. Every instrument is in it's place, surrounded by air and full of life. Voices are rich, expressive and accurate. The result is art."
+    p4: "The end result is something that must be experienced to be believed.  Each detail of musical recordings is effortlessly revealed. Every instrument is in it's place, surrounded by air and full of life. Voices are rich, expressive and accurate. In a word, the result is art."
   }
 
   homeCopy = () => {

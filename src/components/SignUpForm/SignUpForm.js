@@ -183,7 +183,7 @@ class SignUpFormComponent extends React.Component {
                 })(
                   <Input
                     id="email"
-                    placeholder="Email"
+                    placeholder="Email (required)"
                     className={styles.formInput}
                   />
                 )}
@@ -211,7 +211,7 @@ class SignUpFormComponent extends React.Component {
                 </Form.Item>
                 <Form.Item style={{marginBottom: 0}}>
                   <Button className={styles.signUpButton} type="primary" htmlType="submit" disabled={hasErrors(getFieldsError())}>
-                    Submit
+                    Subscribe
                   </Button>
                 </Form.Item>
               </Row>

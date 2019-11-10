@@ -101,7 +101,7 @@ class ProductsPage extends React.Component {
       'driver':
         [
           { title: 'System:', description: '6 Ohm 1.6 Tesla Field Coil' },
-          { title: 'Frequency Response:', description: '20 - 20,000Hz' },
+          { title: 'Frequency Response:', description: '20Hz - 20,000Hz' },
           { title: 'Efficiency (12v):', description: '96.5 dB SPL (2.83 V/1m)' },
           { title: 'Impedance:', description: '9.6 Ohms' },
           { title: 'Qts (12v):', description: '0.19' },
@@ -194,7 +194,7 @@ class ProductsPage extends React.Component {
 
             <Row type="flex" justify="center" align="middle">
               <Col span={13}>
-                <Image img="loudspeaker_web_1500.png"/>
+                <Image img="loudspeaker_web.png"/>
               </Col>
               <Col span={11}>
                 <List

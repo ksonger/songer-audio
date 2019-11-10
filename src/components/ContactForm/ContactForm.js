@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {Button, Col, Form, Input, message, Row, Typography} from 'antd'
+import {Button, Col, Form, Input, message, Row} from 'antd'
 import React from 'react'
 import styles from "./ContactForm.module.scss";
 import regex from 'constants/regex'
@@ -107,7 +107,6 @@ class ContactFormComponent extends React.Component {
   render () {
     const { comments, emailAddress, familyName, formStatus, givenName } = this.state;
     const { onFormCancel } = this.props;
-    const { Paragraph } = Typography;
     const { TextArea } = Input;
     const { getFieldDecorator, getFieldsError } = this.props.form;
     return (
