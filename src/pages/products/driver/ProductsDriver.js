@@ -138,7 +138,7 @@ class ProductsPageDriver extends React.Component {
             )}
           />
           <Row type="flex" justify="center">
-            <Paragraph style={{fontWeight: 'bold', margin: '20px 0 0 12px', color: 'rgba(255,255,255,0.85)'}}>Price: $9500 (pair)</Paragraph>
+            <Paragraph style={{fontWeight: 'bold', margin: '20px 0 0 12px', color: 'rgba(255,255,255,0.85)'}}>Price: $9,500 (pair)</Paragraph>
           </Row>
         </>
       )
@@ -176,7 +176,7 @@ class ProductsPageDriver extends React.Component {
                   )}
                 />
                 <Row type="flex" justify="start">
-                  <Paragraph style={{fontWeight: 'bold', margin: '20px 0 0 12px', color: 'rgba(255,255,255,0.85)'}}>Price: $9500 (pair)</Paragraph>
+                  <Paragraph style={{fontWeight: 'bold', margin: '20px 0 0 12px', color: 'rgba(255,255,255,0.85)'}}>Price: $9,500 (pair)</Paragraph>
                 </Row>
               </Col>
               <Col span={15}>
