@@ -6,8 +6,8 @@
   margin: 30px auto 0 -30%;
 
   &--mobile {
-    max-width: 800px;
-    margin: 60px auto;
+    max-width: 400px;
+    margin: 60px auto 0;
     padding: 0 48px;
     object-fit: scale-down;
   }
@@ -17,10 +17,14 @@
   position: relative;
   overflow: hidden;
   display: block;
-  width: 50%;
+  width: 30%;
   margin: 0 24px 24px;
   float: left;
   padding: 24px;
+}
+
+.aboutMain {
+  margin-top: 40px;
 }
 
 .aboutHeader {
@@ -44,6 +48,30 @@
     padding: 0 18px 24px;
     @include font-size(16px);
     font-weight: 500;
+
+  }
+
+}
+
+.aboutSubheader {
+  padding-left: 20px;
+  margin-top: 24px;
+
+  &--desktop {
+    width: 100%;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.85);
+    @include font-size(14px);
+    font-weight: 500;
+  }
+
+  &--mobile {
+    width: 100%;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.85);
+    @include font-size(14px);
+    font-weight: 500;
+    padding-bottom: 20px;
 
   }
 

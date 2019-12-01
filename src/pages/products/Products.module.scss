@@ -2,14 +2,11 @@
 
 .driver {
   position: relative;
-  max-width: 1200px;
-  margin: 30px auto 0 -30%;
 
-  &--mobile {
     max-width: 800px;
-    margin: 0 auto;
-    object-fit: scale-down;
-  }
+    margin: 0 auto 0 -10%;
+
+
 }
 
 .desktopDriver {
@@ -51,10 +48,10 @@
 
   &--desktop {
     position: relative;
+    top: 80px;
     width: 100%;
     text-align: center;
     color: rgba(255, 255, 255, 0.85);
-    top: -30px;
     @include font-size(16px);
     font-weight: 500;
   }
@@ -73,8 +70,23 @@
 
 }
 
-.homeCopy {
+.responses {
+  position: relative;
+  margin: 0 30px;
 
+  &--desktop {
+    top: -80px;
+  }
+
+}
+
+.response {
+  margin: 30px auto;
+  max-width: 700px;
+}
+
+.homeCopy {
+  color: #fff;
   &--mobile {
     margin-top: 10%;
     padding: 0 6px 60px;
@@ -85,34 +97,22 @@
   }
 }
 
-.homeText {
-
-
-
-  &--mobile {
-    padding: 0 20px 18px;
-    @include font-size(13px);
-    line-height: 15px;
-    color: rgba(0, 0, 0, 0.60);
-    margin-top: -8px;
-  }
-
-  &--desktop {
-    padding: 0 20px 18px;
-    @include font-size(13px);
-    line-height: 15px;
-    color: rgba(255, 255, 255, 0.60);
-  }
-
+.responseLabel {
+  @include font-size(13px);
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.70);
+  text-align: center;
+  padding-top: 20px;
 }
 
 .desktopRow {
-  margin-top: 90px;
+  margin-top: 100px;
   max-width: 920px;
+  padding: 0 30px;
 }
 
 .subscribe {
-  color: rgb(40, 162, 199);
+  color: rgb(131, 184, 201);
   cursor: pointer;
   text-decoration: underline;
 }

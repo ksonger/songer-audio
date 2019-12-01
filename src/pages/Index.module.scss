@@ -1,5 +1,21 @@
 @import '~styles/app';
 
+.homeMain {
+  height: 100%;
+  width: 100%;
+  &--desktop {
+
+
+  }
+}
+
+.homeBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .15;
+}
+
 .driver {
   position: relative;
   max-width: 1200px;
@@ -22,14 +38,14 @@
 }
 
 .homeHeader {
+  position: absolute;
 
   &--desktop {
     position: relative;
     width: 100%;
     text-align: center;
-    color: rgba(255, 255, 255, 0.85);
-    top: -30px;
-    @include font-size(16px);
+    color: rgba(255, 255, 255, 1);
+    @include font-size(20px);
     font-weight: 500;
   }
 
@@ -38,25 +54,59 @@
     width: 100%;
     text-align: center;
     color: rgba(255, 255, 255, 0.85);
-    top: -58px;
-    padding: 0 18px;
-    @include font-size(16px);
+    padding: 0 18px 30px;
+    @include font-size(17px);
     font-weight: 500;
 
   }
 
 }
 
-.homeCopy {
+.home {
+  position: absolute;
+  top: 24px;
+  padding: 0 12px;
 
-  &--mobile {
-
-    margin-top: -30%;
-    padding: 0 6px 60px;
+  .homeCopy {
+    text-align: center;
   }
+}
 
-  &--desktop {
-    margin-top: 0;
+
+.ataGlance {
+  padding: 24px;
+  cursor: pointer;
+
+  .glanceContent {
+    background: rgba(0, 0, 0, .55);
+    min-height: 300px;
+    border: 1px solid rgba(131, 184, 201, 0.35);
+    padding: 20px;
+
+    &--mobile {
+      width: 100%;
+    }
+
+    .header {
+      color: rgba(255, 255, 255, 0.85);
+      @include font-size(17px);
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .body {
+      color: rgba(255, 255, 255, 0.55);
+      @include font-size(14px);
+      font-weight: 100;
+    }
+
+    .cta {
+      margin-top: 30px;
+      color: rgba(40, 162, 199, 0.85);
+      @include font-size(17px);
+      font-weight: 500;
+      cursor: pointer;
+    }
   }
 }
 
@@ -65,16 +115,17 @@
   &--mobile {
     padding: 0 20px 18px;
     @include font-size(13px);
-    line-height: 15px;
-    color: rgba(255, 255, 255, 0.60);
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.70);
     margin-top: -18px;
   }
 
   &--desktop {
     padding: 0 20px 18px;
-    @include font-size(13px);
-    line-height: 15px;
-    color: rgba(255, 255, 255, 0.60);
+    @include font-size(15px);
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
   }
 
 }

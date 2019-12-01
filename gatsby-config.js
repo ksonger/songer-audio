@@ -40,7 +40,7 @@ module.exports = {
           "popover-color": "#fff",
           "menu-bg": "transparent",
           "menu-highlight-color": "#E6CC8E",
-          "menu-item-color": "rgb(40, 162, 199)",
+          "menu-item-color": "rgb(131, 184, 201)",
           "menu-item-active-bg": "rgba(145, 199, 216, 0.15)",
           "layout-header-padding": "0 20px",
           "input-color": "rgba(0, 0, 0, 0.5)"

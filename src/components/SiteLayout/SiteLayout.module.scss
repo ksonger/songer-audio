@@ -13,7 +13,7 @@
 }
 
 .siteLayout {
-  background: linear-gradient(to bottom, #272727 0%,#000000 100%) !important;
+  background: linear-gradient(to bottom, #272727 0%, #000000 100%) !important;
   max-width: 920px;
   border-left: 1px solid rgba(230, 204, 142, 0.35);
   border-right: 1px solid rgba(230, 204, 142, 0.35);
@@ -37,8 +37,9 @@
 .content {
 
   &--desktop {
-    margin-top: 80px;
-    padding: 0 24px 60px;
+    height: 100%;
+    margin-top: 56px;
+    padding: 0;
   }
 
   &--mobile {
@@ -57,7 +58,7 @@
 }
 
 .siteMenu {
-    width: calc(100% - 60px);
+  width: calc(100% - 60px);
   z-index: 1001
 }
 
@@ -92,7 +93,7 @@
   &--mobile {
     background: rgba(59, 59, 59, 0.9);
     border: 1px solid rgba(230, 204, 142, 0.35);
-    color: rgb(40, 162, 199);
+    color: rgb(131, 184, 201);
   }
 }
 
@@ -125,7 +126,7 @@
 }
 
 .subscribe {
-  color: rgb(40, 162, 199);
+  color: rgb(131, 184, 201);
   cursor: pointer;
   text-decoration: underline;
 }

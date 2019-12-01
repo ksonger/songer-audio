@@ -77,7 +77,8 @@ class SiteLayout extends React.Component {
     const pathName = path || window.location.pathname;
     const menuPaths = [
       { pth: paths.HOME, txt: 'home' },
-      { pth: paths.PRODUCTS, txt: 'products' },
+      { pth: paths.PRODUCTS.SPEAKER, txt: 'loudspeakers' },
+      { pth: paths.PRODUCTS.DRIVER, txt: 'drivers' },
       { pth: paths.ABOUT, txt: 'about' },
       { pth: paths.CONTACT, txt: 'contact' }
     ];
@@ -118,13 +119,16 @@ class SiteLayout extends React.Component {
       <Menu.Item key="m0" path={paths.HOME}>
         home
       </Menu.Item>
-      <Menu.Item key="m1" path={paths.PRODUCTS}>
-        products
+      <Menu.Item key="m1" path={paths.PRODUCTS.SPEAKER}>
+        loudspeakers
       </Menu.Item>
-      <Menu.Item key="m2" path={paths.ABOUT}>
+      <Menu.Item key="m2" path={paths.PRODUCTS.DRIVER}>
+        drivers
+      </Menu.Item>
+      <Menu.Item key="m3" path={paths.ABOUT}>
         about
       </Menu.Item>
-      <Menu.Item key="m3" path={paths.CONTACT}>
+      <Menu.Item key="m4" path={paths.CONTACT}>
         contact
       </Menu.Item>
     </Menu>
@@ -178,13 +182,16 @@ class SiteLayout extends React.Component {
                     <Menu.Item key="0" path={paths.HOME}>
                       home
                     </Menu.Item>
-                    <Menu.Item key="1" path={paths.PRODUCTS}>
-                      products
+                    <Menu.Item key="1" path={paths.PRODUCTS.SPEAKER}>
+                      loudspeakers
                     </Menu.Item>
-                    <Menu.Item key="2" path={paths.ABOUT}>
+                    <Menu.Item key="2" path={paths.PRODUCTS.DRIVER}>
+                      drivers
+                    </Menu.Item>
+                    <Menu.Item key="3" path={paths.ABOUT}>
                       about
                     </Menu.Item>
-                    <Menu.Item key="3" path={paths.CONTACT}>
+                    <Menu.Item key="4" path={paths.CONTACT}>
                       contact
                     </Menu.Item>
                   </Menu>
@@ -219,7 +226,7 @@ class SiteLayout extends React.Component {
   render () {
     const { status } = this.state;
     return (
-      <div>
+      <div style={{"height": "100%"}}>
         {status === 'data-ready' && this.renderLayout()}
       </div>
     )
