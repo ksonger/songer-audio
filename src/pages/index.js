@@ -70,9 +70,6 @@ class IndexPage extends React.Component {
   copy = {
     header: `The medium is engineering. The result is art.`,
     p1: `Songer Audio field coil loudspeakers and drivers are functional works of art, of uncompromising craftsmanship.  Each piece is 100% designed, made and assembled by hand. Our products express a philosophy of simplicity, excellence, and a relentless dedication to provide the purest possible experience of music.`,
-    p2: `The Songer Audio 10-inch field coil driver is the product of years of research, innovation & development.  Japanese washi cones and voice coil formers produce beautiful tone and accuracy.  Italian lambskin surrounds offer superb transients.  The elegant brass and aluminum frame dissipates excess heat, and an innovative, carbon fiber and thermal polyurethane spider suspension delivers breathtaking sensitivity and detail.`,
-    p3: "Our furniture grade cabinetry is entirely made from solid hardwood, well-braced and minimally damped for a natural sounding, musical listening experience.",
-    p4: "The end result is something that must be experienced to be believed.  Each detail of musical recordings is effortlessly revealed. Every instrument is in it's place, surrounded by air and full of life. Voices are rich, expressive and accurate. In a word, the result is art."
   }
 
   homeCopy = () => {
@@ -109,7 +106,7 @@ class IndexPage extends React.Component {
                 </Row>
                 {this.mobile() && (
                   <>
-                    <Row type="flex" className={classNames(styles.ataGlance, styles[this.styleState('ataGlance')])} span={24}>
+                    <Row onClick={() => {navigate(paths.PRODUCTS.SPEAKER)}} type="flex" className={classNames(styles.ataGlance, styles[this.styleState('ataGlance')])} span={24}>
                       <Row className={classNames(styles.glanceContent, styles[this.styleState('glanceContent')])}>
                         <Row type="flex" justify="center" className={classNames(styles.header, styles[this.styleState('header')])}>
                           BR-1 Loudspeaker
@@ -122,7 +119,7 @@ class IndexPage extends React.Component {
                         </Row>
                       </Row>
                     </Row>
-                    <Row type="flex" className={classNames(styles.ataGlance, styles[this.styleState('ataGlance')])} span={24}>
+                    <Row onClick={() => {navigate(paths.PRODUCTS.DRIVER)}} type="flex" className={classNames(styles.ataGlance, styles[this.styleState('ataGlance')])} span={24}>
                       <Row className={classNames(styles.glanceContent, styles[this.styleState('glanceContent')])}>
                         <Row type="flex" justify="center" className={classNames(styles.header, styles[this.styleState('header')])}>
                           FC-1 Field Coil Driver
