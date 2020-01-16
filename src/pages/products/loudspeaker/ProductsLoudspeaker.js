@@ -217,40 +217,40 @@ class ProductsPageLoudspeaker extends React.Component {
             </Row>
           )}
           <Row className={classNames(styles.responses, styles[this.styleState('responses')])}>
-            <Col>
-              <Paragraph className={classNames(styles.responseLabel, styles[this.styleState('responseLabel')])}>
-                <span style={{ fontWeight: 'bold', color: 'rgba(255,255,255,0.85)' }}>
-                  Frequency & Impulse Response
-                </span> (single speaker, in-room nearfield measurement)
-              </Paragraph>
-              <Row className={classNames(styles.response, styles[this.styleState('response')])}>
-                <Image img="left_frequency_impulse_response.png"/>
-              </Row>
-              <Paragraph className={classNames(styles.responseLabel, styles[this.styleState('responseLabel')])}>
-                <span style={{ fontWeight: 'bold', color: 'rgba(255,255,255,0.85)' }}>
-                  Cone (black) & Port (red) Response
-                </span> (single speaker, in-room nearfield measurement)
-              </Paragraph>
-              <Row className={classNames(styles.response, styles[this.styleState('response')])}>
-                <Image img="left_nearfield_plus_port.png"/>
-              </Row>
-              <Paragraph className={classNames(styles.responseLabel, styles[this.styleState('responseLabel')])}>
-                <span style={{ fontWeight: 'bold', color: 'rgba(255,255,255,0.85)' }}>
-                Total Harmonic Distortion
-                </span> (single speaker, in-room nearfield measurement)
-              </Paragraph>
-              <Row className={classNames(styles.response, styles[this.styleState('response')])}>
-                <Image img="left_harmonic_distortion.png"/>
-              </Row>
-              <Paragraph className={classNames(styles.responseLabel, styles[this.styleState('responseLabel')])}>
-                <span style={{ fontWeight: 'bold', color: 'rgba(255,255,255,0.85)' }}>
-                Cumulative Spectral Decay
-                </span> (single speaker, in-room nearfield measurement)
-              </Paragraph>
-              <Row className={classNames(styles.response, styles[this.styleState('response')])}>
-                <Image img="left_waterfall_csd.png"/>
-              </Row>
-            </Col>
+            {/*<Col>*/}
+              {/*<Paragraph className={classNames(styles.responseLabel, styles[this.styleState('responseLabel')])}>*/}
+                {/*<span style={{ fontWeight: 'bold', color: 'rgba(255,255,255,0.85)' }}>*/}
+                  {/*Frequency & Impulse Response*/}
+                {/*</span> (single speaker, in-room nearfield measurement)*/}
+              {/*</Paragraph>*/}
+              {/*<Row className={classNames(styles.response, styles[this.styleState('response')])}>*/}
+                {/*<Image img="left_frequency_impulse_response.png"/>*/}
+              {/*</Row>*/}
+              {/*<Paragraph className={classNames(styles.responseLabel, styles[this.styleState('responseLabel')])}>*/}
+                {/*<span style={{ fontWeight: 'bold', color: 'rgba(255,255,255,0.85)' }}>*/}
+                  {/*Cone (black) & Port (red) Response*/}
+                {/*</span> (single speaker, in-room nearfield measurement)*/}
+              {/*</Paragraph>*/}
+              {/*<Row className={classNames(styles.response, styles[this.styleState('response')])}>*/}
+                {/*<Image img="left_nearfield_plus_port.png"/>*/}
+              {/*</Row>*/}
+              {/*<Paragraph className={classNames(styles.responseLabel, styles[this.styleState('responseLabel')])}>*/}
+                {/*<span style={{ fontWeight: 'bold', color: 'rgba(255,255,255,0.85)' }}>*/}
+                {/*Total Harmonic Distortion*/}
+                {/*</span> (single speaker, in-room nearfield measurement)*/}
+              {/*</Paragraph>*/}
+              {/*<Row className={classNames(styles.response, styles[this.styleState('response')])}>*/}
+                {/*<Image img="left_harmonic_distortion.png"/>*/}
+              {/*</Row>*/}
+              {/*<Paragraph className={classNames(styles.responseLabel, styles[this.styleState('responseLabel')])}>*/}
+                {/*<span style={{ fontWeight: 'bold', color: 'rgba(255,255,255,0.85)' }}>*/}
+                {/*Cumulative Spectral Decay*/}
+                {/*</span> (single speaker, in-room nearfield measurement)*/}
+              {/*</Paragraph>*/}
+              {/*<Row className={classNames(styles.response, styles[this.styleState('response')])}>*/}
+                {/*<Image img="left_waterfall_csd.png"/>*/}
+              {/*</Row>*/}
+            {/*</Col>*/}
           </Row>
         </Row>
         <Modal
