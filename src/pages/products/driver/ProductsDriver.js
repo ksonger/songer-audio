@@ -96,7 +96,7 @@ class ProductsPageDriver extends React.Component {
           { title: 'Fs:', description: '19.5 Hz' },
           { title: 'Qts (12v):', description: '0.18' },
           { title: 'Mms:', description: '14.25 grams' },
-          { title: 'Inductance:', description: '.48 (mH (10k)' },
+          { title: 'Inductance:', description: '.48 (mH (10k))' },
           { title: 'Vas:', description: '550 liters' },
           { title: 'Weight:', description: '33 lbs' },
         ]

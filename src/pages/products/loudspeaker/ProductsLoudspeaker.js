@@ -94,7 +94,7 @@ class ProductsPageLoudspeaker extends React.Component {
           { title: 'Efficiency:', description: '92 dB SPL (2.83 V/1m)' },
           { title: 'Dimensions:', description: '(W x H x D) 15 x 47 x 20 in' },
           { title: 'Materials:', description: 'Hardwood (Cherry shown), Brass' },
-          { title: 'Weight:', description: '120 lbs' },
+          { title: 'Weight:', description: '110 lbs' },
           { title: 'Connections:', description: '5-way binding posts, XLR power' },
         ],
     };
