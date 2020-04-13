@@ -90,7 +90,6 @@ class ProductsPageDriver extends React.Component {
       'driver':
         [
           { title: 'System:', description: '6 Ohm 1.6 Tesla Field Coil' },
-          { title: 'Frequency Response:', description: '20Hz - 15,000Hz' },
           { title: 'Efficiency (12v):', description: '96.5 dB SPL (2.83 V/1m)' },
           { title: 'Impedance:', description: '9.6 Ohms' },
           { title: 'Fs:', description: '19.5 Hz' },
