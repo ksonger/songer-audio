@@ -81,7 +81,7 @@ class ProductsPageLoudspeaker extends React.Component {
   }
 
   copy = {
-    header: { loudspeaker: `Songer Audio BR-1 Field Coil Loudspeaker` }
+    header: { loudspeaker: `The Enso Field Coil Loudspeaker` }
   }
 
   homeCopy = () => {
@@ -90,10 +90,10 @@ class ProductsPageLoudspeaker extends React.Component {
       'loudspeaker':
         [
           { title: 'System:', description: 'Point source full-range ported loudspeaker' },
-          { title: 'Frequency Response:', description: '30Hz - 15,000Hz' },
+          { title: 'Frequency Response:', description: '35Hz - 15,000Hz' },
           { title: 'Efficiency:', description: '92 dB SPL (2.83 V/1m)' },
           { title: 'Dimensions:', description: '(W x H x D) 15 x 47 x 20 in' },
-          { title: 'Materials:', description: 'Hardwood (Cherry shown), Brass' },
+          { title: 'Materials:', description: 'Hardwood (cherry shown), Leather, Brass' },
           { title: 'Weight:', description: '110 lbs' },
           { title: 'Connections:', description: '5-way binding posts, XLR power' },
         ],
@@ -105,11 +105,11 @@ class ProductsPageLoudspeaker extends React.Component {
           <>
             <Row>
               <div className={classNames(styles.speaker, styles[this.styleState('speaker')])}>
-                <Image img="loudspeaker_web.png"/>
+                <Image img="prod_loudspeaker_web.png"/>
               </div>
             </Row>
             <Paragraph className={classNames(styles.homeHeaderDriver, styles[this.styleState('homeHeaderDriver')])}>
-              {this.copy.header.driver}
+              {this.copy.header.loudspeaker}
             </Paragraph>
             <List
               size="small"
@@ -136,7 +136,9 @@ class ProductsPageLoudspeaker extends React.Component {
               )}
             />
             <Row type="flex" justify="center">
-              <Paragraph style={{margin: '36px 20px 0 0', color: 'rgba(255,255,255,0.65)'}}>Pricing and availability <Text onClick={this.showForm} className={styles.subscribe}>coming soon</Text></Paragraph>
+              <Paragraph style={{margin: '36px 20px 0 0', color: 'rgba(255,255,255,0.65)'}}>
+                Price: $27,900
+              </Paragraph>
             </Row>
           </>
         )}
@@ -174,12 +176,14 @@ class ProductsPageLoudspeaker extends React.Component {
                     )}
                   />
                   <Row type="flex" justify="start">
-                    <Paragraph style={{margin: '36px 20px 0 0', color: 'rgba(255,255,255,0.65)'}}>Pricing and availability <Text onClick={this.showForm} className={styles.subscribe}>coming soon</Text></Paragraph>
+                    <Paragraph style={{margin: '36px 20px 0 0', color: 'rgba(255,255,255,0.65)'}}>
+                      Price: $27,900
+                    </Paragraph>
                   </Row>
                 </Col>
                 <Col span={15}>
                   <div className={classNames(styles.speaker, styles[this.styleState('speaker')])}>
-                    <Image img="loudspeaker_web.png"/>
+                    <Image img="prod_loudspeaker_web.png"/>
                   </div>
                 </Col>
               </Row>
@@ -217,40 +221,24 @@ class ProductsPageLoudspeaker extends React.Component {
             </Row>
           )}
           <Row className={classNames(styles.responses, styles[this.styleState('responses')])}>
-            {/*<Col>*/}
-              {/*<Paragraph className={classNames(styles.responseLabel, styles[this.styleState('responseLabel')])}>*/}
-                {/*<span style={{ fontWeight: 'bold', color: 'rgba(255,255,255,0.85)' }}>*/}
-                  {/*Frequency & Impulse Response*/}
-                {/*</span> (single speaker, in-room nearfield measurement)*/}
-              {/*</Paragraph>*/}
-              {/*<Row className={classNames(styles.response, styles[this.styleState('response')])}>*/}
-                {/*<Image img="left_frequency_impulse_response.png"/>*/}
-              {/*</Row>*/}
-              {/*<Paragraph className={classNames(styles.responseLabel, styles[this.styleState('responseLabel')])}>*/}
-                {/*<span style={{ fontWeight: 'bold', color: 'rgba(255,255,255,0.85)' }}>*/}
-                  {/*Cone (black) & Port (red) Response*/}
-                {/*</span> (single speaker, in-room nearfield measurement)*/}
-              {/*</Paragraph>*/}
-              {/*<Row className={classNames(styles.response, styles[this.styleState('response')])}>*/}
-                {/*<Image img="left_nearfield_plus_port.png"/>*/}
-              {/*</Row>*/}
-              {/*<Paragraph className={classNames(styles.responseLabel, styles[this.styleState('responseLabel')])}>*/}
-                {/*<span style={{ fontWeight: 'bold', color: 'rgba(255,255,255,0.85)' }}>*/}
-                {/*Total Harmonic Distortion*/}
-                {/*</span> (single speaker, in-room nearfield measurement)*/}
-              {/*</Paragraph>*/}
-              {/*<Row className={classNames(styles.response, styles[this.styleState('response')])}>*/}
-                {/*<Image img="left_harmonic_distortion.png"/>*/}
-              {/*</Row>*/}
-              {/*<Paragraph className={classNames(styles.responseLabel, styles[this.styleState('responseLabel')])}>*/}
-                {/*<span style={{ fontWeight: 'bold', color: 'rgba(255,255,255,0.85)' }}>*/}
-                {/*Cumulative Spectral Decay*/}
-                {/*</span> (single speaker, in-room nearfield measurement)*/}
-              {/*</Paragraph>*/}
-              {/*<Row className={classNames(styles.response, styles[this.styleState('response')])}>*/}
-                {/*<Image img="left_waterfall_csd.png"/>*/}
-              {/*</Row>*/}
-            {/*</Col>*/}
+            <Col>
+              <Paragraph className={classNames(styles.responseLabel, styles[this.styleState('responseLabel')])}>
+                <span style={{ fontWeight: 'bold', color: 'rgba(255,255,255,0.85)' }}>
+                  <span style={{ lineHeight: '24px' }}>Frequency & Impulse Response <br/></span>
+                </span> (Vector average of 20-600Hz nearfield response, & 400-20,000Hz spatially averaged 30&deg; window @ 7ft)
+              </Paragraph>
+              <Row className={classNames(styles.response, styles[this.styleState('response')])}>
+                <Image img="final_production_spl_fr.png"/>
+              </Row>
+              <Paragraph className={classNames(styles.responseLabel, styles[this.styleState('responseLabel')])}>
+                <span style={{ fontWeight: 'bold', color: 'rgba(255,255,255,0.85)' }}>
+                  <span style={{ lineHeight: '24px' }}>Total Harmonic Distortion <br/></span>
+                </span> (Measured at 1m)
+              </Paragraph>
+              <Row className={classNames(styles.response, styles[this.styleState('response')])}>
+                <Image img="final_production_thd_1m.png"/>
+              </Row>
+            </Col>
           </Row>
         </Row>
         <Modal
