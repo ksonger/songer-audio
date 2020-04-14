@@ -137,7 +137,7 @@ class ProductsPageLoudspeaker extends React.Component {
             />
             <Row type="flex" justify="center">
               <Paragraph style={{margin: '36px 20px 0 0', color: 'rgba(255,255,255,0.65)'}}>
-                Price: $27,900
+                Price: $21,900
               </Paragraph>
             </Row>
           </>
@@ -177,7 +177,7 @@ class ProductsPageLoudspeaker extends React.Component {
                   />
                   <Row type="flex" justify="start">
                     <Paragraph style={{margin: '36px 20px 0 0', color: 'rgba(255,255,255,0.65)'}}>
-                      Price: $27,900
+                      Price: $21,900
                     </Paragraph>
                   </Row>
                 </Col>
