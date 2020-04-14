@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bb89d94-465a-4c5e-b978-0c33632fa50a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/products/loudspeaker/ProductsLoudspeaker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products/loudspeaker/ProductsLoudspeaker.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,13 +17,13 @@
     <session id="-1247946672">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="8581" />
+          <entry key="js" value="8583" />
           <entry key="scss" value="1637" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="8581" />
+          <entry key="JavaScript" value="8583" />
           <entry key="SCSS" value="1637" />
         </counts>
       </usages-collector>
@@ -68,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/products/loudspeaker/ProductsLoudspeaker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="179" column="32" selection-start-line="179" selection-start-column="32" selection-end-line="179" selection-end-column="32" />
+            <state relative-caret-position="337">
+              <caret line="173" column="30" lean-forward="true" selection-start-line="173" selection-start-column="30" selection-end-line="173" selection-end-column="30" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -431,16 +430,15 @@
       <workItem from="1586636397344" duration="1093000" />
       <workItem from="1586733701184" duration="8113000" />
       <workItem from="1586803901616" duration="1712000" />
-      <workItem from="1586889521833" duration="39000" />
+      <workItem from="1586889521833" duration="735000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="319572000" />
+    <option name="totallyTimeSpent" value="320268000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="1337" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2406672" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -767,8 +765,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/products/loudspeaker/ProductsLoudspeaker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="179" column="32" selection-start-line="179" selection-start-column="32" selection-end-line="179" selection-end-column="32" />
+        <state relative-caret-position="337">
+          <caret line="173" column="30" lean-forward="true" selection-start-line="173" selection-start-column="30" selection-end-line="173" selection-end-column="30" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
