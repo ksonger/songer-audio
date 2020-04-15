@@ -85,7 +85,7 @@ class ProductsPageLoudspeaker extends React.Component {
   }
 
   homeCopy = () => {
-    const { Paragraph, Text } = Typography;
+    const { Paragraph } = Typography;
     const data = {
       'loudspeaker':
         [

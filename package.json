@@ -16,7 +16,7 @@
     "@aws-amplify/analytics": "^1.2.23",
     "@aws-amplify/auth": "^1.2.31",
     "@aws-amplify/core": "^1.1.0",
-    "antd": "^3.19.8",
+    "antd": "3.19.8",
     "autoprefixer": "^9.6.0",
     "aws-amplify": "^1.1.36",
     "aws-amplify-react": "^2.3.12",

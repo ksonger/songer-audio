@@ -4,7 +4,7 @@ import {Row, Col, Typography} from 'antd'
 import Animated from 'components/Animated'
 import Image from "../components/image"
 import responsive from 'constants/responsive'
-import { navigate, withPrefix } from 'gatsby'
+import { navigate } from 'gatsby'
 import paths from 'constants/paths'
 import styles from './Index.module.scss'
 import classNames from "classnames";
