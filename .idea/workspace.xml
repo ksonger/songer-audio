@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bb89d94-465a-4c5e-b978-0c33632fa50a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/products/loudspeaker/ProductsLoudspeaker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products/loudspeaker/ProductsLoudspeaker.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,13 +17,13 @@
     <session id="-1247946672">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="8669" />
+          <entry key="js" value="8670" />
           <entry key="scss" value="1637" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="8669" />
+          <entry key="JavaScript" value="8670" />
           <entry key="SCSS" value="1637" />
         </counts>
       </usages-collector>
@@ -34,7 +32,7 @@
           <entry key="css" value="1" />
           <entry key="html" value="2" />
           <entry key="jpg" value="1" />
-          <entry key="js" value="36" />
+          <entry key="js" value="37" />
           <entry key="json" value="2" />
           <entry key="less" value="3" />
           <entry key="local" value="1" />
@@ -51,7 +49,7 @@
           <entry key="HTML" value="2" />
           <entry key="Image" value="12" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="36" />
+          <entry key="JavaScript" value="37" />
           <entry key="Less" value="3" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
@@ -83,11 +81,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/products/loudspeaker/ProductsLoudspeaker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="217" column="20" lean-forward="true" selection-start-line="217" selection-start-column="20" selection-end-line="217" selection-end-column="20" />
+            <state relative-caret-position="394">
+              <caret line="92" column="65" selection-start-line="92" selection-start-column="65" selection-end-line="92" selection-end-column="65" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -95,11 +93,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/about/About.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="104" column="335" selection-start-line="104" selection-start-column="335" selection-end-line="104" selection-end-column="335" />
+            <state relative-caret-position="229">
+              <caret line="84" column="19" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/products/driver/ProductsDriver.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="91" column="48" selection-start-line="91" selection-start-column="48" selection-end-line="91" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -218,8 +225,8 @@
         <option value="$PROJECT_DIR$/src/pages/products/driver/ProductsDriver.js" />
         <option value="$PROJECT_DIR$/src/pages/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/pages/products/loudspeaker/ProductsLoudspeaker.js" />
         <option value="$PROJECT_DIR$/src/pages/about/About.js" />
+        <option value="$PROJECT_DIR$/src/pages/products/loudspeaker/ProductsLoudspeaker.js" />
       </list>
     </option>
   </component>
@@ -279,6 +286,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="products" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="songer-audio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="songer-audio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="products" type="462c0819:PsiDirectoryNode" />
+              <item name="driver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="songer-audio" type="b2602c69:ProjectViewProjectNode" />
@@ -376,12 +391,12 @@
       <workItem from="1586889521833" duration="2958000" />
       <workItem from="1586968544220" duration="1981000" />
       <workItem from="1586972297897" duration="1891000" />
-      <workItem from="1587051957027" duration="709000" />
+      <workItem from="1587051957027" duration="1547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="327072000" />
+    <option name="totallyTimeSpent" value="327910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="181" y="23" width="1280" height="1337" extended-state="0" />
@@ -551,13 +566,6 @@
     <entry file="file://$PROJECT_DIR$/src/images/listening_position_1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/products/driver/ProductsDriver.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="91" column="48" selection-start-line="91" selection-start-column="48" selection-end-line="91" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/loudspeaker_web.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -689,20 +697,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/products/loudspeaker/ProductsLoudspeaker.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/about/About.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="217" column="20" lean-forward="true" selection-start-line="217" selection-start-column="20" selection-end-line="217" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="229">
+          <caret line="84" column="19" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/about/About.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/products/driver/ProductsDriver.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="104" column="335" selection-start-line="104" selection-start-column="335" selection-end-line="104" selection-end-column="335" />
+        <state relative-caret-position="464">
+          <caret line="91" column="48" selection-start-line="91" selection-start-column="48" selection-end-line="91" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/products/loudspeaker/ProductsLoudspeaker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="92" column="65" selection-start-line="92" selection-start-column="65" selection-end-line="92" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -90,7 +90,7 @@ class ProductsPageLoudspeaker extends React.Component {
       'loudspeaker':
         [
           { title: 'System:', description: 'Point source full-range ported loudspeaker' },
-          { title: 'Frequency Response:', description: '35Hz - 15,000Hz' },
+          { title: 'Frequency Response:', description: '35Hz - 14,000Hz' },
           { title: 'Efficiency:', description: '92 dB SPL (2.83 V/1m)' },
           { title: 'Dimensions:', description: '(W x H x D) 15 x 47 x 20 in' },
           { title: 'Materials:', description: 'Hardwood (cherry shown), Leather, Brass' },
