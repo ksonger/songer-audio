@@ -224,7 +224,7 @@ class ProductsPageLoudspeaker extends React.Component {
             <Col>
               <Paragraph className={classNames(styles.responseLabel, styles[this.styleState('responseLabel')])}>
                 <span style={{ fontWeight: 'bold', color: 'rgba(255,255,255,0.85)' }}>
-                  <span style={{ lineHeight: '24px' }}>Frequency & Impulse Response <br/></span>
+                  <span style={{ lineHeight: '24px' }}>Frequency Response / SPL <br/></span>
                 </span> (Vector average of 20-600Hz nearfield response, & 400-20,000Hz spatially averaged 30&deg; window @ 7ft)
               </Paragraph>
               <Row className={classNames(styles.response, styles[this.styleState('response')])}>

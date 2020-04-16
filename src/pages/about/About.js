@@ -81,7 +81,7 @@ class AboutPage extends React.Component {
                   Practically speaking, the tolerances of the magnetic gap and voice coil in our drivers is smaller than it is in a typical driver. With that in mind, the ability to remove the influence of the magnetic field during driver assembly is helpful for accuracy.
                 </Paragraph>
                 <Paragraph className={classNames(styles.aboutText, styles[this.styleState('aboutText')])}>
-                  More importantly however, the nature and quality of an electromagnetic field is unlike that of a permanent magnetic field, and is the superior choice for sound reproduction. A permanent magnetic field has comparatively low permeability and is elastic, much like a trampoline. In an electromagnet however the permeability, or 'stiffness' of the magnetic field is typically hundreds if not thousands of times higher. This means that when the voice coil is excited by a signal in that field, it can be moved very precisely in space, and returned similarly to a resting state.  The result is incredibly accurate, low-distortion sound reproduction.
+                  More importantly however, the nature and quality of an electromagnetic field is unlike that of a permanent magnet, and is the better choice for sound reproduction. A permanent magnetic field has comparatively low permeability and is elastic, much like a trampoline. In an electromagnet however the permeability, or 'stiffness' of the magnetic field is typically hundreds if not thousands of times higher. This means that when the voice coil is excited by a signal in that field, it is moved very precisely in space, and returned similarly precisely to a resting state.  The result is incredibly accurate, low-distortion sound reproduction.
                 </Paragraph>
                 <Paragraph className={classNames(styles.aboutText, styles[this.styleState('aboutText')])}>
                   Lastly, the uniform density of the magnetic field in an electromagnet is more constant as the voice coil moves within it, such that the voice coil draws less upon the magnetic field adversely affecting flux density in the gap.
@@ -90,10 +90,10 @@ class AboutPage extends React.Component {
                   Cones and Voice Coils
                 </Paragraph>
                 <Paragraph className={classNames(styles.aboutText, styles[this.styleState('aboutText')])}>
-                  Like a select few other field coil loudspeaker producers, Songer Audio uses treated Hosho washi paper as a cone material, as well as for our voice coil formers. While it's subjective, we feel that the natural lifelike sound produced by mulberry fiber paper simply can't be matched.
+                  Like a select few other field coil loudspeaker producers, Songer Audio uses treated Hosho washi paper as a cone material, as well as for our voice coil formers. While it's subjective, we feel that the natural lifelike sound produced by mulberry fiber paper can't be matched.
                 </Paragraph>
                 <Paragraph className={classNames(styles.aboutText, styles[this.styleState('aboutText')])}>
-                  Unlike others however, Songer Audio hand forms curvilinear cones in our drivers instead of straight cones.  This allows them to be remarkably thin and light, while maintaining excellent radial stiffness and durability, and producing sound over a very broad frequency range.
+                  Unlike others, Songer Audio hand forms curvilinear cones for our drivers instead of straight cones.  This allows for them to be remarkably thin and light, while maintaining excellent radial stiffness and durability, and producing sound over a very broad frequency range.
                 </Paragraph>
                 <Paragraph className={classNames(styles.aboutSubheader, styles[this.styleState('aboutSubheader')])}>
                   Suspension
@@ -102,7 +102,7 @@ class AboutPage extends React.Component {
                   Leather has been used as a surround materials for decades, for it's long-lasting durability and excellent sonic characteristics. We use the lightest and thinnest of lambskin leather for the surrounds of our drivers.
                 </Paragraph>
                 <Paragraph className={classNames(styles.aboutText, styles[this.styleState('aboutText')])}>
-                  Our spider assembly is a patented, highly innovative design. Composed of thermal polyurethane matrix and a light carbon fiber co-polyester composite collar, it holds the moving mass in light tension and further reduces the already feather-weight 14 gram load upon the field and voice coils.  The result is extraordinary sensitivity and detail.
+                  Our spider assembly is a patented, highly innovative design. Composed of thermal polyurethane matrix and a light carbon fiber co-polyester composite collar, it holds the moving mass in light tension and further reduces the already feather-weight 14 gram load upon the field and voice coils.  The results is music with extraordinary dynamics and detail.
                 </Paragraph>
               </Typography>
             </Row>
