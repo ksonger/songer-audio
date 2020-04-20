@@ -28,19 +28,21 @@ class SiteLayout extends React.Component {
   onWindowResize = () => {
     const { breakpoint } = this.state;
     const windowWidth = window.innerWidth;
-    let bp = ''
+    let bp = '';
     _.forEach(_.keys(responsive.BREAKPOINTS), (key) => {
       if (windowWidth > responsive.BREAKPOINTS[key]) {
         bp = key
       }
-    })
+    });
     const debounced = _.debounce(
       () => {
         this.setState({ isMobile: windowWidth < responsive.BREAKPOINTS[breakpoint], point: bp })
+        const cont2 = document.getElementById('container2');
+        cont2.style.right = cont2.clientWidth - cont2.offsetWidth + 'px';
       },
       200,
       false
-    )
+    );
     debounced()
   }
 
@@ -52,20 +54,30 @@ class SiteLayout extends React.Component {
     return window.innerWidth <= responsive.BREAKPOINTS[this.state.breakpoint]
   };
 
-  onRouteChange = (event) => {
-    this.activeMenuItem(event.detail.path())
+  onRouteChange = async (event) => {
+    this.activeMenuItem(event.detail.path());
+    await document.getElementById('container2');
+    const cont2 = document.getElementById('container2');
+    cont2.style.right = cont2.clientWidth - cont2.offsetWidth + 'px';
   };
 
-  componentDidMount () {
+  async componentDidMount () {
     const gatsbyRoot = document.querySelector('#___gatsby');
     const nodes = gatsbyRoot.querySelectorAll('div');
     gatsbyRoot.style.height = '100%';
     nodes[0].style.height = 'inherit';
-    nodes[1].style.height = 'inherit';
     this.setState({ status: 'data-ready' });
-    this.activeMenuItem()
+    this.activeMenuItem();
     window.addEventListener('resize', this.onWindowResize);
-    window.addEventListener('routeChange', this.onRouteChange)
+    window.addEventListener('routeChange', this.onRouteChange);
+    await document.getElementById('container2');
+    const cont2 = document.getElementById('container2');
+    const right = cont2.clientWidth - cont2.offsetWidth + 'px';
+    cont2.style.position = 'absolute';
+    cont2.style.top = '0px';
+    cont2.style.bottom = '0px';
+    cont2.style.left = '0px';
+    cont2.style.right = right;
   }
 
   componentWillUnmount () {
@@ -155,9 +167,9 @@ class SiteLayout extends React.Component {
 
     return (
 
-      <Row className={styles.site} type="flex" justify="center">
+      <Row id="container2" className={styles.site} type="flex" justify="center">
         <Row className={styles.siteShadow}>{' '}</Row>
-        <Layout className={classNames(styles.siteLayout, styles[this.styleState('siteLayout')])}>
+        <Layout id="siteLayout" className={classNames(styles.siteLayout, styles[this.styleState('siteLayout')])}>
           <SEO title="Songer Audio"/>
           <Header className={styles.header}>
             <Row align="middle" type="flex">
@@ -206,7 +218,8 @@ class SiteLayout extends React.Component {
               songer audio
             </Paragraph>
             <Paragraph className={classNames(styles.tag, styles[this.styleState('tag')])}>
-              {!this.mobile() && ('For updates, please ')}<Text onClick={this.showForm} className={styles.subscribe}>subscribe</Text>
+              {!this.mobile() && ('For updates, please ')}<Text onClick={this.showForm}
+                                                                className={styles.subscribe}>subscribe</Text>
             </Paragraph>
           </Header>
           <Content className={classNames(styles.content, styles[this.styleState('content')])}>{children}</Content>

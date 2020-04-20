@@ -106,7 +106,6 @@ class ContactFormComponent extends React.Component {
 
   render () {
     const { comments, emailAddress, familyName, formStatus, givenName } = this.state;
-    const { onFormCancel } = this.props;
     const { TextArea } = Input;
     const { getFieldDecorator, getFieldsError } = this.props.form;
     return (
@@ -159,12 +158,7 @@ class ContactFormComponent extends React.Component {
                   />
                 )}
               </Form.Item>
-              <Row type="flex" justify="space-between">
-                <Form.Item style={{ marginBottom: 0 }}>
-                  <Button className={styles.cancelButton} onClick={onFormCancel} type="secondary">
-                    Cancel
-                  </Button>
-                </Form.Item>
+              <Row type="flex" justify="end">
                 <Form.Item style={{ marginBottom: 0 }}>
                   <Button className={styles.signUpButton} type="primary" htmlType="submit"
                           disabled={hasErrors(getFieldsError())}>
