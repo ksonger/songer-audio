@@ -81,7 +81,7 @@ class ProductsPageDriver extends React.Component {
   }
 
   copy = {
-    header: {driver: `Songer Audio FC-1 10" Field Coil Driver`}
+    header: {driver: `Songer Audio Onimaru 10" Field Coil Driver`}
   }
 
   homeCopy = () => {
@@ -137,7 +137,9 @@ class ProductsPageDriver extends React.Component {
             )}
           />
           <Row type="flex" justify="center">
-            <Paragraph style={{margin: '36px 20px 0 0', color: 'rgba(255,255,255,0.65)'}}>Pricing and availability <Text onClick={this.showForm} className={styles.subscribe}>coming soon</Text></Paragraph>
+            <Paragraph style={{margin: '36px 20px 0 0', color: 'rgba(255,255,255,0.65)'}}>
+              Price: $7,500 (pair)
+            </Paragraph>
           </Row>
         </>
       )
@@ -175,7 +177,9 @@ class ProductsPageDriver extends React.Component {
                   )}
                 />
                 <Row type="flex" justify="start">
-                  <Paragraph style={{margin: '36px 20px 0 0', color: 'rgba(255,255,255,0.65)'}}>Pricing and availability <Text onClick={this.showForm} className={styles.subscribe}>coming soon</Text></Paragraph>
+                  <Paragraph style={{margin: '36px 20px 0 0', color: 'rgba(255,255,255,0.65)'}}>
+                    Price: $7,500 (pair)
+                  </Paragraph>
                 </Row>
               </Col>
               <Col span={15}>
