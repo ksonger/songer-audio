@@ -122,10 +122,10 @@ class IndexPage extends React.Component {
                     <Row onClick={() => {navigate(paths.PRODUCTS.DRIVER)}} type="flex" className={classNames(styles.ataGlance, styles[this.styleState('ataGlance')])} span={24}>
                       <Row className={classNames(styles.glanceContent, styles[this.styleState('glanceContent')])}>
                         <Row type="flex" justify="center" className={classNames(styles.header, styles[this.styleState('header')])}>
-                          Onimaru Field Coil Driver
+                          The Onimaru Driver
                         </Row>
                         <Row type="flex" justify="center" className={classNames(styles.body, styles[this.styleState('body')])}>
-                          The product of years of research and development, the Songer Audio Onimaru is hand-constructed from the finest materials, offering exceptionally lifelike musical reproduction for a variety of design applications.
+                          The product of years of research and development, the Onimaru field coil driver is hand-constructed from the finest materials, offering exceptionally lifelike musical reproduction for a variety of design applications.
                         </Row>
                         <Row type="flex" justify="center" className={classNames(styles.cta, styles[this.styleState('cta')])}>
                           Learn More
@@ -152,10 +152,10 @@ class IndexPage extends React.Component {
                   <Col onClick={() => {navigate(paths.PRODUCTS.DRIVER)}}  className={classNames(styles.ataGlance, styles[this.styleState('ataGlance')])} span={12}>
                     <Row className={classNames(styles.glanceContent, styles[this.styleState('glanceContent')])}>
                       <Row type="flex" justify="center" className={classNames(styles.header, styles[this.styleState('header')])}>
-                        Onimaru Field Coil Driver
+                        The Onimaru Driver
                       </Row>
                       <Row type="flex" justify="center" className={classNames(styles.body, styles[this.styleState('body')])}>
-                        The product of years of research and development, the Songer Audio Onimaru is hand-constructed from the finest materials, offering exceptionally lifelike musical reproduction for a variety of design applications.
+                        The product of years of research and development, the Onimaru field coil driver is hand-constructed from the finest materials, offering exceptionally lifelike musical reproduction for a variety of design applications.
                       </Row>
                       <Row type="flex" justify="center" className={classNames(styles.cta, styles[this.styleState('cta')])}>
                         Learn More

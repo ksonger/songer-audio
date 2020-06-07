@@ -81,7 +81,7 @@ class ProductsPageDriver extends React.Component {
   }
 
   copy = {
-    header: {driver: `Songer Audio Onimaru 10" Field Coil Driver`}
+    header: {driver: `The Onimaru 10" Field Coil Driver`}
   }
 
   homeCopy = () => {
