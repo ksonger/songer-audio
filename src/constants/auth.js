@@ -1,5 +1,0 @@
-export default {
-  EMAIL_CODE_LENGTH: 6,
-  SMS_CODE_LENGTH: 4,
-  PASSWORD_CHARS: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
-}

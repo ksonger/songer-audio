@@ -1,65 +1,32 @@
 {
-  "name": "songer-audio",
-  "private": true,
-  "description": "The website for Songer Audio Loudspeakers",
-  "version": "0.1.0",
-  "author": "Ken Songer <gomper.igbot@gmail.com>",
+  "name": "with-ant-design-less",
+  "version": "1.0.0",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@aws-amplify/analytics": "^1.2.23",
     "@aws-amplify/auth": "^1.2.31",
     "@aws-amplify/core": "^1.1.0",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-less": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
     "antd": "3.19.8",
     "autoprefixer": "^9.6.0",
     "aws-amplify": "^1.1.36",
-    "aws-amplify-react": "^2.3.12",
-    "axios": "^0.19.0",
-    "classnames": "^2.2.6",
-    "dotenv": "^8.0.0",
-    "gatsby": "^2.13.64",
-    "gatsby-image": "^2.2.8",
-    "gatsby-plugin-antd": "^2.0.2",
-    "gatsby-plugin-less": "^2.1.0",
-    "gatsby-plugin-manifest": "^2.2.5",
-    "gatsby-plugin-offline": "^2.2.6",
-    "gatsby-plugin-react-helmet": "^3.1.3",
-    "gatsby-plugin-root-import": "^2.0.5",
-    "gatsby-plugin-sass": "^2.0.11",
-    "gatsby-plugin-sharp": "^2.2.11",
-    "gatsby-source-filesystem": "^2.1.9",
-    "gatsby-transformer-sharp": "^2.2.6",
-    "less": "^3.9.0",
-    "libphonenumber-js": "^1.7.19",
-    "lodash": "^4.17.15",
-    "node-sass": "^4.12.0",
-    "postcss-discard-duplicates": "^4.0.2",
-    "postcss-flexbugs-fixes": "^4.1.0",
-    "postcss-focus": "^4.0.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1",
-    "react-spring": "^8.0.25"
+    "babel-plugin-import": "^1.7.0",
+    "less": "3.0.4",
+    "less-vars-to-js": "1.3.0",
+    "next": "latest",
+    "next-compose-plugins": "^2.2.0",
+    "next-images": "^1.4.1",
+    "node-sass": "^4.14.1",
+    "null-loader": "2.0.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "sass": "^1.26.10"
   },
-  "devDependencies": {
-    "prettier": "^1.18.2"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  "license": "ISC"
 }

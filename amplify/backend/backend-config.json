@@ -1,9 +1,0 @@
-{
-	"auth": {
-		"songeraudio21b80cd2": {
-			"service": "Cognito",
-			"providerPlugin": "awscloudformation",
-			"dependsOn": []
-		}
-	}
-}
