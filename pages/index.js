@@ -27,24 +27,24 @@ export const getServerSideProps = async() => {
   } catch(err) {
     console.warn(err)
     return {
-
+      props: {
         menuitems: []
-
+      }
     }
   }
   if(result.errors) {
     console.warn("Failed to fetch menu items. ", result.errors)
     return {
-
+      props: {
         menuitems: []
-
+      }
     }
   }
   if(result.data)  {
     return {
-
+      props: {
         menuitems: result.data.listMenuItemLists.items
-
+      }
     }
   }
 }
