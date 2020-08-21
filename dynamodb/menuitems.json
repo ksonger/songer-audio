@@ -1,0 +1,88 @@
+{
+  "MenuItemList-5uglnxthxjdhljfh65khd6sbba-dev": [
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "0" },
+          "sortOrder": { "N": "0" },
+          "label": { "S": "home" },
+          "description": { "S": "Songer Audio Home" },
+          "path": {"S":  "/"},
+          "isVisible": {"BOOL":  true}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "1" },
+          "sortOrder": { "N": "1" },
+          "label": { "S": "products" },
+          "description": { "S": "Songer Audio Products" },
+          "path": {"S":  "/products"},
+          "isVisible": {"BOOL":  true}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "2" },
+          "sortOrder": { "N": "2" },
+          "label": { "S": "media" },
+          "description": { "S": "Songer Audio Media" },
+          "path": {"S":  "/media"},
+          "isVisible": {"BOOL":  true}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "3" },
+          "sortOrder": { "N": "3" },
+          "label": { "S": "news" },
+          "description": { "S": "Songer Audio News" },
+          "path": {"S":  "/news"},
+          "isVisible": {"BOOL":  true}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "4" },
+          "sortOrder": { "N": "4" },
+          "label": { "S": "about" },
+          "description": { "S": "About Songer Audio" },
+          "path": {"S":  "/about"},
+          "isVisible": {"BOOL":  true}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "5" },
+          "sortOrder": { "N": "5" },
+          "label": { "S": "contact" },
+          "description": { "S": "Contact Songer Audio" },
+          "path": {"S":  "/contact"},
+          "isVisible": {"BOOL":  true}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "6" },
+          "sortOrder": { "N": "6" },
+          "label": { "S": "admin" },
+          "description": { "S": "Songer Audio Admin" },
+          "path": {"S":  "/admin"},
+          "isVisible": {"BOOL":  false}
+        }
+      }
+    }
+  ]
+}

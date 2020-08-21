@@ -1,7 +1,5 @@
-
-
 .ant-menu-horizontal {
-  border-bottom: none;
+  border-bottom: none !important;
 
   .ant-menu-submenu-selected {
     color: #fffffd;
@@ -37,6 +35,10 @@
   padding-bottom: 0;
   opacity: 0.97;
   background: linear-gradient(rgb(34, 34, 34) 0%, rgba(34, 34, 34, 0) 100%);
+
+  .ant-modal-content {
+    border-radius: 12px;
+  }
 }
 
 .ant-list-bordered {

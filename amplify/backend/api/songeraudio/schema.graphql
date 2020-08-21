@@ -1,0 +1,23 @@
+type MenuItem @model
+  @auth(rules: [{ allow: public, operations: [read] }]) {
+  id: ID!
+  sortOrder: Int!
+  label: String!
+  description: String
+  path: String!
+  isVisible: Boolean!
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+
+type MenuItemList @model
+  @auth(rules: [{ allow: public, operations: [read] }]) {
+  id: ID!
+  sortOrder: Int!
+  label: String!
+  description: String
+  path: String!
+  isVisible: Boolean!
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
