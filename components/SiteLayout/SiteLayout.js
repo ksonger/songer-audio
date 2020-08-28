@@ -1,4 +1,3 @@
-
 import React from "react"
 import {Row, Col, Layout, Typography, Modal} from 'antd'
 import classNames from 'classnames'
@@ -9,6 +8,8 @@ import styles from './SiteLayout.module.scss'
 import SiteMenu from "./SiteMenu";
 import {styleState} from "../../utils/style";
 import {debounce} from "lodash";
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
 
 class SiteLayout extends React.Component {
 
@@ -74,7 +75,7 @@ class SiteLayout extends React.Component {
   }
 
   renderLayout = () => {
-    const { router, children } = this.props;
+    const { router, children, store } = this.props;
     const { Header, Content } = Layout;
     const { Paragraph, Text } = Typography;
     const { isMobile, showModal } = this.state;
@@ -86,7 +87,7 @@ class SiteLayout extends React.Component {
           <Header className={styles.header}>
             <Row align="middle" type="flex">
               <Col className={styles.siteMenu}>
-                <SiteMenu router={router} mobile={isMobile}/>
+                <SiteMenu store={store} router={router} mobile={isMobile}/>
               </Col>
               <Col className={styles.siteLogo}>
                 <img alt="SA" src={logo}/>

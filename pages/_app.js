@@ -1,14 +1,23 @@
-import React from 'react'
-import App from 'next/app'
+import {Provider, useDispatch} from 'react-redux'
+import { useStore } from '../store/store'
+import SiteLayout from "../components/SiteLayout";
+
 import '../styles/app.scss'
+import {useEffect} from "react";
+import {getMenu} from "../actions/actions";
 
-class SongerAudio extends App {
-  render() {
-    const { Component, pageProps, router } = this.props
-    const getLayout = Component.getLayout || (page => page)
+export default function App({ Component, pageProps, router }) {
+  const store = useStore(pageProps.initialReduxState)
 
-    return getLayout(<Component router={router} {...pageProps} />)
-  }
+  useEffect(() => {
+    store.dispatch(getMenu())
+  }, [store.dispatch])
+
+  return (
+    <Provider store={store}>
+      <SiteLayout router={router} store={store}>
+        <Component router={router} store={store} {...pageProps} />
+      </SiteLayout>
+    </Provider>
+  )
 }
-
-export default SongerAudio

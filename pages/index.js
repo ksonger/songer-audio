@@ -1,21 +1,18 @@
 import React from 'react'
 import Amplify from "aws-amplify"
 import awsMobile from '../src/aws-exports'
+import HomePage from "../components/HomePage/HomePage";
+
 import styles from './index.module.scss'
-import SiteLayout from "../components/SiteLayout"
 
 Amplify.configure(awsMobile)
 
-const Home = () => {
-  return <div className={styles.home}/>
-}
-
-Home.getLayout = (page) => {
+const Index = () => {
   return (
-    <SiteLayout router={page.props.router}>
-      {page}
-    </SiteLayout>
+    <div className={styles.home}>
+      <HomePage />
+    </div>
   )
 }
 
-export default Home
+export default Index

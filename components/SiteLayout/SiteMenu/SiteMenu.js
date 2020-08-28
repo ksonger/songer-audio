@@ -1,10 +1,10 @@
 import React from 'react'
-import { useRouter } from "next/router";
 import styles from './SiteMenu.module.scss'
 import classNames from "classnames";
 import {Button, Dropdown, Icon, Menu} from "antd";
 import responsive from "../../../constants/responsive";
-import {fetchMenuItems} from "../../../api";
+import {getMenu} from '../../../actions/home'
+
 
 class SiteMenu extends React.Component {
 
@@ -15,14 +15,16 @@ class SiteMenu extends React.Component {
     items: []
   }
 
+  async getInitialProps({store}) {
+    const items = await store.dispatch(getMenu());
+    return {menuItems: items};
+  }
+
   componentDidMount () {
-    fetchMenuItems()
-      .then(async (response) => {
-        const activeItems = response.menuitems.filter((item) => item.isVisible)
-        await this.setState({
-          items: activeItems.sort((a, b) => a.sortOrder - b.sortOrder)
-        })
-      })
+    const {store} = this.props
+    this.unsubscribe = store.subscribe(() => {
+      this.setState({items: store.getState().menuItems})
+    })
   }
 
   /**
@@ -76,7 +78,7 @@ class SiteMenu extends React.Component {
         }
       </Menu>
     )
-    items = items.filter((item) => item.isVisible)
+
     return (
       <>
         {mobile && (
@@ -93,7 +95,6 @@ class SiteMenu extends React.Component {
       </>
     )
   }
-
 }
 
 export default SiteMenu
