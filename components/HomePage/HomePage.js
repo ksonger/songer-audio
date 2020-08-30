@@ -4,9 +4,11 @@ import {Row, Col, Typography} from 'antd'
 import Animated from '../Animated/Animated'
 import responsive from '../../constants/responsive'
 import paths from '../../constants/paths'
+import {homePageCards} from '../../constants/strings'
 import styles from './HomePage.module.scss'
 import classNames from "classnames";
 import home_background from "../../images/home_background.png";
+import HomePageCard from "../HomePageCard/HomePageCard";
 
 class HomePage extends React.Component {
 
@@ -94,6 +96,8 @@ class HomePage extends React.Component {
   }
 
   renderHome = () => {
+    const {copy, title, path, cta} = homePageCards.enso
+    const {store} = this.props
     return (
       <Animated>
         <Row className={classNames(styles.homeMain, styles[this.styleState('homeMain')])}>
@@ -137,20 +141,15 @@ class HomePage extends React.Component {
                   </>
                 )}
                 {!this.mobile() && (
+
                   <Row type="flex" justify="center">
-                    <Col onClick={() => {navigate(paths.PRODUCTS.SPEAKER)}} className={classNames(styles.ataGlance, styles[this.styleState('ataGlance')])} span={12}>
-                      <Row className={classNames(styles.glanceContent, styles[this.styleState('glanceContent')])}>
-                        <Row type="flex" justify="center" className={classNames(styles.header, styles[this.styleState('header')])}>
-                          The Enso Loudspeaker
-                        </Row>
-                        <Row type="flex" justify="center" className={classNames(styles.body, styles[this.styleState('body')])}>
-                          Songer Audio's first loudspeaker is a solid hardwood, hand-crafted 140 liter bass reflex design. It delivers true full-range sound across the frequency spectrum with breathtaking detail, imaging and transients.
-                        </Row>
-                        <Row type="flex" justify="center" className={classNames(styles.cta, styles[this.styleState('cta')])}>
-                          Learn More
-                        </Row>
-                      </Row>
-                    </Col>
+                    <HomePageCard store={store}
+                                  title={title}
+                                  copy={copy}
+                                  cta={cta}
+                                  path={path}
+                    />
+
                     <Col onClick={() => {navigate(paths.PRODUCTS.DRIVER)}}  className={classNames(styles.ataGlance, styles[this.styleState('ataGlance')])} span={12}>
                       <Row className={classNames(styles.glanceContent, styles[this.styleState('glanceContent')])}>
                         <Row type="flex" justify="center" className={classNames(styles.header, styles[this.styleState('header')])}>

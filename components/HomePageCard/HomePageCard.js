@@ -1,24 +1,45 @@
-import paths from "../../constants/paths";
 import classNames from "classnames";
 import styles from "../HomePage/HomePage.module.scss";
 import {Col, Row} from "antd";
-import React from "react";
+import React, {useState} from "react";
+import responsive from "../../constants/responsive";
 
-const HomePageCard = ({store, title, copy, cta, }) => {
+const HomePageCard = ({store, title, copy, cta, path}) => {
+
+  const [breakpoint] = useState('sm')
+
+  const navigate = (path) => {
+    const {router} = this.props
+    router.push(path)
+  }
+
+  /**
+   * Returns form factor boolean according to breakpoint
+   * @returns {boolean}
+   */
+  const mobile = () => {
+    return window.innerWidth <= responsive.BREAKPOINTS[breakpoint]
+  };
+
+  const styleState = (element) => {
+    return mobile() ? `${element}--mobile` : `${element}--desktop`
+  }
 
   return (
-    <Col onClick={() => {navigate(paths.PRODUCTS.SPEAKER)}} className={classNames(styles.ataGlance, styles[this.styleState('ataGlance')])} span={12}>
-      <Row className={classNames(styles.glanceContent, styles[this.styleState('glanceContent')])}>
-        <Row type="flex" justify="center" className={classNames(styles.header, styles[this.styleState('header')])}>
-          The Enso Loudspeaker
+    <Col onClick={() => {navigate(path)}} className={classNames(styles.ataGlance, styles[styleState('ataGlance')])} span={12}>
+      <Row className={classNames(styles.glanceContent, styles[styleState('glanceContent')])}>
+        <Row type="flex" justify="center" className={classNames(styles.header, styles[styleState('header')])}>
+          {title}
         </Row>
-        <Row type="flex" justify="center" className={classNames(styles.body, styles[this.styleState('body')])}>
-          Songer Audio's first loudspeaker is a solid hardwood, hand-crafted 140 liter bass reflex design. It delivers true full-range sound across the frequency spectrum with breathtaking detail, imaging and transients.
+        <Row type="flex" justify="center" className={classNames(styles.body, styles[styleState('body')])}>
+          {copy}
         </Row>
-        <Row type="flex" justify="center" className={classNames(styles.cta, styles[this.styleState('cta')])}>
-          Learn More
+        <Row type="flex" justify="center" className={classNames(styles.cta, styles[styleState('cta')])}>
+          {cta}
         </Row>
       </Row>
     </Col>
   )
 }
+
+export default HomePageCard
