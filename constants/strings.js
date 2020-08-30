@@ -14,3 +14,8 @@ export const homePageCards = {
     cta: "Learn More"
   }
 }
+
+export const homeCopy = {
+  header: `The medium is engineering. The result is art.`,
+  p1: `Songer Audio field coil loudspeakers and drivers are functional works of art, of uncompromising craftsmanship.  Each piece is 100% designed, made and assembled by hand. Our products express a philosophy of simplicity, excellence, and a relentless dedication to provide the purest possible experience of music.`
+}
