@@ -3,15 +3,12 @@ import styles from "../HomePage/HomePage.module.scss";
 import {Col, Row} from "antd";
 import React from "react";
 import {mobile, styleState} from '../../utils/formFactor'
+import {navigate} from "../../utils/navigation";
+import PropTypes from 'prop-types'
 
 const HomePageCard = ({ card, breakpoint }) => {
 
   const {title, copy, cta, path} = card
-
-  const navigate = (path) => {
-    const { router } = this.props
-    router.push(path)
-  }
 
   const cardContent = () => (
       <Row className={classNames(styles.glanceContent, styles[styleState('glanceContent')])}>
@@ -41,6 +38,11 @@ const HomePageCard = ({ card, breakpoint }) => {
       )}
     </>
   )
+}
+
+HomePageCard.propTypes = {
+  card: PropTypes.object.isRequired,
+  breakpoint: PropTypes.string.isRequired
 }
 
 export default HomePageCard

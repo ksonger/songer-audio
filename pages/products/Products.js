@@ -1,6 +1,5 @@
 import React from 'react'
 import SiteLayout from "../../components/SiteLayout";
-import Home from "../index";
 
 class Products extends React.Component {
   state = {}

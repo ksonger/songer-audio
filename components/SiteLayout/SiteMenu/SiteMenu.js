@@ -2,72 +2,57 @@ import React from 'react'
 import styles from './SiteMenu.module.scss'
 import classNames from "classnames";
 import {Button, Dropdown, Icon, Menu} from "antd";
-import responsive from "../../../constants/responsive";
-import {getMenu} from '../../../actions/home'
-
 
 class SiteMenu extends React.Component {
 
   state = {
     breakpoint: '',
-    menuActiveItem: [],
-    menuActiveLabel: '',
-    items: []
+    activePage: {},
+    items: [],
+    status: 'no-data'
   }
 
-  async getInitialProps({store}) {
-    const items = await store.dispatch(getMenu());
-    return {menuItems: items};
+  applyInitialState = () => {
+    const { store } = this.props
+    return new Promise(async(resolve) => {
+      const items = store.getState().menuItems
+      const item = items.filter(i => i.path === window.location.pathname)[0]
+      await this.setState({
+        items: items,
+        activePage: store.getState().activePage
+      })
+      resolve(item)
+    })
   }
 
   componentDidMount () {
-    const {store} = this.props
+    const { store, pageLoad } = this.props
     this.unsubscribe = store.subscribe(() => {
-      this.setState({items: store.getState().menuItems})
+      this.applyInitialState()
+        .then((item) => {
+          const { status } = this.state
+          if(status === 'no-data')  {
+            this.setState({status: 'data-ready'})
+            pageLoad(item)
+          }
+        })
     })
   }
 
-  /**
-   * Returns form factor boolean according to breakpoint
-   * @returns {boolean}
-   */
-  mobile = () => {
-    const { breakpoint } = this.state;
-    return window.innerWidth <= responsive.BREAKPOINTS[breakpoint]
-  };
+  renderMenu () {
+    let { items, activePage } = this.state
+    let { mobile, clickAction } = this.props
 
-  activeMenuItem = (path, label) => {
-    const { items } = this.state
-    const pathName = path || window.location.pathname;
-    this.setState({
-      menuActiveItem: [items.filter((item) => item.path === pathName)[0]['id']],
-      menuActiveLabel: label
-    })
-  };
-
-  /**
-   * Handle menu item selection
-   * @param item {Menu.Item}
-   */
-  appMenuSelect = (item) => {
-    const { path, children } = item.item.props;
-    const {router} = this.props
-    router.push(path)
-    this.activeMenuItem(path, children)
-
-  }
-
-  render () {
-    let { items, menuActiveLabel } = this.state
-    let { mobile } = this.props
     const menu = (
       <Menu
         id="appMenu"
         className={classNames(styles.menu, styles[mobile ? 'menu--mobile' : 'menu--desktop'])}
         theme="light"
         mode={mobile ? 'vertical' : 'horizontal'}
-        selectedKeys={this.menuActiveItem}
-        onClick={this.appMenuSelect}
+        selectedKeys={activePage.id}
+        onClick={(menuitem) => {
+          clickAction(menuitem.item.props)
+        }}
       >
         {
           items.map((item) => (
@@ -85,7 +70,7 @@ class SiteMenu extends React.Component {
           <Dropdown overlay={menu} placement="bottomCenter" trigger={['click']}>
             <Button className={styles.mobileNavButton}>
               <Icon type="menu" className={styles.mobileMenuIcon}/>
-              {menuActiveLabel}
+              {activePage.label}
             </Button>
           </Dropdown>
         )}
@@ -95,6 +80,16 @@ class SiteMenu extends React.Component {
       </>
     )
   }
+
+  render() {
+    const { status } = this.state
+    return (
+      <>
+        {status === 'data-ready' && this.renderMenu()}
+      </>
+    )
+  }
+
 }
 
 export default SiteMenu

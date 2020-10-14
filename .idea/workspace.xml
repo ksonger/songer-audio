@@ -1,45 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b19551f8-d907-4ed8-8661-1a5bb2e46783" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fonts/TradeGothicLTStd-Extended.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/TradeGothicLTStd-Extended.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/driver_web_1000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/driver_web_cropped_1000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/driver_web_cropped_1500.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/final_production_spl_fr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/final_production_thd_1m.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/home_background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ken.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/left_frequency_impulse_response.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/left_harmonic distortion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/left_harmonic_distortion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/left_nearfield_plus_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/left_only_near_fr_ir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/left_waterfall_csd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/listening_position_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/listening_position_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/loudspeaker_web.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/loudspeaker_web_1500.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nearfield_plus_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/prod_loudspeaker_web.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/products_driver_web.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/right_harmonic distortion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/right_nearfield_plus_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/right_only_near_fr_ir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/sa_logo_e6cc8e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/songer_audio_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/songer_audio_logo_E6CC8E.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/index.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/_antd_overrides.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/_sass.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/_vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/antd-custom.less" beforeDir="false" afterPath="$PROJECT_DIR$/assets/antd-custom.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+    <list default="true" id="f19493e8-800c-4397-90dc-4a776aac6d32" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/clock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/counter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/examples.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reducers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/types.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,59 +32,115 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="ProjectId" id="1g9gS6AxXBkWZY0dFbjnaTTYYaw" />
+  <component name="ProjectId" id="1hv4VcjFYg8xoE5MrLHNFS6TVdO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/styles" />
+      <recent name="$PROJECT_DIR$/constants" />
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/amplify/backend/api/songeraudio" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/pages/index.js" working-dir="$PROJECT_DIR$/pages">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.index.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b19551f8-d907-4ed8-8661-1a5bb2e46783" name="Default Changelist" comment="" />
-      <created>1597532218470</created>
+      <changelist id="f19493e8-800c-4397-90dc-4a776aac6d32" name="Default Changelist" comment="" />
+      <created>1600878256784</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1597532218470</updated>
-      <workItem from="1597532220627" duration="4409000" />
+      <updated>1600878256784</updated>
+      <workItem from="1600878258407" duration="2481000" />
+      <workItem from="1601570346276" duration="598000" />
+      <workItem from="1601920254218" duration="520000" />
+      <workItem from="1601976393537" duration="87000" />
+      <workItem from="1602091947688" duration="251000" />
+      <workItem from="1602468194088" duration="447000" />
+      <workItem from="1602520525829" duration="21946000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="141" y="331" key="SettingsEditor" timestamp="1597535569354">
-      <screen x="0" y="23" width="2560" height="1340" />
+    <state x="378" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602534625103">
+      <screen x="0" y="23" width="2560" height="1338" />
     </state>
-    <state x="141" y="331" key="SettingsEditor/0.23.2560.1340@0.23.2560.1340" timestamp="1597535569354" />
+    <state x="378" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1338@0.23.2560.1338" timestamp="1602534625103" />
+    <state width="1259" height="375" key="GridCell.Tab.0.bottom" timestamp="1602696213142">
+      <screen x="0" y="23" width="2560" height="1338" />
+    </state>
+    <state width="1259" height="375" key="GridCell.Tab.0.bottom/0.23.2560.1338@0.23.2560.1338" timestamp="1602696213142" />
+    <state width="1259" height="375" key="GridCell.Tab.0.center" timestamp="1602696213142">
+      <screen x="0" y="23" width="2560" height="1338" />
+    </state>
+    <state width="1259" height="375" key="GridCell.Tab.0.center/0.23.2560.1338@0.23.2560.1338" timestamp="1602696213142" />
+    <state width="1259" height="375" key="GridCell.Tab.0.left" timestamp="1602696213141">
+      <screen x="0" y="23" width="2560" height="1338" />
+    </state>
+    <state width="1259" height="375" key="GridCell.Tab.0.left/0.23.2560.1338@0.23.2560.1338" timestamp="1602696213141" />
+    <state width="1259" height="375" key="GridCell.Tab.0.right" timestamp="1602696213142">
+      <screen x="0" y="23" width="2560" height="1338" />
+    </state>
+    <state width="1259" height="375" key="GridCell.Tab.0.right/0.23.2560.1338@0.23.2560.1338" timestamp="1602696213142" />
+    <state x="100" y="123" width="1080" height="1138" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1602546339514">
+      <screen x="0" y="23" width="2560" height="1338" />
+    </state>
+    <state x="100" y="123" width="1080" height="1138" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.2560.1338@0.23.2560.1338" timestamp="1602546339514" />
+    <state x="341" y="447" width="598" height="737" key="find.popup" timestamp="1602693758725">
+      <screen x="0" y="23" width="2560" height="1338" />
+    </state>
+    <state x="341" y="447" width="598" height="737" key="find.popup/0.23.2560.1338@0.23.2560.1338" timestamp="1602693758725" />
+    <state x="305" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1602696172680">
+      <screen x="0" y="23" width="2560" height="1338" />
+    </state>
+    <state x="305" y="328" width="670" height="676" key="search.everywhere.popup/0.23.2560.1338@0.23.2560.1338" timestamp="1602696172680" />
+    <state x="370" y="536" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602541127106">
+      <screen x="0" y="23" width="2560" height="1338" />
+    </state>
+    <state x="370" y="536" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.2560.1338@0.23.2560.1338" timestamp="1602541127106" />
   </component>
 </project>

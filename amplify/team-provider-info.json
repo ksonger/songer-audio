@@ -1,20 +1,15 @@
 {
     "dev": {
         "awscloudformation": {
-            "AuthRoleName": "songer-audio-dev-20200817104908-authRole",
-            "UnauthRoleArn": "arn:aws:iam::928790530817:role/songer-audio-dev-20200817104908-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::928790530817:role/songer-audio-dev-20200817104908-authRole",
+            "AuthRoleName": "amplify-songeraudio-dev-94739-authRole",
+            "UnauthRoleArn": "arn:aws:iam::928790530817:role/amplify-songeraudio-dev-94739-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::928790530817:role/amplify-songeraudio-dev-94739-authRole",
             "Region": "us-west-2",
-            "DeploymentBucketName": "songer-audio-dev-20200817104908-deployment",
-            "UnauthRoleName": "songer-audio-dev-20200817104908-unauthRole",
-            "StackName": "songer-audio-dev-20200817104908",
-            "StackId": "arn:aws:cloudformation:us-west-2:928790530817:stack/songer-audio-dev-20200817104908/f53536c0-e0b1-11ea-a038-0a5d164d0af8",
-            "AmplifyAppId": "d4eso8dlefbd5"
-        },
-        "categories": {
-            "auth": {
-                "cognito5e82f640": {}
-            }
+            "DeploymentBucketName": "amplify-songeraudio-dev-94739-deployment",
+            "UnauthRoleName": "amplify-songeraudio-dev-94739-unauthRole",
+            "StackName": "amplify-songeraudio-dev-94739",
+            "StackId": "arn:aws:cloudformation:us-west-2:928790530817:stack/amplify-songeraudio-dev-94739/7e5d1590-fdbc-11ea-9ad4-0ab16b781def",
+            "AmplifyAppId": "dogw80xdz7hqf"
         }
     }
 }

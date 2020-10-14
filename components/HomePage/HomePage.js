@@ -1,13 +1,12 @@
 import React from "react"
 import {Row, Col, Typography} from 'antd'
 import Animated from '../Animated/Animated'
-import responsive from '../../constants/responsive'
 import {homeCopy, homePageCards} from '../../constants/strings'
 import styles from './HomePage.module.scss'
 import classNames from "classnames";
 import home_background from "../../images/home_background.png";
 import HomePageCard from "../HomePageCard/HomePageCard";
-import {onWindowResize, styleState} from "../../utils/formFactor";
+import {styleState} from "../../utils/formFactor";
 
 class HomePage extends React.Component {
 
@@ -24,18 +23,10 @@ class HomePage extends React.Component {
 
   componentDidMount () {
     this.setState({ status: 'data-ready' })
-    const {breakpoint} = this.state
-    window.addEventListener('resize', () => {
-      onWindowResize((bp) => {
-        this.setState({
-          isMobile: window.innerWidth < responsive.BREAKPOINTS[breakpoint]
-        })
-      })
+    const { store } = this.props
+    this.unsubscribe = store.subscribe(() => {
+      this.setState({isMobile: store.getState().mobile})
     })
-  }
-
-  componentWillUnmount () {
-    window.removeEventListener('resize', onWindowResize)
   }
 
   homeCopy = () => {
@@ -60,8 +51,8 @@ class HomePage extends React.Component {
     return (
       <Animated>
         <Row className={classNames(styles.homeMain, styles[styleState('homeMain', breakpoint)])}>
-          <Row style={{ 'height': '100%' }}>
-            <Col style={{ 'height': '100%' }} span={24}>
+          <Row>
+            <Col span={24}>
               <img className={classNames(styles.homeBackground, styles[styleState('homeBackground', breakpoint)])}
                    alt="Onimaru" src={home_background}/>
               <Row className={classNames(styles.home, styles[styleState('home', breakpoint)])}>

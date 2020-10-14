@@ -1,54 +1,50 @@
-import { combineReducers } from 'redux'
+import {combineReducers} from 'redux'
+import {navigate} from "../utils/navigation";
 import * as types from '../constants/types'
+import responsive from "../constants/responsive";
 
 const menuItemsReducer = (state = [], action) => {
-  console.log('action type: ' + action.type)
   switch(action.type) {
-    case 'POPULATE_MENU':
+    case types.POPULATE_MENU:
       return action.menuItems
     default:
       return state
   }
 }
 
-// COUNTER REDUCER
-const counterReducer = (state = 0, { type }) => {
-  switch (type) {
-    case types.INCREMENT:
-      return state + 1
-    case types.DECREMENT:
-      return state - 1
-    case types.RESET:
-      return 0
-    default:
-      return state
-  }
-}
-
-// INITIAL TIMER STATE
-const initialTimerState = {
-  lastUpdate: 0,
-  light: false,
-}
-
-// TIMER REDUCER
-const timerReducer = (state = initialTimerState, { type, payload }) => {
-  switch (type) {
-    case types.TICK:
-      return {
-        lastUpdate: payload.ts,
-        light: !!payload.light,
+const activePageReducer = (state = {
+  id: '0',
+  label: 'home',
+  path: '/'
+}, action) => {
+  switch(action.type) {
+    case types.HIGHLIGHT_MENU:
+      if (window.location.pathname !== action.path) {
+        navigate(action.path)
       }
+      return Object.assign({}, state, {
+        id: action.id,
+        label: action.label,
+        path: action.path
+      })
     default:
       return state
   }
 }
 
-// COMBINED REDUCERS
+const mobileReducer = (state = false, action) => {
+  switch(action.type) {
+    case types.FORM_FACTOR:
+      return window.innerWidth <= responsive.BREAKPOINTS[action.bp]
+    default:
+      return state
+  }
+}
+
 const reducers = {
-  counter: counterReducer,
-  timer: timerReducer,
-  menuItems: menuItemsReducer
+  activePage: activePageReducer,
+  menuItems: menuItemsReducer,
+  mobile: mobileReducer
 }
 
 export default combineReducers(reducers)

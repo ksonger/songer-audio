@@ -1,4 +1,4 @@
-export const TICK = 'TICK'
-export const INCREMENT = 'INCREMENT'
-export const DECREMENT = 'DECREMENT'
-export const RESET = 'RESET'
+export const POPULATE_MENU = 'POPULATE_MENU'
+export const HIGHLIGHT_MENU = 'HIGHLIGHT_MENU'
+export const REQUEST_MENU = 'REQUEST_MENU'
+export const FORM_FACTOR = 'FORM_FACTOR'

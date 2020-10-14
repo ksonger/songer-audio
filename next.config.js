@@ -15,10 +15,11 @@ module.exports = withPlugins([withStyles, withImages], {
 
   lessLoaderOptions: {
     javascriptEnabled: true,
-    modifyVars: themeVariables, // make your antd custom effective
+    modifyVars: themeVariables,
   },
 
   webpack: (config, { isServer }) => {
+    console.log(isServer)
     if (isServer) {
       const antStyles = /antd\/.*?\/style.*?/
       const origExternals = [...config.externals]
@@ -51,5 +52,7 @@ module.exports = withPlugins([withStyles, withImages], {
   },
   cssLoaderOptions: {},
   postcssLoaderOptions: {},
-  miniCssExtractOptions: {}
+  miniCssExtractOptions: {
+    ignoreOrder: true
+  }
 })
