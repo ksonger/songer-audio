@@ -5,8 +5,8 @@ import {homeCopy, homePageCards} from '../../constants/strings'
 import styles from './HomePage.module.scss'
 import classNames from "classnames";
 import home_background from "../../images/home_background.png";
-import HomePageCard from "../HomePageCard/HomePageCard";
 import {styleState} from "../../utils/formFactor";
+import HomePageCardContainer from "../HomePageCard/HomePageCardContainer";
 
 class HomePage extends React.Component {
 
@@ -63,7 +63,7 @@ class HomePage extends React.Component {
                 </Row>
                   <Row type="flex" justify="center">
                     {Object.keys(homePageCards).map((card, index) => (
-                      <HomePageCard card={homePageCards[card]}
+                      <HomePageCardContainer card={homePageCards[card]}
                                     breakpoint={breakpoint}
                                     key={index}
                       />

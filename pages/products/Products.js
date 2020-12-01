@@ -1,24 +1,112 @@
 import React from 'react'
-import SiteLayout from "../../components/SiteLayout";
+import {Col, Row, Typography} from 'antd'
+import classNames from 'classnames'
+import styles from './Products.module.scss'
+import {styleState} from "../../utils/formFactor";
+import {productCards} from '../../constants/strings'
+import ProductCardContainer from "../../components/ProductCard/ProductCardContainer";
+import {setProductActive} from "../../actions/actions";
+import * as types from "../../constants/types";
 
 class Products extends React.Component {
-  state = {}
 
-  render() {
+  state = {
+    breakpoint: 'sm',
+    activeProduct: '',
+    status: 'no-data'
+  }
+
+
+  applyInitialState = () => {
+    const { store } = this.props
+    return new Promise(async(resolve) => {
+      await this.setState({
+        activeProduct: store.getState().activeProduct
+      })
+      resolve()
+    })
+  }
+
+  subscribeHandler = () => {
+    this.applyInitialState()
+      .then(() => {
+        const { status } = this.state
+        if(status === 'no-data')  {
+          this.setState({status: 'data-ready'})
+        }
+      })
+  }
+
+  componentDidMount () {
+    const { store } = this.props
+      this.unsubscribe = store.subscribe(this.subscribeHandler)
+    this.subscribeHandler()
+  }
+
+  componentWillUnmount () {
+    this.unsubscribe()
+  }
+
+  isActiveProduct (item) {
+    const { activeProduct } = this.state
+    return item === activeProduct ? 'active' : 'inactive'
+  }
+
+  dispatchActiveProduct(product) {
+    const { store } = this.props
+    store.dispatch(setProductActive({
+      type: types.SET_ACTIVE_PRODUCT,
+      activeProduct: product
+    }))
+  }
+
+  renderProducts () {
+    const { breakpoint } = this.state
+    const { Text } = Typography
     return (
-      <div style={{color: 'white', marginTop: '100px'}}>
-        Products
-      </div>
+      <Col span={24} className={classNames(styles.productsMain, styles[styleState('productsMain', breakpoint)])}>
+        <Row>
+          {Object.keys(productCards).map((card, index) => (
+            <Text key={`p${index}`}
+                  onClick={() => {
+                    this.dispatchActiveProduct(productCards[card].menu)
+                  }}
+                  className={classNames(styles.menuItem,
+                    styles[styleState('menuItem', breakpoint)],
+                    styles[`menuItem---${this.isActiveProduct(productCards[card].menu)}`])}>
+              {productCards[card].menu}
+              {index < Object.keys(productCards).length - 1 && (
+                <Text className={classNames(styles.divider, styles[styleState('divider', breakpoint)])}>|</Text>
+              )}
+            </Text>
+          ))}
+        </Row>
+        <Col span={24} className={classNames(styles.desktopRow, styles[styleState('desktopRow', breakpoint)])}>
+          <Row type="flex" justify="center">
+            {Object.keys(productCards).map((card, index) => (
+              <Col key={`c${index}`} span={24} className={classNames(styles.productCard,
+                styles[styleState('productCard', breakpoint)],
+                styles[`productCard---${this.isActiveProduct(productCards[card].menu)}`])}>
+                <ProductCardContainer card={productCards[card]}
+                                      breakpoint={breakpoint}
+                                      key={index}
+                />
+              </Col>
+            ))}
+          </Row>
+        </Col>
+      </Col>
     )
   }
-}
 
-Products.getLayout = (page) => {
-  return (
-    <SiteLayout router={page.props.router}>
-      {page}
-    </SiteLayout>
-  )
+  render() {
+    const { status } = this.state
+    return (
+      <>
+        {status === 'data-ready' && this.renderProducts()}
+      </>
+    )
+  }
 }
 
 export default Products

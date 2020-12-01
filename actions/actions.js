@@ -11,6 +11,13 @@ const setMenuItemActive = (item) => {
   }
 }
 
+const setProductActive = (item) => {
+  return {
+    type: types.SET_ACTIVE_PRODUCT,
+    activeProduct: item.activeProduct
+  }
+}
+
 const requestMenu = () => {
   return {
     type: types.REQUEST_MENU
@@ -45,4 +52,4 @@ const setFormFactor = () => {
   }
 }
 
-export {setMenuItemActive, getMenu, setFormFactor}
+export {setMenuItemActive, setProductActive, getMenu, setFormFactor}

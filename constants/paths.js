@@ -2,9 +2,10 @@
 export default {
   HOME: '/',
   PRODUCTS: {
-    SPEAKER: '/products/loudspeaker/',
-    DRIVER: '/products/driver/',
+    ENSO: '/products/',
+    SENSHI: '/products/',
   },
+  TECHNOLOGY: '/technology',
   ABOUT: '/about/',
   CONTACT: '/contact/',
 }

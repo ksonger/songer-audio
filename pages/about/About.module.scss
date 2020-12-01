@@ -1,0 +1,137 @@
+@import '../../styles/mixins';
+
+.portrait {
+  position: relative;
+  max-width: 1200px;
+  margin: 30px auto 0 -30%;
+
+  &--mobile {
+    max-width: 400px;
+    margin: 60px auto 0;
+    padding: 0 48px;
+    object-fit: scale-down;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.desktopPortrait {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 30%;
+  margin: 0 24px 24px;
+  float: left;
+  padding: 24px;
+}
+
+.aboutMain {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.aboutHeader {
+
+  &--desktop {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    top: -30px;
+    @include font-size(16px);
+    font-weight: 500;
+  }
+
+  &--mobile {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 40px;
+    padding: 0 18px 24px;
+    @include font-size(16px);
+    font-weight: 500;
+
+  }
+
+}
+
+.aboutSubheader {
+  padding-left: 20px;
+  margin-top: 24px;
+
+  &--desktop {
+    width: 100%;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.85);
+    @include font-size(14px);
+    font-weight: 500;
+  }
+
+  &--mobile {
+    width: 100%;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.85);
+    @include font-size(14px);
+    font-weight: 500;
+    padding-bottom: 20px;
+
+  }
+
+}
+
+.aboutCopy {
+
+  &--mobile {
+
+    margin-top: -6%;
+    padding: 0 6px 60px;
+  }
+
+  &--desktop {
+    margin-top: 0;
+  }
+}
+
+.aboutText {
+
+  &--mobile {
+    padding: 0 20px 18px;
+    @include font-size(13px);
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.60);
+    margin-top: -18px;
+  }
+
+  &--desktop {
+    padding: 0 20px 18px;
+    @include font-size(13px);
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.60);
+  }
+
+}
+
+.desktopRow {
+  margin-top: 90px;
+  max-width: 920px;
+}
+
+.tagline {
+  width: 100%;
+  @include font-size(13px);
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  margin-top: 12px;
+
+  &--mobile {
+    width: 100%;
+    @include font-size(13px);
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+  }
+}

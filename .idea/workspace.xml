@@ -11,18 +11,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f19493e8-800c-4397-90dc-4a776aac6d32" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/clock.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/counter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/examples.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HomePageCard/HomePageCardContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ProductCard/ProductCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ProductCard/ProductCardContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/about/About.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/products/Products.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/products/[...pid].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/technology/Technology.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/technology/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomePage/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomePageCard/HomePageCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomePageCard/HomePageCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/paths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reducers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/products/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/Products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reducers/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/reducers/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/_antd_overrides.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/_antd_overrides.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/app.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +42,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="SCSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -40,6 +51,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1hv4VcjFYg8xoE5MrLHNFS6TVdO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,16 +61,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages/products" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/technology" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/products" />
+      <recent name="$PROJECT_DIR$/pages/technology" />
       <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/constants" />
-      <recent name="$PROJECT_DIR$/components" />
-      <recent name="$PROJECT_DIR$/amplify/backend/api/songeraudio" />
     </key>
   </component>
   <component name="RunManager">
@@ -88,6 +104,14 @@
       <workItem from="1602091947688" duration="251000" />
       <workItem from="1602468194088" duration="447000" />
       <workItem from="1602520525829" duration="21946000" />
+      <workItem from="1602863762370" duration="1035000" />
+      <workItem from="1602986186896" duration="685000" />
+      <workItem from="1603138568065" duration="403000" />
+      <workItem from="1603210210247" duration="338000" />
+      <workItem from="1603900108258" duration="537000" />
+      <workItem from="1605113441024" duration="85000" />
+      <workItem from="1605553252116" duration="9218000" />
+      <workItem from="1606677715334" duration="19099000" />
     </task>
     <servers />
   </component>
@@ -104,6 +128,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="378" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602534625103">
@@ -130,10 +155,12 @@
       <screen x="0" y="23" width="2560" height="1338" />
     </state>
     <state x="100" y="123" width="1080" height="1138" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.2560.1338@0.23.2560.1338" timestamp="1602546339514" />
-    <state x="341" y="447" width="598" height="737" key="find.popup" timestamp="1602693758725">
-      <screen x="0" y="23" width="2560" height="1338" />
+    <state x="1775" y="396" width="675" height="734" key="find.popup" timestamp="1606845334483">
+      <screen x="0" y="25" width="2560" height="1330" />
     </state>
     <state x="341" y="447" width="598" height="737" key="find.popup/0.23.2560.1338@0.23.2560.1338" timestamp="1602693758725" />
+    <state x="1775" y="397" width="675" height="739" key="find.popup/0.23.2560.1340@0.23.2560.1340" timestamp="1605567731567" />
+    <state x="1775" y="396" width="675" height="734" key="find.popup/0.25.2560.1330@0.25.2560.1330" timestamp="1606845334483" />
     <state x="305" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1602696172680">
       <screen x="0" y="23" width="2560" height="1338" />
     </state>
@@ -142,5 +169,16 @@
       <screen x="0" y="23" width="2560" height="1338" />
     </state>
     <state x="370" y="536" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.2560.1338@0.23.2560.1338" timestamp="1602541127106" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/ProductCard/ProductCard.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

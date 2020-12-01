@@ -32,6 +32,16 @@ const activePageReducer = (state = {
   }
 }
 
+const activeProductReducer = (state = 'koshirae'
+, action) => {
+  switch(action.type) {
+    case types.SET_ACTIVE_PRODUCT:
+      return action.activeProduct
+    default:
+      return state
+  }
+}
+
 const mobileReducer = (state = false, action) => {
   switch(action.type) {
     case types.FORM_FACTOR:
@@ -44,7 +54,8 @@ const mobileReducer = (state = false, action) => {
 const reducers = {
   activePage: activePageReducer,
   menuItems: menuItemsReducer,
-  mobile: mobileReducer
+  mobile: mobileReducer,
+  activeProduct: activeProductReducer
 }
 
 export default combineReducers(reducers)
