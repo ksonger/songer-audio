@@ -1,11 +1,17 @@
 import React from "react";
+import { Post } from '../../components/News/Post'
+import { posts } from '../../api'
 
 class News extends React.Component {
 
 
   render() {
     return (
-      <div style={{color: 'white', marginTop: '100px'}}>News</div>
+      <>
+        {posts.map((post) => (
+          <Post key={post.link} post={post} />
+        ))}
+      </>
     )
   }
 }

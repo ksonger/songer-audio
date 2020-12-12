@@ -44,6 +44,8 @@
 .ant-list-bordered {
   border: 1px solid rgba(217, 217, 217, 0.3) !important;
   overflow: hidden;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 .ant-list-item {
@@ -56,4 +58,12 @@
 
 .ant-breadcrumb-link a, .ant-breadcrumb-separator {
   color: rgb(145, 199, 216);
+}
+
+.slick-list {
+  overflow: visible !important;
+}
+
+.slick-dots {
+  display: none !important;
 }

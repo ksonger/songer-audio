@@ -32,7 +32,7 @@ const activePageReducer = (state = {
   }
 }
 
-const activeProductReducer = (state = 'koshirae'
+const activeProductReducer = (state = 'enso'
 , action) => {
   switch(action.type) {
     case types.SET_ACTIVE_PRODUCT:

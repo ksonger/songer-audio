@@ -5,19 +5,24 @@
   padding: 0 20px;
   margin-top: 70px;
   max-width: 920px;
-}
 
-.menuItem {
-  color: rgb(145, 199, 216);
-  cursor: pointer;
+  .productsMenu {
+    text-align: center;
 
-  &---active {
-    color: rgba(230, 204, 142, 1);
-  }
+    .menuItem {
+      color: rgb(145, 199, 216);
+      cursor: pointer;
+      @include font-size(16px);
 
-  .divider {
-    color: rgb(145, 199, 216);
-    margin: 0 10px;
+      &---active {
+        color: rgba(230, 204, 142, 1);
+      }
+
+      .divider {
+        color: rgb(145, 199, 216);
+        margin: 0 10px;
+      }
+    }
   }
 }
 

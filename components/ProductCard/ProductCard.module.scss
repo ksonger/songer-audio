@@ -1,0 +1,71 @@
+@import '../../styles/mixins';
+
+
+.product {
+  padding: 24px;
+  cursor: pointer;
+
+  &--mobile {
+    padding: 0;
+  }
+
+  .productContent {
+    background: rgba(0, 0, 0, .55);
+    min-height: 300px;
+    border: 1px solid rgba(131, 184, 201, 0.35);
+    padding: 20px;
+
+    &--mobile {
+      width: 100%;
+    }
+
+    .header {
+      color: rgba(255, 255, 255, 0.85);
+      @include font-size(17px);
+      font-weight: 500;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .body {
+      color: rgba(255, 255, 255, 0.55);
+      @include font-size(14px);
+      font-weight: 100;
+      margin-bottom: 36px;
+
+      &--mobile {
+        margin-bottom: 24px;
+      }
+    }
+
+    .cta {
+      margin-top: 30px;
+      color: rgba(40, 162, 199, 0.85);
+      @include font-size(17px);
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .price {
+      margin: 18px 0 0 24px;
+    }
+
+    .responseLabel {
+      @include font-size(13px);
+      line-height: 15px;
+      color: rgba(255, 255, 255, 0.70);
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    .response {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.carouselImage, .graphImage {
+  max-width: 100%;
+}

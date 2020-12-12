@@ -3,6 +3,9 @@ const withPlugins = require("next-compose-plugins");
 const withImages = require("next-images");
 const withStyles = require("@webdeb/next-styles")
 const lessToJS = require('less-vars-to-js')
+const withMDX = require("@next/mdx")({
+  extension: /\.mdx?$/,
+});
 const fs = require('fs')
 const path = require('path')
 
@@ -11,15 +14,17 @@ const themeVariables = lessToJS(
   fs.readFileSync(path.resolve(__dirname, './assets/antd-custom.less'), 'utf8')
 )
 
-module.exports = withPlugins([withStyles, withImages], {
+module.exports = withPlugins([withStyles, withMDX, withImages], {
 
   lessLoaderOptions: {
     javascriptEnabled: true,
     modifyVars: themeVariables,
   },
 
+  pageExtensions: ["js", "jsx", "md", "mdx"],
+
   webpack: (config, { isServer }) => {
-    console.log(isServer)
+
     if (isServer) {
       const antStyles = /antd\/.*?\/style.*?/
       const origExternals = [...config.externals]
@@ -34,6 +39,15 @@ module.exports = withPlugins([withStyles, withImages], {
         },
         ...(typeof origExternals[0] === 'function' ? [] : origExternals),
       ]
+
+      config.module.rules.push({
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        loader: "file-loader",
+        options: {
+          outputPath: '../public/assets/', // if you don't use ../ it will put it inside ".next" folder by default
+          publicPath: 'assets/',
+        }
+      });
 
       config.module.rules.unshift({
         test: antStyles,

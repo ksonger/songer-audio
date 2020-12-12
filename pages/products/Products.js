@@ -65,7 +65,7 @@ class Products extends React.Component {
     const { Text } = Typography
     return (
       <Col span={24} className={classNames(styles.productsMain, styles[styleState('productsMain', breakpoint)])}>
-        <Row>
+        <Row justify="center" className={classNames(styles.productsMenu, styles[styleState('productsMenu', breakpoint)])}>
           {Object.keys(productCards).map((card, index) => (
             <Text key={`p${index}`}
                   onClick={() => {

@@ -29,6 +29,10 @@ class HomePage extends React.Component {
     })
   }
 
+  componentWillUnmount () {
+    this.unsubscribe()
+  }
+
   homeCopy = () => {
     const { Paragraph } = Typography;
     const {breakpoint} = this.state
