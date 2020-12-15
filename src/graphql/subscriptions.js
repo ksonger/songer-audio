@@ -85,3 +85,48 @@ export const onDeleteMenuItemList = /* GraphQL */ `
     }
   }
 `;
+export const onCreateNewsPost = /* GraphQL */ `
+  subscription OnCreateNewsPost {
+    onCreateNewsPost {
+      id
+      slug
+      title
+      summary
+      content
+      images
+      date
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateNewsPost = /* GraphQL */ `
+  subscription OnUpdateNewsPost {
+    onUpdateNewsPost {
+      id
+      slug
+      title
+      summary
+      content
+      images
+      date
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteNewsPost = /* GraphQL */ `
+  subscription OnDeleteNewsPost {
+    onDeleteNewsPost {
+      id
+      slug
+      title
+      summary
+      content
+      images
+      date
+      createdAt
+      updatedAt
+    }
+  }
+`;

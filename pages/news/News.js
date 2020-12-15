@@ -1,17 +1,23 @@
 import React from "react";
-import { Post } from '../../components/News/Post'
-import { posts } from '../../api'
+import PostListContainer from "../../components/News/PostListContainer";
+import {Col} from 'antd'
+import styles from '../../components/News/Posts.module.scss'
+import classNames from "classnames";
+import {styleState} from "../../utils/formFactor";
 
 class News extends React.Component {
 
+  state = {
+    breakpoint: 'sm'
+  }
 
-  render() {
+
+  render () {
+    const { breakpoint } = this.state
     return (
-      <>
-        {posts.map((post) => (
-          <Post key={post.link} post={post} />
-        ))}
-      </>
+      <Col className={classNames(styles.newsMain, styles[styleState('newsMain', breakpoint)])}>
+        <PostListContainer/>
+      </Col>
     )
   }
 }

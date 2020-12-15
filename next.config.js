@@ -21,9 +21,11 @@ module.exports = withPlugins([withStyles, withMDX, withImages], {
     modifyVars: themeVariables,
   },
 
-  pageExtensions: ["js", "jsx", "md", "mdx"],
-
   webpack: (config, { isServer }) => {
+
+    withMDX({
+      pageExtensions: ["js", "jsx", "md", "mdx"]
+    })
 
     if (isServer) {
       const antStyles = /antd\/.*?\/style.*?/

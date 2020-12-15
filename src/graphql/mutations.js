@@ -103,3 +103,57 @@ export const deleteMenuItemList = /* GraphQL */ `
     }
   }
 `;
+export const createNewsPost = /* GraphQL */ `
+  mutation CreateNewsPost(
+    $input: CreateNewsPostInput!
+    $condition: ModelNewsPostConditionInput
+  ) {
+    createNewsPost(input: $input, condition: $condition) {
+      id
+      slug
+      title
+      summary
+      content
+      images
+      date
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const updateNewsPost = /* GraphQL */ `
+  mutation UpdateNewsPost(
+    $input: UpdateNewsPostInput!
+    $condition: ModelNewsPostConditionInput
+  ) {
+    updateNewsPost(input: $input, condition: $condition) {
+      id
+      slug
+      title
+      summary
+      content
+      images
+      date
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const deleteNewsPost = /* GraphQL */ `
+  mutation DeleteNewsPost(
+    $input: DeleteNewsPostInput!
+    $condition: ModelNewsPostConditionInput
+  ) {
+    deleteNewsPost(input: $input, condition: $condition) {
+      id
+      slug
+      title
+      summary
+      content
+      images
+      date
+      createdAt
+      updatedAt
+    }
+  }
+`;

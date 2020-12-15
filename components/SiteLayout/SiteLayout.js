@@ -2,8 +2,6 @@ import React from "react"
 import {Row, Col, Layout, Typography, Modal} from 'antd'
 import classNames from 'classnames'
 import SignUpForm from '../SignUpForm'
-import {setFormFactor} from '../../actions/actions'
-import responsive from '../../constants/responsive'
 import logo from '../../images/sa_logo_e6cc8e.png'
 import styles from './SiteLayout.module.scss'
 import {styleState} from "../../utils/style";

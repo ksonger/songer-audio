@@ -71,3 +71,40 @@ export const listMenuItemLists = /* GraphQL */ `
     }
   }
 `;
+export const getNewsPost = /* GraphQL */ `
+  query GetNewsPost($id: ID!) {
+    getNewsPost(id: $id) {
+      id
+      slug
+      title
+      summary
+      content
+      images
+      date
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const listNewsPosts = /* GraphQL */ `
+  query ListNewsPosts(
+    $filter: ModelNewsPostFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listNewsPosts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        slug
+        title
+        summary
+        content
+        images
+        date
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+  }
+`;

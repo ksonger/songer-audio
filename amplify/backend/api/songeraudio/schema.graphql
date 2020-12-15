@@ -21,3 +21,16 @@ type MenuItemList @model
   createdAt: AWSDateTime
   updatedAt: AWSDateTime
 }
+
+type NewsPost @model
+@auth(rules: [{ allow: public, operations: [read] }]) {
+  id: ID!
+  slug: String!
+  title: String!
+  summary: String!
+  content: String!
+  images: [String]
+  date: AWSDateTime
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}

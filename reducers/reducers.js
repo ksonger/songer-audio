@@ -33,7 +33,7 @@ const activePageReducer = (state = {
 }
 
 const activeProductReducer = (state = 'enso'
-, action) => {
+  , action) => {
   switch(action.type) {
     case types.SET_ACTIVE_PRODUCT:
       return action.activeProduct
@@ -51,11 +51,31 @@ const mobileReducer = (state = false, action) => {
   }
 }
 
+const newsPostsReducer = (state = {
+  isFetching: false,
+  items: [],
+}, action) => {
+  switch(action.type) {
+    case types.FETCH_NEWSPOSTS:
+      return Object.assign({}, state, {
+        isFetching: true,
+      });
+    case types.POPULATE_NEWSPOSTS:
+      return Object.assign({}, state, {
+        isFetching: false,
+        items: action.newsposts,
+      });
+    default:
+      return state;
+  }
+};
+
 const reducers = {
   activePage: activePageReducer,
   menuItems: menuItemsReducer,
   mobile: mobileReducer,
-  activeProduct: activeProductReducer
+  activeProduct: activeProductReducer,
+  newsposts: newsPostsReducer
 }
 
 export default combineReducers(reducers)

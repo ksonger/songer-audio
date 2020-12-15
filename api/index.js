@@ -1,7 +1,11 @@
 import {API} from "aws-amplify";
 import {graphqlOperation} from "@aws-amplify/api-graphql";
-import {listMenuItemLists} from "../src/graphql/queries";
+import {listMenuItemLists, listNewsPosts, getNewsPost} from "../src/graphql/queries";
 
+/**
+ * Fetch the current site menu
+ * @returns {Promise<{menuitems: []}|{menuitems: *}>}
+ */
 export const fetchMenuItems = async () => {
   let result;
   try {
@@ -25,15 +29,32 @@ export const fetchMenuItems = async () => {
   }
 }
 
-function importAll (r) {
-  return r.keys().map((fileName) => {
-    return {
-      link: fileName.substr(1).replace(/\/index\.mdx$/, ""),
-      module: r(fileName)
+/**
+ * Fetch posts for the news page
+ * @returns {Promise<[]>}
+ */
+export const fetchNews = async (options) => {
+  let result = [];
+  let response;
+  try {
+    if(options.id)  {
+      response = await API.graphql((graphqlOperation(getNewsPost, options.id)));
+    } else {
+      response = await API.graphql((graphqlOperation(listNewsPosts)));
     }
-  });
+  } catch(err) {
+    console.warn("Failed to fetch menu items. ", err);
+    return result;
+  }
+  if(response.errors) {
+    console.warn("Failed to fetch menu items. ", response.errors);
+  }
+  if(response.data) {
+    if(options.id)  {
+      result = response.data.getNewsPost.items;
+    } else {
+      result = response.data.listNewsPosts.items;
+    }
+  }
+  return result;
 }
-
-export const posts = importAll(
-  require.context("../pages/news/blog/", true, /\.mdx$/)
-);
