@@ -8,19 +8,9 @@ import {navigate} from "../../utils/navigation";
 import PropTypes from 'prop-types'
 import {setMenuItemActive} from "../../actions/actions";
 
-let HomePageCard = ({ card, breakpoint, dispatch }) => {
+let HomePageCard = ({ card, breakpoint, dispatch, clickAction }) => {
 
   const {title, copy, cta, path} = card
-
-  const clickAction = (p) => {
-    dispatch(setMenuItemActive({
-      id: p.eventKey,
-      label: p.children,
-      path: p.path
-    }))
-    navigate(path)
-  }
-
 
   const cardContent = () => (
       <Row className={classNames(styles.glanceContent, styles[styleState('glanceContent')])}>

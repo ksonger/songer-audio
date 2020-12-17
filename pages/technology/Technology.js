@@ -2,8 +2,7 @@ import classNames from "classnames";
 import {connect} from 'react-redux'
 import {Carousel, Col, List, Row, Typography} from "antd";
 import React, {useState, useEffect} from "react";
-import {mobile, styleState} from '../../utils/formFactor'
-import PropTypes from 'prop-types'
+import {styleState} from '../../utils/formFactor'
 import {technologies} from '../../constants/strings'
 import _ from 'lodash'
 
@@ -20,9 +19,7 @@ let Technology = () => {
   let pInt;
 
   useEffect(() => (
-    function cleanup () {
-      clearInterval(pInt)
-    }
+    clearInterval(pInt)
   ));
 
   const cardContent = () => (
@@ -37,34 +34,54 @@ let Technology = () => {
             Field Coils
           </Paragraph>
           <Paragraph className={classNames(styles.aboutText, styles[styleState('aboutText', breakpoint)])}>
-            Unlike a typical loudspeaker driver, Songer Audio uses powerful electromagnets called field coils to produce a magnetic field, rather than a permanent magnet. There are some good reasons for that design decision.
+            Unlike a typical loudspeaker driver, Songer Audio uses powerful electromagnets called field coils to produce
+            a magnetic field, rather than a permanent magnet. There are some good reasons for that design decision.
           </Paragraph>
           <Paragraph className={classNames(styles.aboutText, styles[styleState('aboutText', breakpoint)])}>
-            Practically speaking, the tolerances of the magnetic gap and voice coil in our drivers is smaller than it is in a typical driver. With that in mind, the ability to remove the influence of the magnetic field during driver assembly is helpful for accuracy.
+            Practically speaking, the tolerances of the magnetic gap and voice coil in our drivers is smaller than it is
+            in a typical driver. With that in mind, the ability to remove the influence of the magnetic field during
+            driver assembly is helpful for accuracy.
           </Paragraph>
           <Paragraph className={classNames(styles.aboutText, styles[styleState('aboutText', breakpoint)])}>
-            More importantly however, the nature and quality of an electromagnetic field is unlike that of a permanent magnet, and is the better choice for sound reproduction. A permanent magnetic field has comparatively low permeability and is elastic, much like a trampoline. In an electromagnet however the permeability, or 'stiffness' of the magnetic field is typically hundreds if not thousands of times higher. This means that when the voice coil is excited by a signal in that field, it is moved very precisely in space, and returned similarly precisely to a resting state.  The result is incredibly accurate, low-distortion sound reproduction.
+            More importantly however, the nature and quality of an electromagnetic field is unlike that of a permanent
+            magnet, and is the better choice for sound reproduction. A permanent magnetic field has comparatively low
+            permeability and is elastic, much like a trampoline. In an electromagnet however the permeability, or
+            'stiffness' of the magnetic field is typically hundreds if not thousands of times higher. This means that
+            when the voice coil is excited by a signal in that field, it is moved very precisely in space, and returned
+            similarly precisely to a resting state. The result is incredibly accurate, low-distortion sound
+            reproduction.
           </Paragraph>
           <Paragraph className={classNames(styles.aboutText, styles[styleState('aboutText', breakpoint)])}>
-            Lastly, the uniform density of the magnetic field in an electromagnet is more constant as the voice coil moves within it, such that the voice coil draws less upon the magnetic field adversely affecting flux density in the gap.
+            Lastly, the uniform density of the magnetic field in an electromagnet is more constant as the voice coil
+            moves within it, such that the voice coil draws less upon the magnetic field adversely affecting flux
+            density in the gap.
           </Paragraph>
           <Paragraph className={classNames(styles.aboutSubheader, styles[styleState('aboutSubheader', breakpoint)])}>
             Cones and Voice Coils
           </Paragraph>
           <Paragraph className={classNames(styles.aboutText, styles[styleState('aboutText', breakpoint)])}>
-            Like a select few other field coil loudspeaker producers, Songer Audio uses treated Hosho washi paper as a cone material, as well as for our voice coil formers. While it's subjective, we feel that the natural lifelike sound produced by mulberry fiber paper can't be matched.
+            Like a select few other field coil loudspeaker producers, Songer Audio uses treated Hosho washi paper as a
+            cone material, as well as for our voice coil formers. While it's subjective, we feel that the natural
+            lifelike sound produced by mulberry fiber paper can't be matched.
           </Paragraph>
           <Paragraph className={classNames(styles.aboutText, styles[styleState('aboutText', breakpoint)])}>
-            Unlike others, Songer Audio hand forms curvilinear cones for our drivers instead of straight cones.  This allows for them to be remarkably thin and light, while maintaining excellent radial stiffness and durability, and producing sound over a very broad frequency range.
+            Unlike others, Songer Audio hand forms curvilinear cones for our drivers instead of straight cones. This
+            allows for them to be remarkably thin and light, while maintaining excellent radial stiffness and
+            durability, and producing sound over a very broad frequency range.
           </Paragraph>
           <Paragraph className={classNames(styles.aboutSubheader, styles[styleState('aboutSubheader', breakpoint)])}>
             Suspension
           </Paragraph>
           <Paragraph className={classNames(styles.aboutText, styles[styleState('aboutText', breakpoint)])}>
-            Leather has been used as a surround materials for decades, for it's long-lasting durability and excellent sonic characteristics. We use the lightest and thinnest of lambskin leather for the surrounds of our drivers.
+            Leather has been used as a surround materials for decades, for it's long-lasting durability and excellent
+            sonic characteristics. We use the lightest and thinnest of lambskin leather for the surrounds of our
+            drivers.
           </Paragraph>
           <Paragraph className={classNames(styles.aboutText, styles[styleState('aboutText', breakpoint)])}>
-            Our spider assembly is a patented, highly innovative design. Composed of thermal polyurethane matrix and a light carbon fiber co-polyester composite collar, it holds the moving mass in light tension and further reduces the already feather-weight 14 gram load upon the field and voice coils.  The results is music with extraordinary dynamics and detail.
+            Our spider assembly is a patented, highly innovative design. Composed of thermal polyurethane matrix and a
+            light carbon fiber co-polyester composite collar, it holds the moving mass in light tension and further
+            reduces the already feather-weight 14 gram load upon the field and voice coils. The results is music with
+            extraordinary dynamics and detail.
           </Paragraph>
         </Typography>
       </Row>
@@ -110,11 +127,12 @@ let Technology = () => {
                       }
                     }}>
             <div className={classNames(styles.carousel, styles[styleState('carousel', breakpoint)])}>
-            {carousel && carousel.length && (
-              carousel.map((image, index) => (
-                  <img className={classNames(styles.carouselImage, styles[styleState('carouselImage', breakpoint)])} key={index} src={image.src}/>
-                )
-              ))}
+              {carousel && carousel.length && (
+                carousel.map((image, index) => (
+                    <img className={classNames(styles.carouselImage, styles[styleState('carouselImage', breakpoint)])}
+                         key={index} src={image.src}/>
+                  )
+                ))}
             </div>
           </Carousel>
         </Col>
@@ -130,11 +148,6 @@ let Technology = () => {
       </Row>
     </Col>
   )
-}
-
-Technology.propTypes = {
-  card: PropTypes.object.isRequired,
-  breakpoint: PropTypes.string.isRequired
 }
 
 Technology = connect()(Technology)

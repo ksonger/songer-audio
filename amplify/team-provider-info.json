@@ -10,6 +10,11 @@
             "StackName": "amplify-songeraudio-dev-94739",
             "StackId": "arn:aws:cloudformation:us-west-2:928790530817:stack/amplify-songeraudio-dev-94739/7e5d1590-fdbc-11ea-9ad4-0ab16b781def",
             "AmplifyAppId": "dogw80xdz7hqf"
+        },
+        "categories": {
+            "auth": {
+                "songeraudio445f6b94": {}
+            }
         }
     }
 }

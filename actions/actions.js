@@ -1,5 +1,7 @@
-import {fetchMenuItems, fetchNews} from "../api";
+import {fetchNews} from "../api";
+import {menu} from '../constants/strings'
 import * as types from '../constants/types'
+import moment from "moment";
 
 
 const setMenuItemActive = (item) => {
@@ -18,12 +20,6 @@ const setProductActive = (item) => {
   }
 }
 
-const requestMenu = () => {
-  return {
-    type: types.REQUEST_MENU
-  }
-}
-
 const receiveMenu = (items) => {
   items = items.sort((a, b) => a.sortOrder - b.sortOrder).filter(item => item.isVisible)
   return {
@@ -34,14 +30,7 @@ const receiveMenu = (items) => {
 
 const getMenu = () => {
   return (dispatch) => {
-    dispatch(requestMenu())
-    return fetchMenuItems()
-      .then((response) => {
-        return response.menuitems
-      })
-      .then((items) => {
-        dispatch(receiveMenu(items))
-      })
+    dispatch(receiveMenu(menu))
   }
 }
 
@@ -65,7 +54,9 @@ const requestNewsPosts = () => {
  * @returns {{type: string, posts: *}}
  */
 const receiveNewsPosts = (items, count = 1) => {
-  items = items.sort((a, b) => a.createdAt - b.createdAt)
+  items = items.sort((a, b) => {
+    return moment(b.createdAt).valueOf() - moment(a.createdAt).valueOf()
+  })
   return {
     type: types.POPULATE_NEWSPOSTS,
     newsposts: items.slice(0, count)

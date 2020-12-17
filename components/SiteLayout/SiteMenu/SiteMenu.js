@@ -2,6 +2,9 @@ import React from 'react'
 import styles from './SiteMenu.module.scss'
 import classNames from "classnames";
 import {Button, Dropdown, Icon, Menu} from "antd";
+import {getMenu, setMenuItemActive} from "../../../actions/actions";
+
+let mInt;
 
 class SiteMenu extends React.Component {
 
@@ -12,7 +15,7 @@ class SiteMenu extends React.Component {
     status: 'no-data'
   }
 
-  applyInitialState = () => {
+  applyInitialState = async() => {
     const { store } = this.props
     return new Promise(async(resolve) => {
       const items = store.getState().menuItems
@@ -26,17 +29,26 @@ class SiteMenu extends React.Component {
   }
 
   componentDidMount () {
-    const { store, pageLoad } = this.props
+    const { store } = this.props
     this.unsubscribe = store.subscribe(() => {
       this.applyInitialState()
-        .then((item) => {
+        .then(() => {
           const { status } = this.state
           if(status === 'no-data')  {
             this.setState({status: 'data-ready'})
-            pageLoad(item)
           }
         })
     })
+    //TODO: very unsatisfying, find a way to intercept nextjs routes
+    mInt = setInterval(() => {
+      const path = '/' + window.location.pathname.split('/')[1]
+      if(path !== store.getState().activePage.path) {
+        store.dispatch(setMenuItemActive(store.getState().menuItems.find((el) => {
+          return el.path === path
+        })))
+      }
+    }, 500)
+    store.dispatch(getMenu())
   }
 
   renderMenu () {

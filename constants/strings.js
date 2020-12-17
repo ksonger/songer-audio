@@ -109,7 +109,7 @@ export const productCards = {
         "description": "5-way binding posts, 3-pin XLR power"
       },
     ],
-    price: "$31,900",
+    price: "$22,900",
     graphs: [
       {
         title: "Frequency Response / SPL",
@@ -166,7 +166,7 @@ export const productCards = {
         "description": "5-way binding posts, 3-pin XLR power"
       },
     ],
-    price: "$44,900",
+    price: "Coming Soon",
     graphs: [],
     eventKey: '2',
   }
@@ -176,3 +176,62 @@ export const homeCopy = {
   header: `The medium is engineering. The result is art.`,
   p1: `Songer Audio field coil loudspeakers and drivers are functional works of art, of uncompromising craftsmanship.  Each piece is 100% designed, made and assembled by hand. Our products express a philosophy of simplicity, excellence, and a relentless dedication to provide the purest possible experience of music.`
 }
+
+export const menu = [
+  {
+    "description": "Songer Audio Home",
+    "id": "0",
+    "isVisible": true,
+    "label": "home",
+    "path": "/",
+    "sortOrder": 0
+  },
+  {
+    "description": "Songer Audio Products",
+    "id": "1",
+    "isVisible": true,
+    "label": "products",
+    "path": "/products",
+    "sortOrder": 1
+  },
+  {
+    "description": "Songer Audio Technology",
+    "id": "2",
+    "isVisible": true,
+    "label": "technology",
+    "path": "/technology",
+    "sortOrder": 2
+  },
+  {
+    "description": "Songer Audio News",
+    "id": "3",
+    "isVisible": true,
+    "label": "news",
+    "path": "/news",
+    "sortOrder": 3
+  },
+  {
+    "description": "About Songer Audio",
+    "id": "4",
+    "isVisible": true,
+    "label": "about",
+    "path": "/about",
+    "sortOrder": 4
+  },
+  {
+    "description": "Contact Songer Audio",
+    "id": "5",
+    "isVisible": true,
+    "label": "contact",
+    "path": "/contact",
+    "sortOrder": 5
+  },
+  {
+    "description": "Songer Audio Admin",
+    "id": "6",
+    "isVisible": false,
+    "label": "admin",
+    "path": "/admin",
+    "sortOrder": 6
+  }
+]

@@ -1,3 +1,6 @@
+import auth from "../constants/auth";
+import regex from "../constants/regex";
+
 /**
  * Capitalizes string.
  *
@@ -73,4 +76,45 @@ export const truncate = (text, limit) => {
 
   // trim trailing whitespace/periods
   return text.replace(/[\s.]+$/g, '');
+};
+
+export const pwd = (len) => {
+  let retVal = '';
+  const chars = auth.PASSWORD_CHARS;
+  for(let i = 0, n = chars.length; i < len; ++i) {
+    retVal += chars.charAt(Math.random() * n)
+  }
+  return retVal
+};
+
+/**
+ * Custom form field validator
+ * @param rule {*}
+ * @param value {string}
+ * @param cb {Function}
+ */
+export const validPhoneNumber = (rule, value, cb) => {
+  if (String(value).match(regex.PHONE_REGEX || value.length === 0)) {
+    cb()
+  } else if (value.length > 0) {
+    cb('Please provide a mobile phone number.')
+  } else {
+    cb('')
+  }
+};
+
+/**
+ * Custom form field validator
+ * @param rule {*}
+ * @param value {string}
+ * @param cb {Function}
+ */
+export const validEmail = (rule, value, cb) => {
+  if (String(value).match(regex.EMAIL_REGEX)) {
+    cb()
+  } else if (value.length > 0) {
+    cb('Please provide a valid email.')
+  } else {
+    cb('')
+  }
 };

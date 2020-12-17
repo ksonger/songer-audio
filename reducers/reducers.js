@@ -19,7 +19,8 @@ const activePageReducer = (state = {
 }, action) => {
   switch(action.type) {
     case types.HIGHLIGHT_MENU:
-      if (window.location.pathname !== action.path) {
+      const path = '/' + window.location.pathname.split('/')[1]
+      if (path !== action.path) {
         navigate(action.path)
       }
       return Object.assign({}, state, {

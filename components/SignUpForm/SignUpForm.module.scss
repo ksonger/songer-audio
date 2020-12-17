@@ -1,5 +1,6 @@
 .cancelButton {
   padding-top: 2px;
+  margin-right: 8px;
 }
 
 .signUpButton {
@@ -11,16 +12,18 @@
 .codeSentMessage {
   width: 100%;
   text-align: center;
+  color: rgba(255,255,255,.75);
 }
 
 .codeSentEmail {
   margin-top: 6px;
-  color: rgb(40, 162, 199);
+  color: rgb(230, 204, 142);
 }
 
 .resendMessage {
   width: 100%;
   text-align: center;
+  color: rgba(255,255,255,.75);
 }
 
 .confirmActions {

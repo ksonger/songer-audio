@@ -9,11 +9,6 @@ const mapDispatchToProps = (dispatch) => ({
       label: props.children,
       path: props.path
     }))
-  },
-  pageLoad: (item) => {
-    if(item)  {
-      dispatch(setMenuItemActive(item))
-    }
   }
 })
 

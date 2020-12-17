@@ -4,7 +4,7 @@ import SiteLayoutContainer from "../components/SiteLayout/SiteLayoutContainer";
 import {router as setRouter} from "../utils/navigation";
 import '../styles/app.scss'
 import {useEffect} from "react";
-import {getMenu} from "../actions/actions";
+import {getMenu, setMenuItemActive} from "../actions/actions";
 import Amplify from "aws-amplify";
 import awsMobile from "../src/aws-exports";
 
@@ -16,7 +16,7 @@ export default function App({ Component, pageProps, router }) {
 
   useEffect(() => {
     store.dispatch(getMenu())
-  }, [store.dispatch])
+  })
 
   return (
     <Provider store={store}>

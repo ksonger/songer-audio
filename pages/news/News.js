@@ -11,12 +11,12 @@ class News extends React.Component {
     breakpoint: 'sm'
   }
 
-
   render () {
     const { breakpoint } = this.state
+    const { store } = this.props
     return (
       <Col className={classNames(styles.newsMain, styles[styleState('newsMain', breakpoint)])}>
-        <PostListContainer/>
+        <PostListContainer store={store}/>
       </Col>
     )
   }

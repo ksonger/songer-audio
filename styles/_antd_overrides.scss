@@ -35,9 +35,29 @@
   padding-bottom: 0;
   opacity: 0.97;
   background: linear-gradient(rgb(34, 34, 34) 0%, rgba(34, 34, 34, 0) 100%);
+  border: 1px solid rgba(230, 204, 142, .4);
+
+  .ant-modal-header {
+    background: rgba(59, 59, 59, 0.90);
+    border-bottom: 1px solid rgba(230, 204, 142, .4);
+
+    span {
+      color: rgba(230, 204, 142, 1);
+    }
+  }
+
+  .ant-modal-body {
+    color: rgba(255,255,255,.75) !important;
+  }
 
   .ant-modal-content {
     border-radius: 12px;
+    background: rgba(59, 59, 59, 0.90);
+    color: rgba(255,255,255,0.55);
+
+    .ant-modal-close-x {
+      color: rgb(40, 162, 199)
+    }
   }
 }
 
@@ -66,4 +86,14 @@
 
 .slick-dots {
   display: none !important;
+}
+
+.ant-message-notice-content {
+  background-color: #333;
+  color: rgba(255,255,255,.75);
+  border: 1px solid rgba(230, 204, 142, .4);
+}
+
+.ant-message-custom-content {
+  background-color: #333;
 }

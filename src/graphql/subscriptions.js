@@ -1,90 +1,6 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreateMenuItem = /* GraphQL */ `
-  subscription OnCreateMenuItem {
-    onCreateMenuItem {
-      id
-      sortOrder
-      label
-      description
-      path
-      isVisible
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onUpdateMenuItem = /* GraphQL */ `
-  subscription OnUpdateMenuItem {
-    onUpdateMenuItem {
-      id
-      sortOrder
-      label
-      description
-      path
-      isVisible
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onDeleteMenuItem = /* GraphQL */ `
-  subscription OnDeleteMenuItem {
-    onDeleteMenuItem {
-      id
-      sortOrder
-      label
-      description
-      path
-      isVisible
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onCreateMenuItemList = /* GraphQL */ `
-  subscription OnCreateMenuItemList {
-    onCreateMenuItemList {
-      id
-      sortOrder
-      label
-      description
-      path
-      isVisible
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onUpdateMenuItemList = /* GraphQL */ `
-  subscription OnUpdateMenuItemList {
-    onUpdateMenuItemList {
-      id
-      sortOrder
-      label
-      description
-      path
-      isVisible
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onDeleteMenuItemList = /* GraphQL */ `
-  subscription OnDeleteMenuItemList {
-    onDeleteMenuItemList {
-      id
-      sortOrder
-      label
-      description
-      path
-      isVisible
-      createdAt
-      updatedAt
-    }
-  }
-`;
 export const onCreateNewsPost = /* GraphQL */ `
   subscription OnCreateNewsPost {
     onCreateNewsPost {
@@ -125,6 +41,51 @@ export const onDeleteNewsPost = /* GraphQL */ `
       content
       images
       date
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onCreateSubscriber = /* GraphQL */ `
+  subscription OnCreateSubscriber {
+    onCreateSubscriber {
+      id
+      given_name
+      family_name
+      email
+      phone_number
+      phone_number_verified
+      email_verified
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateSubscriber = /* GraphQL */ `
+  subscription OnUpdateSubscriber {
+    onUpdateSubscriber {
+      id
+      given_name
+      family_name
+      email
+      phone_number
+      phone_number_verified
+      email_verified
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteSubscriber = /* GraphQL */ `
+  subscription OnDeleteSubscriber {
+    onDeleteSubscriber {
+      id
+      given_name
+      family_name
+      email
+      phone_number
+      phone_number_verified
+      email_verified
       createdAt
       updatedAt
     }
