@@ -1,10 +1,8 @@
 import React from "react"
 import {Row, Col, Typography} from 'antd'
 import Animated from '../../components/Animated/Animated'
-import responsive from '../../constants/responsive'
-import ken from "../../images/ken.jpg";
 import styles from './About.module.scss'
-import {styleState} from "../../utils/formFactor";
+import {styleState, mobile} from "../../utils/formFactor";
 import classNames from "classnames";
 
 
@@ -29,23 +27,16 @@ class AboutPage extends React.Component {
     this.unsubscribe()
   }
 
-  /**
-   * Returns form factor boolean according to breakpoint
-   * @returns {boolean}
-   */
-  mobile = () => {
-    return window.innerWidth <= responsive.BREAKPOINTS[this.state.breakpoint]
-  };
   aboutCopy = () => {
     const { Paragraph } = Typography;
     const {breakpoint} = this.state
     return (
       <Row>
         <Col span={24}>
-          {this.mobile() && (
+          {mobile(breakpoint) && (
             <Row>
               <div className={classNames(styles.portrait, styles[styleState('portrait', breakpoint)])}>
-                <img alt="Ken Songer" src={ken}/>
+                <img alt="Ken Songer" src='./ken.jpg'/>
               </div>
             </Row>
           )}
@@ -55,9 +46,9 @@ class AboutPage extends React.Component {
                 <Paragraph className={classNames(styles.aboutHeader, styles[styleState('aboutHeader', breakpoint)])}>
                   Songer Audio
                 </Paragraph>
-                {!this.mobile() && (
+                {!mobile(breakpoint) && (
                   <img className={classNames(styles.desktopPortrait)}
-                       alt="Ken Songer" src={ken}/>
+                       alt="Ken Songer" src='./ken.jpg'/>
                 )}
                 <Paragraph className={classNames(styles.aboutText, styles[styleState('aboutText', breakpoint)])}>
                   Songer Audio is the product of my lifelong passion. It is the sum of thousands of hours of design and redesign, of refinement and production, and of an obsessive drive to perfect the joyful experience of music.

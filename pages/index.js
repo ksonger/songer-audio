@@ -1,10 +1,6 @@
 import React from 'react'
-
 import HomePage from "../components/HomePage/HomePage";
-
 import styles from './index.module.scss'
-
-
 
 class Index extends React.Component {
   render () {

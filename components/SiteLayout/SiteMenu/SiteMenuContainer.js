@@ -1,6 +1,7 @@
 import SiteMenu from "./SiteMenu";
 import {connect} from 'react-redux'
 import { setMenuItemActive } from "../../../actions/actions";
+import {navigate} from "../../../utils/navigation";
 
 const mapDispatchToProps = (dispatch) => ({
   clickAction: (props) => {
@@ -9,10 +10,11 @@ const mapDispatchToProps = (dispatch) => ({
       label: props.children,
       path: props.path
     }))
+    navigate(props.path)
   }
 })
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
   return {
     mobile: state.mobile
   }

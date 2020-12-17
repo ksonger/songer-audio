@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import ReactHtmlParser, {processNodes, convertNodeToElement, htmlparser2} from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 import {Button, Col, Row, Spin, Icon} from 'antd'
@@ -7,6 +7,8 @@ import styles from './Posts.module.scss'
 import classNames from "classnames";
 import {styleState} from "../../utils/formFactor";
 import Link from "next/link";
+import {mobile} from "../../utils/formFactor";
+
 
 class Post extends PureComponent {
 
@@ -15,9 +17,9 @@ class Post extends PureComponent {
   }
 
   componentDidMount () {
-    const { fetchNewsPost, id, newspost } = this.props;
+    const { fetchNewsPost, id, slug, newspost } = this.props;
     if (!newspost) {
-      fetchNewsPost(id);
+      fetchNewsPost(id, slug);
     }
   }
 
@@ -48,25 +50,31 @@ class Post extends PureComponent {
           </Link>
         </Row>
         <Row align="bottom" className={classNames(styles.postHeader, styles[styleState('postHeader', breakpoint)])}>
-          <Col className={classNames(styles.postTitle, styles[styleState('postTitle', breakpoint)])} span={20}>
+          <Col className={classNames(styles.postTitle, styles[styleState('postTitle', breakpoint)])} xs={{ span: 24 }} sm={{ span: 24 }} md={{span:20}} lg={{ span: 20 }} xxl={{ span: 20 }}>
             {title}
           </Col>
-          <Col className={classNames(styles.postDate, styles[styleState('postDate', breakpoint)])}>
-            <time dateTime={createdAt}>{moment(createdAt).fromNow()}</time>
-          </Col>
+          {!mobile(breakpoint) && (
+            <Col className={classNames(styles.postDate, styles[styleState('postDate', breakpoint)])}>
+              <time dateTime={createdAt}>{moment(createdAt).fromNow()}</time>
+            </Col>
+          )}
         </Row>
         <Row>
           {content && (
             ReactHtmlParser(content)
           )}
         </Row>
-        {images && images.length > 0 && (
-          images.map((image, index) => (
-              <div className={classNames(styles.postImage, styles[styleState('postImage', breakpoint)])} key={index}>
-                <img key={index} src={image}/>
-              </div>
-            )
-          ))}
+        <Row justify="center">
+          <Col span={24} className={classNames(styles.postImageCol, styles[styleState('postImageCol', breakpoint)])}>
+            {images && images.length > 0 && (
+              images.map((image, index) => (
+                  <div className={classNames(styles.postImage, styles[styleState('postImage', breakpoint)])} key={index}>
+                    <img alt={`post_image_${index}`} className={classNames(styles.postImg, styles[styleState('postImg', breakpoint)])} key={index} src={image}/>
+                  </div>
+                )
+              ))}
+          </Col>
+        </Row>
       </Col>
     );
   };

@@ -2,29 +2,25 @@
 
 .contact {
   &--mobile {
-    margin-top: 60px;
+    margin-top: 80px;
   }
 
   &--desktop {
-    margin-top: 60px;
+    margin-top: 90px;
   }
 }
 
 .bodyText {
+  @include font-size(15px);
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.60);
 
   &--mobile {
     padding: 0 20px 18px;
-    @include font-size(13px);
-    line-height: 15px;
-    color: rgba(255, 255, 255, 0.60);
     margin-top: -18px;
   }
 
   &--desktop {
     padding: 0 20px 18px;
-    @include font-size(13px);
-    line-height: 15px;
-    color: rgba(255, 255, 255, 0.60);
   }
-
 }

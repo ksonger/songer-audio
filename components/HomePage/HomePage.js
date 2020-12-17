@@ -4,7 +4,6 @@ import Animated from '../Animated/Animated'
 import {homeCopy, homePageCards} from '../../constants/strings'
 import styles from './HomePage.module.scss'
 import classNames from "classnames";
-import home_background from "../../images/home_background.png";
 import {styleState} from "../../utils/formFactor";
 import HomePageCardContainer from "../HomePageCard/HomePageCardContainer";
 
@@ -58,7 +57,7 @@ class HomePage extends React.Component {
           <Row>
             <Col span={24}>
               <img className={classNames(styles.homeBackground, styles[styleState('homeBackground', breakpoint)])}
-                   alt="Onimaru" src={home_background}/>
+                   alt="Onimaru" src='./home_background.png'/>
               <Row className={classNames(styles.home, styles[styleState('home', breakpoint)])}>
                 <Row className={classNames(styles.homeCopy, styles[styleState('homeCopy', breakpoint)])}>
                   {(
@@ -73,7 +72,6 @@ class HomePage extends React.Component {
                       />
                     ))}
                   </Row>
-
               </Row>
             </Col>
           </Row>

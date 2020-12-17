@@ -2,14 +2,14 @@ import classNames from "classnames";
 import {connect} from 'react-redux'
 import {Carousel, Col, List, Row, Typography} from "antd";
 import React, {useEffect} from "react";
-import {mobile, styleState} from '../../utils/formFactor'
+import {styleState} from '../../utils/formFactor'
 import PropTypes from 'prop-types'
 import _ from 'lodash'
 
 import styles from './ProductCard.module.scss'
 
 
-let ProductCard = ({ card, breakpoint, dispatch }) => {
+let ProductCard = ({ card, breakpoint }) => {
 
   const { title, copy, carousel, specifications, price, graphs } = card
   const { Paragraph } = Typography
@@ -17,9 +17,7 @@ let ProductCard = ({ card, breakpoint, dispatch }) => {
   let pInt;
 
   useEffect(() => (
-    function cleanup () {
       clearInterval(pInt)
-    }
   ));
 
   const cardContent = () => (
@@ -45,7 +43,7 @@ let ProductCard = ({ card, breakpoint, dispatch }) => {
                     }}>
             {carousel && carousel.length && (
               carousel.map((image, index) => (
-                  <img key={index} src={image.src}/>
+                  <img alt={`carousel_image_${index}`} key={index} src={image.src}/>
                 )
               ))}
           </Carousel>
@@ -90,7 +88,7 @@ let ProductCard = ({ card, breakpoint, dispatch }) => {
                 </span> {graph.description}
               </Paragraph>
               <Row className={classNames(styles.response, styles[styleState('response')])}>
-                <img key={`g${index}`} src={graph.src}/>
+                <img alt={`graph_image${index}`} key={`g${index}`} src={graph.src}/>
               </Row>
             </>
           ))

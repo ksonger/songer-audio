@@ -3,7 +3,7 @@ import React from 'react'
 import styles from "./ContactForm.module.scss";
 import regex from '../../constants/regex'
 import classNames from "classnames";
-import responsive from '../../constants/responsive'
+import {styleState} from "../../utils/formFactor";
 import {sendComments} from "../../api";
 
 const hasErrors = (fieldsError) => {
@@ -30,39 +30,6 @@ class ContactFormComponent extends React.Component {
     this.setState({ [e.target.name]: e.target.value })
   };
 
-  handleComments = async () => {
-    const { getFieldValue, resetFields } = this.props.form;
-
-    sendComments({
-      given_name: getFieldValue('givenname'),
-      family_name: getFieldValue('familyname'),
-      email_address: getFieldValue('emailaddress'),
-      comments: getFieldValue('Comments')
-    })
-      .then((response) => {
-        message.success(String(response))
-      })
-      .catch((error) => {
-        message.error(String(error))
-      })
-      .finally(() => {
-        resetFields();
-      })
-
-  };
-
-  /**
-   * Returns form factor boolean according to breakpoint
-   * @returns {boolean}
-   */
-  mobile = () => {
-    return window.innerWidth <= responsive.BREAKPOINTS[this.state.breakpoint]
-  };
-
-  styleState = (element) => {
-    return this.mobile() ? `${element}--mobile` : `${element}--desktop`
-  };
-
   /**
    * Custom form field validator
    * @param rule {*}
@@ -79,18 +46,34 @@ class ContactFormComponent extends React.Component {
     }
   };
 
+  /**
+   * Error validates form, and submits the comments
+   * @param e
+   */
   handleSubmit = (e) => {
     e.preventDefault();
     // eslint-disable-next-line react/prop-types
-    this.props.form.validateFields((err, values) => {
+    this.props.form.validateFields((err) => {
       if (!err) {
-        this.handleComments(values).catch((err) => {
-          console.log('error', err)
+        const { getFieldValue, resetFields } = this.props.form;
+        sendComments({
+          given_name: getFieldValue('givenname'),
+          family_name: getFieldValue('familyname'),
+          email_address: getFieldValue('emailaddress'),
+          comments: getFieldValue('Comments')
         })
+          .then((response) => {
+            message.success(String(response))
+          })
+          .catch((error) => {
+            message.error(String(error))
+          })
+          .finally(() => {
+            resetFields();
+          })
       }
     })
   };
-
 
   render () {
     const { comments, emailAddress, familyName, formStatus, givenName } = this.state;
@@ -99,7 +82,7 @@ class ContactFormComponent extends React.Component {
     return (
 
       <Row type="flex" justify="center"
-           className={classNames(styles.contactForm, styles[this.styleState('contactForm')])}>
+           className={classNames(styles.contactForm, styles[styleState('contactForm')])}>
         <Col span={24}>
           {formStatus === 'contact' && (
             <Form layout="vertical" onSubmit={this.handleSubmit}>

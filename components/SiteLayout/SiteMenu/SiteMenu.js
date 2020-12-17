@@ -51,6 +51,10 @@ class SiteMenu extends React.Component {
     store.dispatch(getMenu())
   }
 
+  componentWillUnmount () {
+    clearInterval(mInt)
+  }
+
   renderMenu () {
     let { items, activePage } = this.state
     let { mobile, clickAction } = this.props

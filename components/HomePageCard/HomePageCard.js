@@ -4,13 +4,11 @@ import {connect} from 'react-redux'
 import {Col, Row} from "antd";
 import React from "react";
 import {mobile, styleState} from '../../utils/formFactor'
-import {navigate} from "../../utils/navigation";
 import PropTypes from 'prop-types'
-import {setMenuItemActive} from "../../actions/actions";
 
-let HomePageCard = ({ card, breakpoint, dispatch, clickAction }) => {
+let HomePageCard = ({ card, breakpoint, clickAction }) => {
 
-  const {title, copy, cta, path} = card
+  const {title, copy, cta} = card
 
   const cardContent = () => (
       <Row className={classNames(styles.glanceContent, styles[styleState('glanceContent')])}>

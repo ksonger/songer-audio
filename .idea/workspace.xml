@@ -11,52 +11,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f19493e8-800c-4397-90dc-4a776aac6d32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/ContactForm/ContactForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ContactForm/ContactForm.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ContactForm/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/contact/Contact.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/DGA-1-glamour-photo-1200x920.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/TradeGothicLTStd-Extended.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/TradeGothicLTStd-Extended.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/pap_quintet_detail_whammerdyne.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/pap_quintet_whammerdyne.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/ply_prototype.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/ultimate_truth.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/wireframe1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/wireframe2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/wireframe3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/home_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ken.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/api/songeraudio/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/songeraudio/schema.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/backend-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/backend-config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/team-provider-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/team-provider-info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContactForm/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContactForm/ContactForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomePage/HomePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/HomePageCard/HomePageCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomePageCard/HomePageCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HomePageCard/HomePageCardContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomePageCard/HomePageCardContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/News/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/News/Post.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/News/PostContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/News/PostContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/News/PostListContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/News/PostListContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/News/Posts.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/News/Posts.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProductCard/ProductCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductCard/ProductCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProductCard/ProductCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductCard/ProductCard.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/SignUpForm/SignUpForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SignUpForm/SignUpForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SignUpForm/SignUpForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/SignUpForm/SignUpForm.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SiteLayout/SiteLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteLayout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/SiteLayout/SiteLayout.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/Menu.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenuContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenuContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/paths.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/strings.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/news/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/news/News.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact/Contact.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact/Contact.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/news/[...post].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/news/[...post].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/products/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/Products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/products/[...pid].js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/show-redux-state.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/technology/Technology.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/technology/Technology.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reducers/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/reducers/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/queries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/schema.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/subscriptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/subscriptions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/_antd_overrides.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/_antd_overrides.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/utilities.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utilities.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/style.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +130,7 @@
       <workItem from="1607533760575" duration="9691000" />
       <workItem from="1607549037017" duration="53309000" />
       <workItem from="1607882927603" duration="62636000" />
-      <workItem from="1608139752281" duration="19560000" />
+      <workItem from="1608139752281" duration="33780000" />
     </task>
     <servers />
   </component>
@@ -196,29 +181,30 @@
     <state x="100" y="125" width="1080" height="1132" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.25.2560.1333@0.25.2560.1333" timestamp="1607546485070" />
     <state x="108" y="99" width="1080" height="1134" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.25.2560.1335@0.25.2560.1335" timestamp="1607814708925" />
     <state x="108" y="99" width="1080" height="1137" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.25.2560.1338@0.25.2560.1338" timestamp="1608074655429" />
-    <state x="100" y="125" width="1580" height="1134" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608163109333">
+    <state x="100" y="125" width="1580" height="1134" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608229637887">
       <screen x="0" y="25" width="2560" height="1333" />
     </state>
     <state x="100" y="123" width="1080" height="1138" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.2560.1338@0.23.2560.1338" timestamp="1602546339514" />
     <state x="100" y="125" width="1652" height="1133" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.2560.1331@0.25.2560.1331" timestamp="1607888888508" />
-    <state x="100" y="125" width="1580" height="1134" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.2560.1333@0.25.2560.1333" timestamp="1608163109333" />
+    <state x="100" y="125" width="1580" height="1134" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.2560.1333@0.25.2560.1333" timestamp="1608229637887" />
     <state x="100" y="125" width="1652" height="1136" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.2560.1335@0.25.2560.1335" timestamp="1608153912583" />
     <state x="100" y="125" width="1580" height="1139" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.2560.1338@0.25.2560.1338" timestamp="1608079874470" />
-    <state x="197" y="185" width="675" height="739" key="find.popup" timestamp="1608155538364">
-      <screen x="0" y="25" width="2560" height="1335" />
+    <state x="491" y="228" width="675" height="737" key="find.popup" timestamp="1608229946791">
+      <screen x="0" y="25" width="2560" height="1333" />
     </state>
     <state x="341" y="447" width="598" height="737" key="find.popup/0.23.2560.1338@0.23.2560.1338" timestamp="1602693758725" />
     <state x="1775" y="397" width="675" height="739" key="find.popup/0.23.2560.1340@0.23.2560.1340" timestamp="1605567731567" />
     <state x="1775" y="396" width="675" height="734" key="find.popup/0.25.2560.1330@0.25.2560.1330" timestamp="1606845334483" />
     <state x="1775" y="396" width="675" height="735" key="find.popup/0.25.2560.1331@0.25.2560.1331" timestamp="1607535721694" />
-    <state x="491" y="228" width="675" height="737" key="find.popup/0.25.2560.1333@0.25.2560.1333" timestamp="1607990161882" />
+    <state x="491" y="228" width="675" height="737" key="find.popup/0.25.2560.1333@0.25.2560.1333" timestamp="1608229946791" />
     <state x="197" y="185" width="675" height="739" key="find.popup/0.25.2560.1335@0.25.2560.1335" timestamp="1608155538364" />
     <state x="1775" y="398" width="675" height="739" key="find.popup/0.25.2560.1336@0.25.2560.1336" timestamp="1607648728947" />
     <state x="510" y="309" width="1302" height="741" key="find.popup/0.25.2560.1338@0.25.2560.1338" timestamp="1608079193999" />
-    <state x="305" y="330" width="670" height="676" key="search.everywhere.popup" timestamp="1608145450166">
-      <screen x="0" y="25" width="2560" height="1336" />
+    <state x="305" y="329" width="670" height="675" key="search.everywhere.popup" timestamp="1608226893578">
+      <screen x="0" y="25" width="2560" height="1333" />
     </state>
     <state x="305" y="328" width="670" height="676" key="search.everywhere.popup/0.23.2560.1338@0.23.2560.1338" timestamp="1602696172680" />
+    <state x="305" y="329" width="670" height="675" key="search.everywhere.popup/0.25.2560.1333@0.25.2560.1333" timestamp="1608226893578" />
     <state x="305" y="329" width="670" height="675" key="search.everywhere.popup/0.25.2560.1335@0.25.2560.1335" timestamp="1607549838274" />
     <state x="305" y="330" width="670" height="676" key="search.everywhere.popup/0.25.2560.1336@0.25.2560.1336" timestamp="1608145450166" />
     <state x="305" y="330" width="670" height="677" key="search.everywhere.popup/0.25.2560.1338@0.25.2560.1338" timestamp="1608065333379" />

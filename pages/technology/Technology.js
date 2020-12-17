@@ -12,8 +12,7 @@ import styles from './Technology.module.scss'
 let Technology = () => {
 
   const [breakpoint] = useState('sm');
-
-  const { title, copy, carousel, specifications } = technologies.onimaru
+  const { title, carousel, specifications } = technologies.onimaru
   const { Paragraph } = Typography
 
   let pInt;
@@ -129,7 +128,7 @@ let Technology = () => {
             <div className={classNames(styles.carousel, styles[styleState('carousel', breakpoint)])}>
               {carousel && carousel.length && (
                 carousel.map((image, index) => (
-                    <img className={classNames(styles.carouselImage, styles[styleState('carouselImage', breakpoint)])}
+                    <img alt={`carousel_image${index}`} className={classNames(styles.carouselImage, styles[styleState('carouselImage', breakpoint)])}
                          key={index} src={image.src}/>
                   )
                 ))}

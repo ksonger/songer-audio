@@ -8,7 +8,6 @@ import {styleState} from "../../utils/style";
 import PropTypes from 'prop-types'
 import {onWindowResize} from "../../utils/formFactor";
 import SiteMenuContainer from "./SiteMenu/SiteMenuContainer";
-import {getMenu} from "../../actions/actions";
 
 class SiteLayout extends React.Component {
 
@@ -17,7 +16,7 @@ class SiteLayout extends React.Component {
     loading: false
   };
 
-  async componentDidMount () {
+  componentDidMount () {
     this.setState({ status: 'data-ready' });
     const { formFactor } = this.props
     formFactor()

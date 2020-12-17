@@ -27,6 +27,9 @@ class Products extends React.Component {
     })
   }
 
+  /**
+   * Handles changes to the store and updates state status
+   */
   subscribeHandler = () => {
     this.applyInitialState()
       .then(() => {
@@ -47,11 +50,20 @@ class Products extends React.Component {
     this.unsubscribe()
   }
 
+  /**
+   * Helper to show the active product and hide inactive products
+   * @param item
+   * @returns {string}
+   */
   isActiveProduct (item) {
     const { activeProduct } = this.state
     return item === activeProduct ? 'active' : 'inactive'
   }
 
+  /**
+   * Dispatch an action to set the active product
+   * @param product
+   */
   dispatchActiveProduct(product) {
     const { store } = this.props
     store.dispatch(setProductActive({

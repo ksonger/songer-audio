@@ -1,20 +1,53 @@
 import React from "react";
-import {useRouter} from 'next/router'
+import {router} from '../../utils/navigation'
+import {getStore} from '../../store/store'
 import PostContainer from "../../components/News/PostContainer";
+import {fetchNewsPosts} from "../../actions/actions";
+import {Col} from "antd";
 
-const NewsPost = () => {
+class NewsPost extends React.Component {
 
-  const router = useRouter()
-  let id, slug
-  if (router.query.post) {
-    id = router.query.post[0]
-    slug = router.query.post[1]
+  state = {
+    status: 'no-data',
+    slug: null,
+    id: null
   }
 
-  return (
-    <PostContainer id={id} slug={slug}/>
-  )
+  componentDidMount () {
+    const r = router()
+    if(getStore().getState().newsposts.items.length === 0) {
+      getStore().dispatch(fetchNewsPosts())
+    }
+    this.unsubscribe = getStore().subscribe(() => {
+      if(getStore().getState().newsposts.items.length > 0)  {
+        if (r.query.post) {
+          this.setState({
+            id: r.query.post[0],
+            slug: r.query.post[1],
+            status: 'data-ready'
+          })
+        }
+      }
+    })
+  }
 
+  componentWillUnmount () {
+    this.unsubscribe();
+  }
+
+  renderPost = () => {
+    const { slug, id } = this.state;
+    return <PostContainer id={id} slug={slug}/>
+  };
+
+  render () {
+    const { status } = this.state;
+    return (
+        <Col>
+          {status === 'data-ready' && this.renderPost()}
+        </Col>
+    )
+  }
 }
 
 export default NewsPost

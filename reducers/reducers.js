@@ -1,5 +1,4 @@
 import {combineReducers} from 'redux'
-import {navigate} from "../utils/navigation";
 import * as types from '../constants/types'
 import responsive from "../constants/responsive";
 
@@ -21,7 +20,7 @@ const activePageReducer = (state = {
     case types.HIGHLIGHT_MENU:
       const path = '/' + window.location.pathname.split('/')[1]
       if (path !== action.path) {
-        navigate(action.path)
+        //navigate(action.path)
       }
       return Object.assign({}, state, {
         id: action.id,

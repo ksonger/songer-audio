@@ -32,6 +32,14 @@ class SignUpFormComponent extends React.Component {
     this.setState({ [e.target.name]: e.target.value })
   };
 
+  /**
+   * Uses Amplify Auth to sign up a subscriber
+   * @param givenname
+   * @param familyname
+   * @param emailaddress
+   * @param phonenumber
+   * @returns {Promise<void>}
+   */
   signUp = async ({ givenname, familyname, emailaddress, phonenumber }) => {
 
     let error = false;
@@ -84,6 +92,10 @@ class SignUpFormComponent extends React.Component {
     }
   };
 
+  /**
+   * Uses Amplify Auth to confirm the sign-up email address
+   * @returns {Promise<void>}
+   */
   handleConfirm = async () => {
     const { emailAddress, uuid } = this.state;
     const { getFieldValue } = this.props.form;
@@ -113,6 +125,10 @@ class SignUpFormComponent extends React.Component {
     }
   };
 
+  /**
+   * Validates form and submits sign up
+   * @param e
+   */
   handleSubmit = (e) => {
     e.preventDefault();
     // eslint-disable-next-line react/prop-types
