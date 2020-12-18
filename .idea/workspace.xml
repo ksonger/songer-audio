@@ -12,22 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f19493e8-800c-4397-90dc-4a776aac6d32" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenuContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenuContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/About.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact/Contact.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/media/Media.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/media/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/media/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/news/News.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/news/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/news/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/products/Products.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/products/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/technology/Technology.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/technology/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/technology/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reducers/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/reducers/reducers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +100,7 @@
       <workItem from="1607533760575" duration="9691000" />
       <workItem from="1607549037017" duration="53309000" />
       <workItem from="1607882927603" duration="62636000" />
-      <workItem from="1608139752281" duration="39714000" />
+      <workItem from="1608139752281" duration="41116000" />
     </task>
     <servers />
   </component>
