@@ -5,6 +5,7 @@ import moment from "moment";
 
 
 const setMenuItemActive = (item) => {
+  console.log('action', item)
   return {
     type: types.HIGHLIGHT_MENU,
     id: item.id,

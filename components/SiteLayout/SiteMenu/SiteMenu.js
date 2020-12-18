@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './SiteMenu.module.scss'
 import classNames from "classnames";
 import {Button, Dropdown, Icon, Menu} from "antd";
-import {getMenu, setMenuItemActive} from "../../../actions/actions";
+import {getMenu} from "../../../actions/actions";
 
 let mInt;
 
@@ -19,10 +19,10 @@ class SiteMenu extends React.Component {
     const { store } = this.props
     return new Promise(async(resolve) => {
       const items = store.getState().menuItems
-      const item = items.filter(i => i.path === window.location.pathname)[0]
+      const pathName = window.location.pathname.split('/').slice(0,2).join('/')
+      const item = items.filter(i => i.path === pathName)[0]
       await this.setState({
-        items: items,
-        activePage: store.getState().activePage
+        items: items
       })
       resolve(item)
     })
@@ -30,24 +30,21 @@ class SiteMenu extends React.Component {
 
   componentDidMount () {
     const { store } = this.props
-    this.unsubscribe = store.subscribe(() => {
+    this.setState({
+      activePage: store.getState().activePage
+    })
+    this.unsubscribe = store.subscribe(async() => {
       this.applyInitialState()
-        .then(() => {
+        .then(async(item) => {
+          await this.setState({
+            activePage: item
+          })
           const { status } = this.state
           if(status === 'no-data')  {
             this.setState({status: 'data-ready'})
           }
         })
     })
-    //TODO: very unsatisfying, find a way to intercept nextjs routes
-    mInt = setInterval(() => {
-      const path = '/' + window.location.pathname.split('/')[1]
-      if(path !== store.getState().activePage.path) {
-        store.dispatch(setMenuItemActive(store.getState().menuItems.find((el) => {
-          return el.path === path
-        })))
-      }
-    }, 500)
     store.dispatch(getMenu())
   }
 
@@ -55,9 +52,21 @@ class SiteMenu extends React.Component {
     clearInterval(mInt)
   }
 
+  onMenuSelect = async(props) => {
+    let { clickAction } = this.props
+    const {items} = this.state
+    const item = items.filter(i => i.path === props.path)[0]
+    console.log(item)
+    await this.setState({
+      activePage: item
+    })
+    await this.forceUpdate()
+    clickAction(props)
+  }
+
   renderMenu () {
     let { items, activePage } = this.state
-    let { mobile, clickAction } = this.props
+    let { mobile } = this.props
 
     const menu = (
       <Menu
@@ -65,9 +74,10 @@ class SiteMenu extends React.Component {
         className={classNames(styles.menu, styles[mobile ? 'menu--mobile' : 'menu--desktop'])}
         theme="light"
         mode={mobile ? 'vertical' : 'horizontal'}
-        selectedKeys={activePage.id}
-        onClick={(menuitem) => {
-          clickAction(menuitem.item.props)
+        selectedKeys={[activePage.id]}
+        onClick={async(menuitem) => {
+
+          this.onMenuSelect(menuitem.item.props)
         }}
       >
         {

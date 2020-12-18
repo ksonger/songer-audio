@@ -11,37 +11,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f19493e8-800c-4397-90dc-4a776aac6d32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/home_background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/ken.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ContactForm/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContactForm/ContactForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomePage/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HomePageCard/HomePageCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomePageCard/HomePageCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/News/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/News/Post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/News/PostContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/News/PostContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/News/Posts.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/News/Posts.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProductCard/ProductCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductCard/ProductCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProductCard/ProductCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductCard/ProductCard.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SignUpForm/SignUpForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SignUpForm/SignUpForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SiteLayout/SiteLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteLayout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/SiteLayout/SiteLayout.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/Menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenuContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenuContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact/Contact.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact/Contact.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/news/[...post].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/news/[...post].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/products/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/Products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/products/[...pid].js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/show-redux-state.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/technology/Technology.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/technology/Technology.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about/About.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact/Contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/media/Media.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/media/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/media/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/news/News.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/news/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/news/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/products/Products.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/products/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/technology/Technology.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/technology/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/technology/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reducers/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/reducers/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/style.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +116,7 @@
       <workItem from="1607533760575" duration="9691000" />
       <workItem from="1607549037017" duration="53309000" />
       <workItem from="1607882927603" duration="62636000" />
-      <workItem from="1608139752281" duration="33780000" />
+      <workItem from="1608139752281" duration="39714000" />
     </task>
     <servers />
   </component>
