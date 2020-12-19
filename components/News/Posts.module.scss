@@ -1,0 +1,103 @@
+@import '../../styles/app';
+
+.newsMain {
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0 20px;
+  margin-top: 70px;
+  max-width: 920px;
+
+  .newsFeed {
+    color: rgba(255, 255, 255, 0.55);
+    width: 100%;
+
+    .listItem {
+      border-bottom: 1px solid rgba(131, 184, 201, 0.35);
+      padding-bottom: 16px;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    h2 {
+      color: rgba(131, 184, 201, .85);
+      @include font-size(17px);
+    }
+  }
+}
+
+.progress {
+  padding: 16px;
+  text-align: center;
+}
+
+.postMain {
+  color: rgba(255, 255, 255, 0.55);
+  padding: 0 20px;
+  width: 100%;
+  max-width: 920px;
+
+  .postNav {
+    @include font-size(15px);
+    color: rgb(131, 184, 201);
+    cursor: pointer;
+    margin-bottom: 36px;
+
+    .navButton {
+      background-color: rgba(131, 184, 201, .75);
+      border-color: rgba(131, 184, 201, .75);
+
+      span {
+        padding-top: 3px;
+      }
+    }
+  }
+
+  .postHeader {
+    border-bottom: 1px solid rgba(131, 184, 201, 0.35);
+    padding: 0 12px 12px 0;
+    margin-bottom: 18px;
+
+    .postTitle {
+      @include font-size(17px);
+      color: rgba(230, 204, 142, .75);
+    }
+
+    .postDate {
+      @include font-size(13px);
+      text-align: right;
+
+      time {
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.35);
+      }
+    }
+  }
+
+  .postImageCol {
+
+    &--mobile {
+      text-align: center;
+    }
+
+    .postImage {
+      height: 400px;
+      display: inline-block;
+      overflow: hidden;
+      margin: 6px;
+      border: 2px solid rgba(230, 204, 142, 0.85);
+
+      &--mobile {
+        max-width: 360px;
+        height: 100%;
+      }
+
+      .postImg {
+        max-height: 100%;
+        display: inline-block;
+
+        &--mobile {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

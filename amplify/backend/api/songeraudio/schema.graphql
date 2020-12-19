@@ -1,0 +1,25 @@
+type NewsPost @model
+@auth(rules: [{ allow: public, operations: [read] }]) {
+  id: ID!
+  slug: String!
+  title: String!
+  summary: String!
+  content: String!
+  images: [String]
+  date: AWSDateTime
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+
+type Subscriber @model
+@auth(rules: [{ allow: public, operations: [create, read] }]) {
+  id: ID!
+  given_name: String
+  family_name: String
+  email: String!
+  phone_number: String
+  phone_number_verified: Boolean
+  email_verified: Boolean
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}

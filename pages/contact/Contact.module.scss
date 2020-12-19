@@ -1,0 +1,26 @@
+@import '../../styles/app';
+
+.contact {
+  &--mobile {
+    margin-top: 80px;
+  }
+
+  &--desktop {
+    margin-top: 90px;
+  }
+}
+
+.bodyText {
+  @include font-size(15px);
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.60);
+
+  &--mobile {
+    padding: 0 20px 18px;
+    margin-top: -18px;
+  }
+
+  &--desktop {
+    padding: 0 20px 18px;
+  }
+}
