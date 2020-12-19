@@ -36,7 +36,7 @@ class AboutPage extends React.Component {
           {mobile(breakpoint) && (
             <Row>
               <div className={classNames(styles.portrait, styles[styleState('portrait', breakpoint)])}>
-                <img alt="Ken Songer" src='./ken.jpg'/>
+                <img alt="Ken Songer" src='/ken.jpg'/>
               </div>
             </Row>
           )}
@@ -48,7 +48,7 @@ class AboutPage extends React.Component {
                 </Paragraph>
                 {!mobile(breakpoint) && (
                   <img className={classNames(styles.desktopPortrait)}
-                       alt="Ken Songer" src='./ken.jpg'/>
+                       alt="Ken Songer" src='/ken.jpg'/>
                 )}
                 <Paragraph className={classNames(styles.aboutText, styles[styleState('aboutText', breakpoint)])}>
                   Songer Audio is the product of my lifelong passion. It is the sum of thousands of hours of design and redesign, of refinement and production, and of an obsessive drive to perfect the joyful experience of music.

@@ -14,5 +14,14 @@ const router = (r) => {
   }
 }
 
-export { navigate, router }
+const searchToObject = () => {
+  const searchParams = new URLSearchParams(window.location.search)
+  const result = {}
+  for(const [key, value] of searchParams.entries()) {
+    result[key] = value;
+  }
+  return result;
+}
+
+export { navigate, router, searchToObject }
 

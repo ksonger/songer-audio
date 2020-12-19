@@ -6,7 +6,6 @@ import {Button, Col, Row, Spin, Icon} from 'antd'
 import styles from './Posts.module.scss'
 import classNames from "classnames";
 import {styleState} from "../../utils/formFactor";
-import Link from "next/link";
 import {mobile} from "../../utils/formFactor";
 
 
@@ -36,21 +35,22 @@ class Post extends PureComponent {
 
   renderPost = () => {
     const { title, createdAt, content, images } = this.props.newspost;
+    const { navHandler } = this.props
     const { breakpoint } = this.state
     return (
       <Col>
         <Row className={classNames(styles.postNav, styles[styleState('postNav', breakpoint)])}>
-          <Link href="/news">
-            <Row>
-              <Button className={classNames(styles.navButton, styles[styleState('navButton', breakpoint)])}
-                      type="primary" shape="round" icon="caret-left" size="small">
-                News
-              </Button>
-            </Row>
-          </Link>
+          <Row>
+            <Button onClick={() => {navHandler()}}
+                    className={classNames(styles.navButton, styles[styleState('navButton', breakpoint)])}
+                    type="primary" shape="round" icon="caret-left" size="small">
+              Posts
+            </Button>
+          </Row>
         </Row>
         <Row align="bottom" className={classNames(styles.postHeader, styles[styleState('postHeader', breakpoint)])}>
-          <Col className={classNames(styles.postTitle, styles[styleState('postTitle', breakpoint)])} xs={{ span: 24 }} sm={{ span: 24 }} md={{span:20}} lg={{ span: 20 }} xxl={{ span: 20 }}>
+          <Col className={classNames(styles.postTitle, styles[styleState('postTitle', breakpoint)])} xs={{ span: 24 }}
+               sm={{ span: 24 }} md={{ span: 20 }} lg={{ span: 20 }} xxl={{ span: 20 }}>
             {title}
           </Col>
           {!mobile(breakpoint) && (
@@ -69,7 +69,9 @@ class Post extends PureComponent {
             {images && images.length > 0 && (
               images.map((image, index) => (
                   <div className={classNames(styles.postImage, styles[styleState('postImage', breakpoint)])} key={index}>
-                    <img alt={`post_image_${index}`} className={classNames(styles.postImg, styles[styleState('postImg', breakpoint)])} key={index} src={image}/>
+                    <img alt={`post_image_${index}`}
+                         className={classNames(styles.postImg, styles[styleState('postImg', breakpoint)])} key={index}
+                         src={image}/>
                   </div>
                 )
               ))}

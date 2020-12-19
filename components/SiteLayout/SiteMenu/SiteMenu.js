@@ -56,7 +56,6 @@ class SiteMenu extends React.Component {
     let { clickAction } = this.props
     const {items} = this.state
     const item = items.filter(i => i.path === props.path)[0]
-    console.log(item)
     await this.setState({
       activePage: item
     })

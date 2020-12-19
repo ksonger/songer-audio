@@ -81,16 +81,16 @@ let ProductCard = ({ card, breakpoint }) => {
       <Row>
         <Col>
           {graphs.map((graph, index) => (
-            <>
+            <Col key={`g${index}`}>
               <Paragraph className={classNames(styles.responseLabel, styles[styleState('responseLabel')])}>
                 <span style={{ fontWeight: 'bold', color: 'rgba(255,255,255,0.85)' }}>
                   <span style={{ lineHeight: '24px' }}>{graph.title} <br/></span>
                 </span> {graph.description}
               </Paragraph>
               <Row className={classNames(styles.response, styles[styleState('response')])}>
-                <img alt={`graph_image${index}`} key={`g${index}`} src={graph.src}/>
+                <img alt={`graph_image${index}`} src={graph.src}/>
               </Row>
-            </>
+            </Col>
           ))
           }
         </Col>
