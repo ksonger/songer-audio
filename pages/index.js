@@ -1,5 +1,5 @@
 import React from 'react'
-import HomePage from "../components/HomePage/HomePage";
+import HomePageContainer from "../components/HomePage/HomePageContainer";
 import styles from './index.module.scss'
 
 class Index extends React.Component {
@@ -7,7 +7,7 @@ class Index extends React.Component {
     const {store} = this.props
     return (
       <div className={styles.home}>
-        <HomePage store={store}/>
+        <HomePageContainer store={store}/>
       </div>
     )
   }
