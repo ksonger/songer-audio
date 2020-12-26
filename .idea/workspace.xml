@@ -12,14 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f19493e8-800c-4397-90dc-4a776aac6d32" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/News/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/News/Post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/News/PostList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/News/PostList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/News/Posts.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/News/Posts.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProductCard/ProductCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductCard/ProductCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SignUpForm/SignUpForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SignUpForm/SignUpForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/news/[...post].js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenuContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenuContainer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +106,7 @@
       <workItem from="1607882927603" duration="62636000" />
       <workItem from="1608139752281" duration="41175000" />
       <workItem from="1608328435326" duration="8154000" />
+      <workItem from="1609009211861" duration="2404000" />
     </task>
     <servers />
   </component>
@@ -127,6 +124,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
     <state x="378" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602534625103">
@@ -168,13 +168,13 @@
     <state x="100" y="125" width="1580" height="1134" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.2560.1333@0.25.2560.1333" timestamp="1608229637887" />
     <state x="100" y="125" width="1652" height="1136" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.2560.1335@0.25.2560.1335" timestamp="1608153912583" />
     <state x="100" y="125" width="1580" height="1139" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.2560.1338@0.25.2560.1338" timestamp="1608079874470" />
-    <state x="1775" y="396" width="675" height="735" key="find.popup" timestamp="1608398570618">
+    <state x="1775" y="396" width="675" height="735" key="find.popup" timestamp="1609011789911">
       <screen x="0" y="25" width="2560" height="1331" />
     </state>
     <state x="341" y="447" width="598" height="737" key="find.popup/0.23.2560.1338@0.23.2560.1338" timestamp="1602693758725" />
     <state x="1775" y="397" width="675" height="739" key="find.popup/0.23.2560.1340@0.23.2560.1340" timestamp="1605567731567" />
     <state x="1775" y="396" width="675" height="734" key="find.popup/0.25.2560.1330@0.25.2560.1330" timestamp="1606845334483" />
-    <state x="1775" y="396" width="675" height="735" key="find.popup/0.25.2560.1331@0.25.2560.1331" timestamp="1608398570618" />
+    <state x="1775" y="396" width="675" height="735" key="find.popup/0.25.2560.1331@0.25.2560.1331" timestamp="1609011789911" />
     <state x="491" y="228" width="675" height="737" key="find.popup/0.25.2560.1333@0.25.2560.1333" timestamp="1608229946791" />
     <state x="197" y="185" width="675" height="739" key="find.popup/0.25.2560.1335@0.25.2560.1335" timestamp="1608155538364" />
     <state x="1775" y="398" width="675" height="739" key="find.popup/0.25.2560.1336@0.25.2560.1336" timestamp="1607648728947" />
@@ -203,7 +203,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/pages/about/index.js</url>
           <line>46</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

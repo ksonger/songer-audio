@@ -5,7 +5,6 @@ import moment from "moment";
 
 
 const setMenuItemActive = (item) => {
-  console.log('action', item)
   return {
     type: types.HIGHLIGHT_MENU,
     id: item.id,
@@ -88,7 +87,7 @@ const fetchNewsPosts = (options, count) => {
         dispatch(receiveNewsPosts(items, count))
       })
       .catch((err) => {
-        console.log('error', err)
+        console.warn('error', err)
       })
   };
 };

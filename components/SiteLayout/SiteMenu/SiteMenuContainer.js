@@ -1,16 +1,23 @@
 import SiteMenu from "./SiteMenu";
 import {connect} from 'react-redux'
 import {navigate} from "../../../utils/navigation";
+import {setMenuItemActive} from "../../../actions/actions";
 
-const mapDispatchToProps = () => ({
+const mapDispatchToProps = (dispatch) => ({
   clickAction: (props) => {
+    dispatch(setMenuItemActive({
+      id: props.eventKey,
+      label: props.children,
+      path: props.path
+    }))
     navigate(props.path)
   }
 })
 
 const mapStateToProps = (state) => {
   return {
-    mobile: state.mobile
+    mobile: state.mobile,
+    activePage: state.activePage
   }
 }
 

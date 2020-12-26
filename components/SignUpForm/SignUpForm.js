@@ -114,7 +114,7 @@ class SignUpFormComponent extends React.Component {
       })
       onFormSubmit();
     } catch (err) {
-      console.log(err);
+      console.warn(err);
       message.error('Something went wrong.  Please try again.')
     }
 
@@ -135,7 +135,7 @@ class SignUpFormComponent extends React.Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         this.signUp(values).catch(() => {
-          console.log('error')
+          console.warn('error')
         })
       }
     })
