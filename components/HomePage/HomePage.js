@@ -21,15 +21,15 @@ class HomePage extends React.Component {
   };
 
   componentDidMount () {
-    this.setState({ status: 'data-ready' })
-    const { store } = this.props
-    this.unsubscribe = store.subscribe(() => {
-      this.setState({isMobile: store.getState().mobile})
-    })
+    const { mobile } = this.props
+    this.setState({ isMobile: mobile, status: 'data-ready' })
   }
 
-  componentWillUnmount () {
-    this.unsubscribe()
+  componentDidUpdate (prevProps, prevState, snapshot) {
+    const { isMobile } = this.state;
+    if (isMobile !== this.props.mobile) {
+      this.setState({ isMobile: this.props.mobile })
+    }
   }
 
   homeCopy = () => {
@@ -50,28 +50,40 @@ class HomePage extends React.Component {
   }
 
   renderHome = () => {
-    const {breakpoint} = this.state
+    const {breakpoint, isMobile} = this.state
+    const cards = () => {
+      return (
+        Object.keys(homePageCards).map((card, index) => (
+            <HomePageCardContainer card={homePageCards[card]}
+                                   breakpoint={breakpoint}
+                                   key={index}
+            />
+          ))
+      )
+    }
     return (
       <Animated>
         <Row className={classNames(styles.homeMain, styles[styleState('homeMain', breakpoint)])}>
           <Row>
             <Col span={24}>
               <img className={classNames(styles.homeBackground, styles[styleState('homeBackground', breakpoint)])}
-                   alt="Onimaru" src='./home_background.png'/>
+                   alt="Onimaru" src='/home_background.png'/>
               <Row className={classNames(styles.home, styles[styleState('home', breakpoint)])}>
                 <Row className={classNames(styles.homeCopy, styles[styleState('homeCopy', breakpoint)])}>
                   {(
                     this.homeCopy()
                   )}
                 </Row>
+                {isMobile && (
+                  <Col span={24}>
+                    {cards()}
+                  </Col>
+                )}
+                {!isMobile && (
                   <Row type="flex" justify="center">
-                    {Object.keys(homePageCards).map((card, index) => (
-                      <HomePageCardContainer card={homePageCards[card]}
-                                    breakpoint={breakpoint}
-                                    key={index}
-                      />
-                    ))}
+                    {cards()}
                   </Row>
+                )}
               </Row>
             </Col>
           </Row>
