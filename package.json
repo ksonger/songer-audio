@@ -21,7 +21,7 @@
     "autoprefixer": "^9.6.0",
     "aws-amplify": "latest",
     "aws-amplify-react": "latest",
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "babel-plugin-import": "^1.7.0",
     "classnames": "^2.2.6",
     "faker": "^5.1.0",
