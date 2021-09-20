@@ -6,6 +6,7 @@ import React from "react";
 import {mobile, styleState} from '../../utils/formFactor'
 import PropTypes from 'prop-types'
 
+
 let HomePageCard = ({ card, breakpoint, clickAction }) => {
 
   const {title, copy, cta} = card

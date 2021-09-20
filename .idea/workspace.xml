@@ -11,14 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f19493e8-800c-4397-90dc-4a776aac6d32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/HomePage/HomePageContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ProductsPage/Products.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ProductsPage/ProductsPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ProductsPage/ProductsPageContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomePage/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/products/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomePageCard/HomePageCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomePageCard/HomePageCard.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +103,7 @@
       <workItem from="1608139752281" duration="41175000" />
       <workItem from="1608328435326" duration="8154000" />
       <workItem from="1609009211861" duration="6596000" />
+      <workItem from="1632161406512" duration="21000" />
     </task>
     <servers />
   </component>
