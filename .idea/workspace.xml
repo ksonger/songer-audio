@@ -11,14 +11,230 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f19493e8-800c-4397-90dc-4a776aac6d32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/HomePage/HomePageContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ProductsPage/Products.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ProductsPage/ProductsPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ProductsPage/ProductsPageContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/paths.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/content-blocks/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/factories/ContentBlockFactory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/factories/ContentIconFactory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/factories/DynamicComponentFactory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/factories/IconFactory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/factories/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/global/HtmlHead/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/layout/Container/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/layout/Container/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/layout/Grid/Grid.stories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/layout/Grid/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/layout/Grid/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/layout/MobileSlider/Navigation/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/layout/MobileSlider/Navigation/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/layout/MobileSlider/Navigation/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/layout/MobileSlider/flickityOptions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/layout/MobileSlider/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/layout/MobileSlider/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/layout/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shapes/button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shapes/callout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shapes/card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shapes/event.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shapes/globalData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shapes/icon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shapes/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shapes/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shapes/locale.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shapes/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shapes/post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shapes/quiz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shapes/radioGroup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shapes/searchResult.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shapes/svg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/ProtoSVG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/SVGs.stories.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/AdditionalAssistanceChildCare.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/AdditionalAssistanceGeneralSupport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/AdditionalAssistanceHealthCare.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/AdditionalAssistanceHousing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/AdditionalAssistanceSurvivors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/AdditionalAssistanceTransportation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/Advocacy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/EmailSignUp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/EndHunger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/FindSupportFreeFood.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/FindSupportNetwork.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/FindSupportProduce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/FindSupportProduceAlt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/GivingBusinessCauseRelated.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/GivingBusinessDonating.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/GivingBusinessHostFundraiser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/GivingBusinessSponsorship.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/GivingBusinessWorkplaceGiving.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/GivingIndividualsDonateVehicle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/GivingIndividualsDonations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/GivingIndividualsFundraiser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/GivingIndividualsPlannedGift.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/LibraryFAQs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/OurFoodNetworkLocalOrgs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/OurFoodNetworkPartnerOpps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/PeopleBased.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/SignUp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/SupportPartnerServices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/TimeIdeas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/VolunteerCalendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/VolunteerProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/VolunteerSignUp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/content/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/CaretDown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/CaretLeft.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/CaretRight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/Checkbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/Close.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/CloseFill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/CloseMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/GeoMarker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/Hamburger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/Play.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/PlusFill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/Quote.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/Search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/social/Facebook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/social/Instagram.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/social/LinkedIn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/social/Twitter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/icon/social/YouTube.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/logo/FeedingAmerica.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/logo/OFBLogoDefault.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/logo/OFBLogoSimple.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/logo/OFBLogoType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svgs/logo/logo/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/templates/Default/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/templates/Default/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/templates/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contexts/GlobalData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/datetime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/transforms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/url.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/listeners.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useFilterEntryList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useFontFaceObserver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useGlobalContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useHover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useIdle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useNestingContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/usePagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useQuizContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useScroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useSignUpForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useSiteSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useThemedGroupContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useVimeoOembedAPI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/[[...page]].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/base/appearance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/base/fonts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/base/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/base/resets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/base/root.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/base/typography.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/base/variables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/globalStyles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/appearance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/eslint-config/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/eslint-config/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/eslint-config/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/eslint-config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/eslint-config/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/hooks/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/hooks/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/hooks/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/hooks/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/hooks/src/useDebounce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/hooks/src/useFocusTrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/hooks/src/useReduceMotion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/hooks/src/useWhyDidYouUpdate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/style-mixins/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/style-mixins/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/style-mixins/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/style-mixins/src/appearance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/style-mixins/src/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/style-mixins/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/style-mixins/src/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/style-mixins/src/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/style-mixins/src/typography.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/mixins/typography.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/utility/appearance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/utility/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/utility/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles/utility/typography.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.graphqlconfig.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.graphqlconfig.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomePage/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/products/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/.config/project-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/.config/project-config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/api/songeraudio/parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/songeraudio/parameters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/api/songeraudio/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/songeraudio/schema.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Animated/Animated.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContactForm/ContactForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContactForm/ContactForm.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContactForm/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomePage/HomePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomePage/HomePage.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomePage/HomePageContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomePageCard/HomePageCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomePageCard/HomePageCardContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/News/Post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/News/PostContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/News/PostList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/News/PostListContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/News/Posts.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProductCard/ProductCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProductCard/ProductCard.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProductCard/ProductCardContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProductsPage/Products.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProductsPage/ProductsPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProductsPage/ProductsPageContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SignUpForm/SignUpForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SignUpForm/SignUpForm.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SignUpForm/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteLayout.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteLayoutContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenu.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/SiteMenuContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SiteLayout/SiteMenu/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SiteLayout/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about/About.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact/Contact.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/media/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/news/News.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/news/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/products/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/technology/Technology.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/technology/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reducers/reducers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/mutations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/queries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/subscriptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/subscriptions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/_antd_overrides.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/_sass.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/_vars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,28 +261,30 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/ProductsPage" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/contexts" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/components/ProductsPage" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/amplify/backend/auth" />
-      <recent name="$PROJECT_DIR$/pages/news/blog" />
-      <recent name="$PROJECT_DIR$/images/enso/carousel" />
+      <recent name="$PROJECT_DIR$/contexts" />
+      <recent name="$PROJECT_DIR$/components/svgs/logo" />
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/theme/styles/mixins" />
+      <recent name="$PROJECT_DIR$/helpers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/theme/styles" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/pages/news/blog/mdx" />
       <recent name="$PROJECT_DIR$/pages/news" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/pages/technology" />
     </key>
   </component>
   <component name="RunManager">
@@ -110,6 +328,8 @@
       <workItem from="1608139752281" duration="41175000" />
       <workItem from="1608328435326" duration="8154000" />
       <workItem from="1609009211861" duration="6596000" />
+      <workItem from="1632757119563" duration="1922000" />
+      <workItem from="1637873777137" duration="10483000" />
     </task>
     <servers />
   </component>
@@ -132,69 +352,23 @@
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="378" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602534625103">
-      <screen x="0" y="23" width="2560" height="1338" />
+    <state x="1285" y="221" width="1080" height="1131" key="DiffContextDialog" timestamp="1632241204448">
+      <screen x="0" y="25" width="2560" height="1336" />
     </state>
-    <state x="378" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1338@0.23.2560.1338" timestamp="1602534625103" />
-    <state width="1259" height="371" key="GridCell.Tab.0.bottom" timestamp="1607545265695">
-      <screen x="0" y="25" width="2560" height="1333" />
+    <state x="1285" y="221" width="1080" height="1131" key="DiffContextDialog/0.25.2560.1336@0.25.2560.1336" timestamp="1632241204448" />
+    <state x="100" y="125" width="1079" height="1131" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1632321576038">
+      <screen x="0" y="25" width="2560" height="1336" />
     </state>
-    <state width="1259" height="375" key="GridCell.Tab.0.bottom/0.23.2560.1338@0.23.2560.1338" timestamp="1602696213142" />
-    <state width="1259" height="371" key="GridCell.Tab.0.bottom/0.25.2560.1333@0.25.2560.1333" timestamp="1607545265695" />
-    <state width="1259" height="371" key="GridCell.Tab.0.center" timestamp="1607545265694">
-      <screen x="0" y="25" width="2560" height="1333" />
+    <state x="100" y="125" width="1079" height="1131" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.2560.1336@0.25.2560.1336" timestamp="1632321576038" />
+    <state x="341" y="443" width="597" height="490" key="find.popup" timestamp="1637949695451">
+      <screen x="0" y="25" width="2560" height="1330" />
     </state>
-    <state width="1259" height="375" key="GridCell.Tab.0.center/0.23.2560.1338@0.23.2560.1338" timestamp="1602696213142" />
-    <state width="1259" height="371" key="GridCell.Tab.0.center/0.25.2560.1333@0.25.2560.1333" timestamp="1607545265694" />
-    <state width="1259" height="371" key="GridCell.Tab.0.left" timestamp="1607545265693">
-      <screen x="0" y="25" width="2560" height="1333" />
+    <state x="341" y="443" width="597" height="490" key="find.popup/0.25.2560.1330@0.25.2560.1330" timestamp="1637949695451" />
+    <state x="341" y="445" width="597" height="490" key="find.popup/0.25.2560.1335@0.25.2560.1335" timestamp="1632171864700" />
+    <state x="305" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1632188349526">
+      <screen x="0" y="25" width="2560" height="1336" />
     </state>
-    <state width="1259" height="375" key="GridCell.Tab.0.left/0.23.2560.1338@0.23.2560.1338" timestamp="1602696213141" />
-    <state width="1259" height="371" key="GridCell.Tab.0.left/0.25.2560.1333@0.25.2560.1333" timestamp="1607545265693" />
-    <state width="1259" height="371" key="GridCell.Tab.0.right" timestamp="1607545265694">
-      <screen x="0" y="25" width="2560" height="1333" />
-    </state>
-    <state width="1259" height="375" key="GridCell.Tab.0.right/0.23.2560.1338@0.23.2560.1338" timestamp="1602696213142" />
-    <state width="1259" height="371" key="GridCell.Tab.0.right/0.25.2560.1333@0.25.2560.1333" timestamp="1607545265694" />
-    <state x="108" y="99" width="1080" height="1137" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1608074655429">
-      <screen x="0" y="25" width="2560" height="1338" />
-    </state>
-    <state x="108" y="99" width="1080" height="1131" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.25.2560.1331@0.25.2560.1331" timestamp="1607888888508" />
-    <state x="100" y="125" width="1080" height="1132" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.25.2560.1333@0.25.2560.1333" timestamp="1607546485070" />
-    <state x="108" y="99" width="1080" height="1134" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.25.2560.1335@0.25.2560.1335" timestamp="1607814708925" />
-    <state x="108" y="99" width="1080" height="1137" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.25.2560.1338@0.25.2560.1338" timestamp="1608074655429" />
-    <state x="100" y="125" width="1580" height="1134" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608229637887">
-      <screen x="0" y="25" width="2560" height="1333" />
-    </state>
-    <state x="100" y="123" width="1080" height="1138" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.2560.1338@0.23.2560.1338" timestamp="1602546339514" />
-    <state x="100" y="125" width="1652" height="1133" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.2560.1331@0.25.2560.1331" timestamp="1607888888508" />
-    <state x="100" y="125" width="1580" height="1134" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.2560.1333@0.25.2560.1333" timestamp="1608229637887" />
-    <state x="100" y="125" width="1652" height="1136" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.2560.1335@0.25.2560.1335" timestamp="1608153912583" />
-    <state x="100" y="125" width="1580" height="1139" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.2560.1338@0.25.2560.1338" timestamp="1608079874470" />
-    <state x="352" y="192" width="675" height="735" key="find.popup" timestamp="1609016760494">
-      <screen x="0" y="25" width="2560" height="1331" />
-    </state>
-    <state x="341" y="447" width="598" height="737" key="find.popup/0.23.2560.1338@0.23.2560.1338" timestamp="1602693758725" />
-    <state x="1775" y="397" width="675" height="739" key="find.popup/0.23.2560.1340@0.23.2560.1340" timestamp="1605567731567" />
-    <state x="1775" y="396" width="675" height="734" key="find.popup/0.25.2560.1330@0.25.2560.1330" timestamp="1606845334483" />
-    <state x="352" y="192" width="675" height="735" key="find.popup/0.25.2560.1331@0.25.2560.1331" timestamp="1609016760494" />
-    <state x="491" y="228" width="675" height="737" key="find.popup/0.25.2560.1333@0.25.2560.1333" timestamp="1608229946791" />
-    <state x="197" y="185" width="675" height="739" key="find.popup/0.25.2560.1335@0.25.2560.1335" timestamp="1608155538364" />
-    <state x="1775" y="398" width="675" height="739" key="find.popup/0.25.2560.1336@0.25.2560.1336" timestamp="1607648728947" />
-    <state x="510" y="309" width="1302" height="741" key="find.popup/0.25.2560.1338@0.25.2560.1338" timestamp="1608079193999" />
-    <state x="305" y="329" width="670" height="674" key="search.everywhere.popup" timestamp="1608398220815">
-      <screen x="0" y="25" width="2560" height="1331" />
-    </state>
-    <state x="305" y="328" width="670" height="676" key="search.everywhere.popup/0.23.2560.1338@0.23.2560.1338" timestamp="1602696172680" />
-    <state x="305" y="329" width="670" height="674" key="search.everywhere.popup/0.25.2560.1331@0.25.2560.1331" timestamp="1608398220815" />
-    <state x="305" y="329" width="670" height="675" key="search.everywhere.popup/0.25.2560.1333@0.25.2560.1333" timestamp="1608226893578" />
-    <state x="305" y="329" width="670" height="675" key="search.everywhere.popup/0.25.2560.1335@0.25.2560.1335" timestamp="1607549838274" />
-    <state x="305" y="330" width="670" height="676" key="search.everywhere.popup/0.25.2560.1336@0.25.2560.1336" timestamp="1608145450166" />
-    <state x="305" y="330" width="670" height="677" key="search.everywhere.popup/0.25.2560.1338@0.25.2560.1338" timestamp="1608065333379" />
-    <state x="370" y="536" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602541127106">
-      <screen x="0" y="23" width="2560" height="1338" />
-    </state>
-    <state x="370" y="536" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.2560.1338@0.23.2560.1338" timestamp="1602541127106" />
+    <state x="305" y="328" width="670" height="676" key="search.everywhere.popup/0.25.2560.1336@0.25.2560.1336" timestamp="1632188349526" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

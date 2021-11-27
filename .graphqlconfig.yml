@@ -1,6 +1,6 @@
 projects:
   songeraudio:
-    schemaPath: src/graphql/schema.json
+    schemaPath: amplify/backend/api/songeraudio/build/schema.graphql
     includes:
       - src/graphql/**/*.js
     excludes:

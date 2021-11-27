@@ -1,6 +1,210 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const onCreatePage = /* GraphQL */ `
+  subscription OnCreatePage {
+    onCreatePage {
+      id
+      index
+      label
+      slug
+      uri
+      contentBlocks {
+        items {
+          id
+          pageId
+          sortOrder
+          type
+          title
+          header
+          subheader
+          body
+          html
+          images
+          layout
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdatePage = /* GraphQL */ `
+  subscription OnUpdatePage {
+    onUpdatePage {
+      id
+      index
+      label
+      slug
+      uri
+      contentBlocks {
+        items {
+          id
+          pageId
+          sortOrder
+          type
+          title
+          header
+          subheader
+          body
+          html
+          images
+          layout
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeletePage = /* GraphQL */ `
+  subscription OnDeletePage {
+    onDeletePage {
+      id
+      index
+      label
+      slug
+      uri
+      contentBlocks {
+        items {
+          id
+          pageId
+          sortOrder
+          type
+          title
+          header
+          subheader
+          body
+          html
+          images
+          layout
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onCreateContentBlock = /* GraphQL */ `
+  subscription OnCreateContentBlock {
+    onCreateContentBlock {
+      id
+      pageId
+      sortOrder
+      type
+      title
+      header
+      subheader
+      body
+      html
+      images
+      layout
+      specs {
+        id
+        label
+        value
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateContentBlock = /* GraphQL */ `
+  subscription OnUpdateContentBlock {
+    onUpdateContentBlock {
+      id
+      pageId
+      sortOrder
+      type
+      title
+      header
+      subheader
+      body
+      html
+      images
+      layout
+      specs {
+        id
+        label
+        value
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteContentBlock = /* GraphQL */ `
+  subscription OnDeleteContentBlock {
+    onDeleteContentBlock {
+      id
+      pageId
+      sortOrder
+      type
+      title
+      header
+      subheader
+      body
+      html
+      images
+      layout
+      specs {
+        id
+        label
+        value
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onCreateSpec = /* GraphQL */ `
+  subscription OnCreateSpec {
+    onCreateSpec {
+      id
+      label
+      value
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateSpec = /* GraphQL */ `
+  subscription OnUpdateSpec {
+    onUpdateSpec {
+      id
+      label
+      value
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteSpec = /* GraphQL */ `
+  subscription OnDeleteSpec {
+    onDeleteSpec {
+      id
+      label
+      value
+      createdAt
+      updatedAt
+    }
+  }
+`;
 export const onCreateNewsPost = /* GraphQL */ `
   subscription OnCreateNewsPost {
     onCreateNewsPost {
@@ -10,6 +214,7 @@ export const onCreateNewsPost = /* GraphQL */ `
       summary
       content
       images
+      comments
       date
       createdAt
       updatedAt
@@ -25,6 +230,7 @@ export const onUpdateNewsPost = /* GraphQL */ `
       summary
       content
       images
+      comments
       date
       createdAt
       updatedAt
@@ -40,6 +246,7 @@ export const onDeleteNewsPost = /* GraphQL */ `
       summary
       content
       images
+      comments
       date
       createdAt
       updatedAt

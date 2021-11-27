@@ -1,0 +1,79 @@
+{
+  "_from": "@castiron/hooks@^1.0.0",
+  "_id": "@castiron/hooks@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-ODflWv+6MwLKIjtn0JXa8HQJgpAeZoscmwqMlKZOJhgAu3YWiKIDNG4U5Sdjxf3NzJgappwjwZpBhff8MiDryQ==",
+  "_location": "/@castiron/hooks",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@castiron/hooks@^1.0.0",
+    "name": "@castiron/hooks",
+    "escapedName": "@castiron%2fhooks",
+    "scope": "@castiron",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@castiron/hooks/-/hooks-1.0.0.tgz",
+  "_shasum": "1b297db23ba671efe28253d62566a728880e88a7",
+  "_spec": "@castiron/hooks@^1.0.0",
+  "_where": "/Users/ken/Documents/ofb/client",
+  "author": {
+    "name": "Cast Iron Coding"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ],
+  "bugs": {
+    "url": "https://github.com/castiron/common-js/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "focus-trap": "^6.6.0"
+  },
+  "deprecated": false,
+  "description": "A set of common hooks",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "gitHead": "de2b541a77ad5e984a69a2b64bb9506f7d704bf2",
+  "homepage": "https://github.com/castiron/common-js/packages/hooks/#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@castiron/hooks",
+  "peerDependencies": {
+    "react": ">= 16.8",
+    "react-dom": ">= 16.8"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castiron/common-js.git",
+    "directory": "hooks"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "npm:publish": "yarn build && yarn publish --access public"
+  },
+  "version": "1.0.0"
+}

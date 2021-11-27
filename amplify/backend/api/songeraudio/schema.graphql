@@ -1,18 +1,57 @@
-type NewsPost @model
-@auth(rules: [{ allow: public, operations: [read] }]) {
+schema {
+  query: Query
+}
+
+type Query {
+  getPages: [Page]
+}
+
+type Page @model {
+  id: ID!
+  index: Int,
+  label: String,
+  slug: String,
+  uri: String,
+  contentBlocks: [ContentBlock] @connection(keyName: "byPage", fields: ["label"]),
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+
+type ContentBlock @model
+@key(name: "byPage", fields: ["pageId"], queryField: "byPage") {
+  id: ID!,
+  pageId: String,
+  sortOrder: Int,
+  type: String,
+  title: String,
+  header: String,
+  subheader: String,
+  body: String,
+  html: String,
+  images: [String],
+  layout: String,
+  specs: [Spec]
+}
+
+type Spec @model {
+  id: ID!,
+  label: String,
+  value: String,
+}
+type NewsPost @model {
   id: ID!
   slug: String!
   title: String!
   summary: String!
   content: String!
   images: [String]
+  comments: [String],
   date: AWSDateTime
   createdAt: AWSDateTime
   updatedAt: AWSDateTime
 }
 
-type Subscriber @model
-@auth(rules: [{ allow: public, operations: [create, read] }]) {
+type Subscriber @model {
   id: ID!
   given_name: String
   family_name: String

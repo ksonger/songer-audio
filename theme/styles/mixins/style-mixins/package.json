@@ -1,0 +1,68 @@
+{
+  "_from": "@castiron/style-mixins@^1.0.5",
+  "_id": "@castiron/style-mixins@1.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-VqEpfCd7vjqm1EISTdtGoHuIRMPKaQ9X7gen5pwNa5V0kxGcHiar6jr3vynRWIiH0hWlGDIlEk8S00gw3oxGIg==",
+  "_location": "/@castiron/style-mixins",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@castiron/style-mixins@^1.0.5",
+    "name": "@castiron/style-mixins",
+    "escapedName": "@castiron%2fstyle-mixins",
+    "scope": "@castiron",
+    "rawSpec": "^1.0.5",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.5"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@castiron/style-mixins/-/style-mixins-1.0.5.tgz",
+  "_shasum": "683387c47a9d5a51bbf503de39634493278f371b",
+  "_spec": "@castiron/style-mixins@^1.0.5",
+  "_where": "/Users/ken/Documents/ofb/client",
+  "author": {
+    "name": "Cast Iron Coding"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ],
+  "bugs": {
+    "url": "https://github.com/castiron/common-js/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A bunch of JS helper functions for styling",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4"
+  },
+  "homepage": "https://github.com/castiron/common-js/tree/main/packages/style-mixins",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@castiron/style-mixins",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castiron/common-js.git",
+    "directory": "packages/style-mixins"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "npm:publish": "yarn build && yarn publish --access public"
+  },
+  "version": "1.0.5"
+}

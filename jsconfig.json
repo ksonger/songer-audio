@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/api/*": ["api/*"],
+      "@/components/*": ["components/*"],
+      "@/content-blocks/*": ["components/content-blocks/*"],
+      "@/content-blocks": ["components/content-blocks"],
+      "@/dynamic/*": ["components/dynamic/*"],
+      "@/dynamic": ["components/dynamic/"],
+      "@/factories/*": ["components/factories/*"],
+      "@/factories": ["components/factories/"],
+      "@/atomics/*": ["components/atomics/*"],
+      "@/atomics": ["components/atomics/"],
+      "@/composed/*": ["components/composed/*"],
+      "@/composed": ["components/composed/"],
+      "@/layout/*": ["components/layout/*"],
+      "@/layout": ["components/layout/"],
+      "@/templates/*": ["components/templates/*"],
+      "@/templates": ["components/templates"],
+      "@/global": ["components/global"],
+      "@/global/*": ["components/global/*"],
+      "@/shapes": ["components/shapes/"],
+      "@/shapes/*": ["components/shapes/*"],
+      "@/hooks/*": ["hooks/*"],
+      "@/hooks": ["hooks/"],
+      "@/contexts/*": ["contexts/*"],
+      "@/styles/*": ["theme/styles/*"],
+      "@/svgs/*": ["components/svgs/*"],
+      "@/storybook/*": ["storybook/*"],
+      "@/fixtures/*": ["fixtures/*"],
+      "@/helpers/*": ["helpers/*"],
+      "@/helpers": ["helpers/"]
+    }
+  }
+}

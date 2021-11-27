@@ -1,0 +1,134 @@
+import styled from "styled-components";
+import { Meta, Story, Canvas } from "@storybook/addon-docs";
+import { SVGFlexWrapper } from "@/storybook/previewComponents";
+import GlobalStyles from "@/styles/globalStyles";
+import * as ContentIcon from "./content";
+import * as Icon from "./icon";
+import * as Logo from "./logo";
+
+export const SVGGrid = ({ svgs }) => (
+  <SVGFlexWrapper>
+    {svgs.map(({ name, Component }) => (
+      <li key={name}>
+        <div>
+          <Component />
+        </div>
+        <h3>{name}</h3>
+      </li>
+    ))}
+  </SVGFlexWrapper>
+);
+
+<Meta
+  title="Theme/SVGs"
+  component={SVGGrid}
+  parameters={{ controls: { disable: true } }}
+/>
+
+export const Template = (args) => <SVGGrid {...args} />;
+
+# SVGs
+
+## Logos
+
+<Story
+  name="Logos"
+  args={{
+    svgs: [
+      "OFBLogoDefault",
+      "OFBLogoSimple",
+      "OFBLogoType",
+      "FeedingAmerica",
+    ].map((svg) => {
+      return {
+        name: svg,
+        Component: Logo[svg],
+      };
+    }),
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+## Simple Icons
+
+<Story
+  name="Simple Icons"
+  args={{
+    svgs: [
+      "CaretDown",
+      "CaretLeft",
+      "CaretRight",
+      "Checkbox",
+      "CloseMenu",
+      "Close",
+      "CloseFill",
+      "GeoMarker",
+      "Hamburger",
+      "Play",
+      "PlusFill",
+      "Quote",
+      "Search",
+      "Facebook",
+      "Instagram",
+      "LinkedIn",
+      "YouTube",
+    ].map((svg) => {
+      return {
+        name: svg,
+        Component: Icon[svg],
+      };
+    }),
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+## Content Icons
+
+<Story
+  name="Content Icons"
+  args={{
+    svgs: [
+      "AdditionalAssistanceChildCare",
+      "AdditionalAssistanceGeneralSupport",
+      "AdditionalAssistanceHealthCare",
+      "AdditionalAssistanceHousing",
+      "AdditionalAssistanceSurvivors",
+      "AdditionalAssistanceTransportation",
+      "Advocacy",
+      "EmailSignUp",
+      "EndHunger",
+      "FindSupportFreeFood",
+      "FindSupportNetwork",
+      "FindSupportProduce",
+      "FindSupportProduceAlt",
+      "LibraryFAQs",
+      "OurFoodNetworkLocalOrgs",
+      "OurFoodNetworkPartnerOpps",
+      "PeopleBased",
+      "SignUp",
+      "SupportPartnerServices",
+      "TimeIdeas",
+      "VolunteerCalendar",
+      "VolunteerProfile",
+      "VolunteerSignUp",
+      "GivingBusinessCauseRelated",
+      "GivingBusinessDonating",
+      "GivingBusinessHostFundraiser",
+      "GivingBusinessSponsorship",
+      "GivingBusinessWorkplaceGiving",
+      "GivingIndividualsDonateVehicle",
+      "GivingIndividualsDonations",
+      "GivingIndividualsFundraiser",
+      "GivingIndividualsPlannedGift",
+    ].map((svg) => {
+      return {
+        name: svg,
+        Component: ContentIcon[svg],
+      };
+    }),
+  }}
+>
+  {Template.bind({})}
+</Story>
